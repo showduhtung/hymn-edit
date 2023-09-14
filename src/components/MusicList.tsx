@@ -44,10 +44,9 @@ function readFileAsync(file: File): Promise<HymnFile> {
 }
 
 export const MusicList = () => {
-  const [data] = useState(["144. Wait isDraggedOver God and Trust Him", 2, 3]);
   const [selected, setSelected] = useState(-1);
   const [isDraggedOver, toggleDraggedOver] = useToggle(false);
-  const [isConfirming, toggleConfirmation] = useToggle(true);
+  const [isConfirming, toggleConfirmation] = useToggle(false);
   const [files, setFiles] = useState<HymnFile[]>([]);
 
   function handleDrop(e: DragEvent<HTMLUListElement>) {
@@ -82,29 +81,35 @@ export const MusicList = () => {
     toggleConfirmation(false);
   }
 
+  const displayFiles = isConfirming ? [] : files;
+
   return (
     <>
-      <ListConfirmationDialog
-        open={isConfirming}
-        onClose={handleCloseDialog}
-        data={files}
-        onConfirm={handleConfirm}
-      />
+      {/* need to use the ternary to force mount/unmount */}
+      {isConfirming && (
+        <ListConfirmationDialog
+          open={isConfirming}
+          data={files}
+          onClose={handleCloseDialog}
+          onConfirm={handleConfirm}
+        />
+      )}
       <List
         sx={{
           opacity: isDraggedOver ? 0.5 : 1,
           backgroundColor: isDraggedOver ? "rgba(0,0,0,0.1)" : "transparent",
           borderStyle: isDraggedOver ? "dashed" : "none",
           borderRadius: 3,
+          minHeight: 300,
         }}
         onDragEnter={withPreventDefaults()}
         onDragOver={withPreventDefaults(handleDragState(true))}
         onDragLeave={withPreventDefaults(handleDragState(false))}
         onDrop={withPreventDefaults(handleDrop)}
       >
-        {data.map((item, idx) => (
+        {displayFiles.map((item, idx) => (
           <ListItemButton
-            key={item}
+            key={item.title}
             sx={{
               display: "flex",
               justifyContent: "space-between",
@@ -115,7 +120,7 @@ export const MusicList = () => {
             selected={selected === idx}
             disableRipple
           >
-            <Typography>{item}</Typography>
+            <Typography>{`${item.num}. ${item.title}`}</Typography>
             <Checkbox disabled />
           </ListItemButton>
         ))}
