@@ -4,17 +4,13 @@ import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import {
   Box,
-  Checkbox,
   Container,
   Divider,
-  List,
-  ListItemButton,
   Paper,
   Typography,
   styled,
 } from "@mui/material";
-import { useToggle } from "@uidotdev/usehooks";
-import { DragEventHandler, useState } from "react";
+import { MusicList } from "./components";
 
 const StyledContainer = styled(Container)(({ theme }) => ({
   padding: "24px",
@@ -38,7 +34,7 @@ function App() {
               Please drag JSON file(s) into this box
             </Typography>
           </Box>
-          <Divider sx={{ mt: "24px" }} />
+          <Divider sx={{ mt: "24px", mb: "8px" }} />
           <MusicList />
         </Paper>
         <Paper elevation={2} sx={{ flex: 1, padding: "24px" }}></Paper>
@@ -48,74 +44,3 @@ function App() {
 }
 
 export default App;
-
-const MusicList = () => {
-  const [data] = useState(["144. Wait on God and Trust Him", 2, 3]);
-  const [selected, setSelected] = useState(-1);
-  const [on, toggle] = useToggle(false);
-
-  function preventDefaults(e: DragEvent) {
-    e.preventDefault();
-    e.stopPropagation();
-  }
-
-  function handleDrop(e: DragEvent) {
-    preventDefaults(e);
-    toggle(false);
-    const { files } = e.dataTransfer ?? { files: [] as FileList };
-    console.log("hanlding drop", files);
-    handleFiles(files);
-  }
-
-  function handleFiles(files: FileList) {
-    for (let i = 0; i < files.length; i++) {
-      const file = files[i];
-      if (file.type === "application/json") {
-        console.log("File is a JSON file:", file.name);
-      } else {
-        console.log("File is NOT a JSON file:", file.name);
-      }
-    }
-  }
-
-  return (
-    <List
-      style={{
-        opacity: on ? 0.5 : 1,
-        backgroundColor: on ? "rgba(0,0,0,0.1)" : "transparent",
-        borderStyle: on ? "dashed" : "none",
-        borderRadius: 5,
-      }}
-      onDragEnter={preventDefaults}
-      onDragOver={(e) => {
-        preventDefaults(e);
-        toggle(true);
-      }}
-      onDragLeave={(e) => {
-        preventDefaults(e);
-        toggle(false);
-      }}
-      onDrop={handleDrop}
-    >
-      {data.map((item, idx) => (
-        <ListItemButton
-          key={item}
-          sx={{
-            display: "flex",
-            justifyContent: "space-between",
-            borderRadius: 2,
-            ":hover": { backgroundColor: "transparent" },
-          }}
-          onClick={() => setSelected(idx)}
-          selected={selected === idx}
-          disableRipple
-        >
-          <Typography>{item}</Typography>
-          <Checkbox disabled />
-        </ListItemButton>
-      ))}
-    </List>
-  );
-};
-
-const useDnd = () => {};
