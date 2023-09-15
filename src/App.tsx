@@ -22,7 +22,7 @@ export type HymnType = {
   title: string;
   verses: VerseType[];
 };
-type VerseType = { label: string; num: number; html: string };
+export type VerseType = { label: string; num: number; html: string };
 
 function App() {
   const [selectedHymn, setSelectedHymn] = useState<HymnType>(ex);
