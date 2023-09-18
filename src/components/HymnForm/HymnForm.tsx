@@ -1,24 +1,48 @@
 import { useState } from "react";
-import { Stack } from "@mui/joy";
+import { Stack, StackProps, Typography } from "@mui/joy";
+import { Box } from "@mui/material";
 
-import { HymnType } from "../../App";
+import { HymnType, LocalHymnsState } from "../../types";
 import { IndividualVerseForm, ControlBar } from ".";
+import { useLocalStorage } from "@uidotdev/usehooks";
 
-export const HymnForm = ({ selectedHymn }: { selectedHymn: HymnType }) => {
-  const [selectedVerse, setSelectedVerse] = useState<number>(0);
-  const [verseNo, ...content] = splitByBreakLine(
-    selectedHymn.verses[selectedVerse].html
+const defaultState = {
+  hymns: [] as HymnType[],
+  selectedHymn: undefined,
+};
+
+export const HymnForm = (props: StackProps) => {
+  const [selectedVerseIdx, setSelectedVerseIdx] = useState<number>(0);
+  const [{ selectedHymn } = defaultState, _saveToLocalStorage] =
+    useLocalStorage<LocalHymnsState>("editing-hymns");
+
+  if (!selectedHymn) {
+    return <Typography>Select a Hymn to start editting</Typography>;
+  }
+
+  const [verseNo] = splitByBreakLine(
+    selectedHymn.verses[selectedVerseIdx].html
   );
 
   return (
-    <Stack spacing="24px">
+    <Stack spacing="24px" {...props}>
       <ControlBar
+        value={selectedVerseIdx}
+        onChange={setSelectedVerseIdx}
         verses={selectedHymn.verses}
-        value={selectedVerse}
-        onChange={setSelectedVerse}
-        titles={[selectedHymn.title, verseNo]}
+        titles={[selectedHymn.title, `Verse ${verseNo}`]}
       />
-      <IndividualVerseForm initialContent={content} />
+      {selectedHymn.verses.map((verse, idx) => {
+        const [_, ...content] = splitByBreakLine(verse.html);
+        return (
+          <Box
+            key={content[0]}
+            display={idx === selectedVerseIdx ? "block" : "none"}
+          >
+            <IndividualVerseForm initialContent={content} />
+          </Box>
+        );
+      })}
     </Stack>
   );
 };

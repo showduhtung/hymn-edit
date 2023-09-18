@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import { Button, ButtonGroup, Typography, Stack } from "@mui/joy";
 
-import { type VerseType } from "../../App";
+import { type VerseType } from "../../types";
 
 type ControlBarProps = {
   verses: VerseType[];
@@ -29,6 +29,7 @@ export const ControlBar = ({
             .filter((_, idx) => idx < 11)
             .map((item, idx) => (
               <Button
+                key={idx}
                 variant={idx === value ? "solid" : "outlined"}
                 onClick={() => onChange(idx)}
                 color="primary"

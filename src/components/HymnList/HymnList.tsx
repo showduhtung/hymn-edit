@@ -2,25 +2,25 @@ import { DragEvent, useState } from "react";
 import { Box, Divider, Paper, PaperProps } from "@mui/material";
 import { Typography, List, ListItemButton } from "@mui/joy";
 import { Check } from "@mui/icons-material";
-import { useToggle } from "@uidotdev/usehooks";
+import { useToggle, useLocalStorage } from "@uidotdev/usehooks";
 
-import { HymnType } from "../../App";
 import { ListConfirmationDialog } from "./ListConfirmationDialog";
 import { readFileAsync, withPreventDefaults } from "./utilities";
+import { HymnType, LocalHymnsState } from "../../types";
 
-type HymnListProps = {
-  onSelectHymn: (arg: HymnType) => void;
-  selectedHymn: HymnType | undefined;
-} & PaperProps;
+const defaultState = {
+  hymns: [] as HymnType[],
+  selectedHymn: undefined,
+};
 
-export const HymnList = ({
-  selectedHymn,
-  onSelectHymn,
-  ...props
-}: HymnListProps) => {
+export const HymnList = (props: PaperProps) => {
+  const [localState = defaultState, saveToLocalStorage] =
+    useLocalStorage<LocalHymnsState>("editing-hymns");
+  const { hymns = [], selectedHymn } = localState;
+
   const [isDraggedOver, toggleDraggedOver] = useToggle(false);
   const [filesToBeConfirmed, setFilesToBeConfirmed] = useState<HymnType[]>([]);
-  const [files, setFiles] = useState<HymnType[]>([]);
+  const [files, setFiles] = useState<HymnType[]>(hymns);
 
   async function handleFiles(files: FileList) {
     const possibleFiles: HymnType[] = await Promise.all(
@@ -29,7 +29,10 @@ export const HymnList = ({
         .map(readFileAsync)
     );
 
-    if (possibleFiles.length > 0) setFilesToBeConfirmed(possibleFiles);
+    if (possibleFiles.length > 0) {
+      setFilesToBeConfirmed(possibleFiles);
+      saveToLocalStorage({ ...localState, hymns: possibleFiles });
+    }
   }
 
   function handleDrop(e: DragEvent<HTMLUListElement>) {
@@ -37,6 +40,7 @@ export const HymnList = ({
     const { files } = e.dataTransfer ?? { files: [] };
     handleFiles(files);
   }
+
   function handleDragState(state: boolean) {
     return () => toggleDraggedOver(state);
   }
@@ -48,14 +52,23 @@ export const HymnList = ({
   function handleConfirmFiles(selectedHymns: HymnType[]) {
     setFilesToBeConfirmed([]);
     setFiles(selectedHymns);
-    onSelectHymn(selectedHymns[0]);
+    saveToLocalStorage({ ...localState, selectedHymn: selectedHymns[0] });
   }
+
+  function handleSelectHymn(hymn: HymnType) {
+    return () => saveToLocalStorage({ ...localState, selectedHymn: hymn });
+  }
+
+  const combinedFiles = filesToBeConfirmed.reduce((acc: HymnType[], curr) => {
+    if (acc.find((item) => item.num === curr.num)) return acc;
+    return [...acc, curr];
+  }, files);
 
   return (
     <Paper elevation={2} {...props}>
       <Box px="12px">
         <Typography fontSize={24} sx={{ textDecoration: "underline" }}>
-          Hymn List
+          Hymns to be editted
         </Typography>
         <Box height="2px" />
         <Typography fontSize={12}>
@@ -81,10 +94,11 @@ export const HymnList = ({
             sx={{
               display: "flex",
               justifyContent: "space-between",
-              borderRadius: 2,
+              borderRadius: 3,
+              mb: "4px",
             }}
             color="primary"
-            onClick={() => onSelectHymn(item)}
+            onClick={handleSelectHymn(item)}
             selected={item.title === selectedHymn?.title}
           >
             <Typography>{`${item.num}. ${item.title}`}</Typography>
@@ -97,7 +111,7 @@ export const HymnList = ({
       {filesToBeConfirmed.length > 0 && (
         <ListConfirmationDialog
           open
-          data={filesToBeConfirmed}
+          data={combinedFiles}
           onClose={handleCloseDialog}
           onConfirm={handleConfirmFiles}
         />

@@ -57,7 +57,7 @@ export const ListConfirmationDialog = ({
   }
 
   return (
-    <Modal open={open} onClose={onClose(false)} keepMounted={false}>
+    <Modal open={open} onClose={onClose(false)}>
       <ModalDialog>
         <DialogTitle>
           Are you sure that you want to accept these files?
