@@ -1,3 +1,5 @@
+import { ChangeEvent } from "react";
+
 export function splitByBreakLine(html: string) {
   return html
     .split("<br>")
@@ -7,4 +9,10 @@ export function splitByBreakLine(html: string) {
 
 export function joinByBreakLine(html: string[]) {
   return html.map((line) => `<b>${line[0]}</b>${line.slice(1)}`).join("<br>");
+}
+
+export function autofocusLastCharacter(e: ChangeEvent<HTMLTextAreaElement>) {
+  const val = e.target.value;
+  e.target.value = "";
+  e.target.value = val;
 }

@@ -1,5 +1,4 @@
-import { Box } from "@mui/material";
-import { Button, ButtonGroup, Typography, Stack } from "@mui/joy";
+import { Box, Button, ButtonGroup, Typography, Stack } from "@mui/joy";
 
 import { type VerseType } from "../../types";
 

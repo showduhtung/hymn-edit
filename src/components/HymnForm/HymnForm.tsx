@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { Stack, StackProps } from "@mui/joy";
-import { Box } from "@mui/material";
+import { Box, Stack, StackProps } from "@mui/joy";
 import { useLocalStorage } from "@uidotdev/usehooks";
 
 import { HymnType, LocalHymnsState } from "../../types";

@@ -1,16 +1,19 @@
 import { ChangeEvent, useState } from "react";
-import { Box, IconButton, Paper } from "@mui/material";
+import { Paper } from "@mui/material";
 import {
+  Box,
+  IconButton,
   Textarea,
   Typography,
   Stack,
   Button,
-  styled,
   useTheme,
 } from "@mui/joy";
 import { FiCheck, FiRefreshCw, FiRotateCcw, FiSave } from "react-icons/fi";
-import { joinByBreakLine } from "./utilities";
-import { HymnStatus } from "../../types";
+import { autofocusLastCharacter, joinByBreakLine } from "../utilities";
+import { HymnStatus } from "../../../types";
+import { IconLegend } from "./IconLegend";
+import { Div } from "./Div";
 
 type IndividualVerseFormProps = {
   savedVerse: string[];
@@ -23,8 +26,6 @@ type IndividualVerseFormProps = {
 const initial = "#F7FDFF";
 const unsaved = "#FFFBEA";
 const saved = "#E8FFEA";
-
-const Div = styled("div")(({ theme }) => theme.typography["h4"]);
 
 export const IndividualVerseForm = ({
   savedVerse,
@@ -166,7 +167,9 @@ export const IndividualVerseForm = ({
           </Paper>
         </Box>
       </Stack>
+
       <Box height="24px" />
+
       <Box display="flex" gap="8px">
         <Button
           variant="solid"
@@ -189,26 +192,3 @@ export const IndividualVerseForm = ({
     </>
   );
 };
-
-const IconLegend = () => (
-  <Box display="flex" gap="12px">
-    <Box display="flex" alignItems="center" gap="4px">
-      <FiSave size="14" />
-      <Typography fontSize="14px">Save</Typography>
-    </Box>
-    <Box display="flex" alignItems="center" gap="4px">
-      <FiRefreshCw size="14" />
-      <Typography fontSize="14px">Reset</Typography>
-    </Box>
-    <Box display="flex" alignItems="center" gap="4px">
-      <FiRotateCcw size="14" />
-      <Typography fontSize="14px">Undo</Typography>
-    </Box>
-  </Box>
-);
-
-function autofocusLastCharacter(e: ChangeEvent<HTMLTextAreaElement>) {
-  const val = e.target.value;
-  e.target.value = "";
-  e.target.value = val;
-}

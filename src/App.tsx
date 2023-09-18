@@ -4,7 +4,8 @@ import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import "@fontsource/inter";
 
-import { Box, Container, Paper, styled } from "@mui/material";
+import { Paper } from "@mui/material";
+import { Box, styled, Container } from "@mui/joy";
 import { HymnForm, HymnList } from "./components";
 
 const StyledContainer = styled(Container)(({ theme }) => ({
