@@ -20,23 +20,20 @@ export const HymnForm = (props: StackProps) => {
     return <Typography>Select a Hymn to start editting</Typography>;
   }
 
-  const [verseNo] = splitByBreakLine(
-    selectedHymn.verses[selectedVerseIdx].html
-  );
-
   return (
     <Stack spacing="24px" {...props}>
       <ControlBar
         value={selectedVerseIdx}
         onChange={setSelectedVerseIdx}
         verses={selectedHymn.verses}
-        titles={[selectedHymn.title, `Verse ${verseNo}`]}
+        title={selectedHymn.title}
       />
+      <Box height="12px" />
       {selectedHymn.verses.map((verse, idx) => {
         const [_, ...content] = splitByBreakLine(verse.html);
         return (
           <Box
-            key={content[0]}
+            key={String(idx) + content[0]}
             display={idx === selectedVerseIdx ? "block" : "none"}
           >
             <IndividualVerseForm initialContent={content} />

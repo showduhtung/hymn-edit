@@ -7,22 +7,19 @@ type ControlBarProps = {
   verses: VerseType[];
   value: number;
   onChange: (idx: number) => void;
-  titles: [string, string];
+  title: string;
 };
 
 export const ControlBar = ({
   verses,
-  titles,
+  title,
   onChange,
   value,
 }: ControlBarProps) => {
   const secondRow = verses.length > 10 ? verses.slice(10) : [];
   return (
     <Box display="flex" justifyContent="space-between">
-      <Stack>
-        <Typography fontSize="24px">{titles[0]}</Typography>
-        <Typography fontSize="20px">{titles[1]}</Typography>
-      </Stack>
+      <Typography fontSize="24px">{title}</Typography>
       <Stack alignItems="flex-end" spacing="12px">
         <ButtonGroup variant="outlined">
           {verses
