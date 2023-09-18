@@ -65,6 +65,7 @@ export const HymnListButton = ({
               sx={{ borderRadius: 3 }}
               color="primary"
               onClick={onDownload}
+              disabled={status !== "completed"}
             >
               <FiDownload size="14" />
             </IconButton>

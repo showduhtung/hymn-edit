@@ -4,7 +4,7 @@ import { useToggle, useLocalStorage } from "@uidotdev/usehooks";
 import { FiDownload } from "react-icons/fi";
 
 import { ListConfirmationDialog } from "./ListConfirmationDialog";
-import { readFileAsync, withPreventDefaults } from "./utilities";
+import { downloadAsZip, readFileAsync, withPreventDefaults } from "./utilities";
 import type { HymnType, LocalHymnsState } from "../../types";
 import { HymnListButton } from "./HymnListButton";
 
@@ -76,14 +76,24 @@ export const HymnList = () => {
     };
   }
 
-  function handleDownloadHymn(_hymnIdxs?: number[]) {
+  function handleDownloadHymn(hymnIdxs?: number[]) {
     return () => {
-      // const idxs =
-      //   hymnIdxs ||
-      //   hymns.reduce((acc: number[], hymn, idx) => {
-      //     if (hymn.status === "completed") return [...acc, idx];
-      //     return acc;
-      //   }, []);
+      const files = hymnIdxs
+        ? hymnIdxs.map((idx) => hymns[idx])
+        : hymns.filter((hymn) => hymn.status === "completed");
+
+      const parsedFiles = files.map(({ verses, status: _, ...hymn }) => {
+        const parsedVerses = verses.map(
+          ({ updatedHtml: _, ...verse }) => verse
+        );
+        return { ...hymn, verses: parsedVerses };
+      });
+      downloadAsZip(parsedFiles);
+
+      const leftoverHymns = hymns.filter(
+        (hymn) => !files.find((file) => file.num === hymn.num)
+      );
+      saveToLocalStorage({ hymns: leftoverHymns, selectedHymnIdx: 0 });
     };
   }
 

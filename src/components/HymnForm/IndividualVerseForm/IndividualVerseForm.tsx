@@ -176,7 +176,7 @@ export const IndividualVerseForm = ({
           disabled={!canSave}
           endDecorator={<FiSave size="14" />}
         >
-          Save all changes
+          Save changes
         </Button>
 
         <Button

@@ -1,5 +1,6 @@
 import { DragEvent } from "react";
-import { HymnType } from "../../types";
+import JSZip from "jszip";
+import { HymnType, VerseType } from "../../types";
 
 export function withPreventDefaults(
   fn?: (e: DragEvent<HTMLUListElement>) => void
@@ -26,5 +27,35 @@ export function readFileAsync(file: File): Promise<HymnType> {
 
     reader.onerror = () => reject(new Error("Error reading the file"));
     reader.readAsText(file);
+  });
+}
+
+type DownloadHymnType = {
+  lang: string;
+  num: string;
+  title: string;
+  verses: OriginalVerseType[];
+};
+type OriginalVerseType = Omit<VerseType, "updatedHtml">;
+
+export function downloadAsZip(datas: DownloadHymnType[]) {
+  const zip = new JSZip();
+
+  // Add JSON data to zip
+  datas.forEach((data, index) => {
+    const jsonStr = JSON.stringify(data);
+    zip.file(`${datas[index].num}.json`, jsonStr);
+  });
+
+  // Generate zip and initiate download
+  zip.generateAsync({ type: "blob" }).then((blob) => {
+    const href = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = href;
+    link.download = "download.zip"; // Change to your desired zip filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(href);
   });
 }
