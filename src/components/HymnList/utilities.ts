@@ -1,5 +1,5 @@
 import { DragEvent } from "react";
-import { HymnType } from "../../App";
+import { HymnType } from "../../types";
 
 export function withPreventDefaults(
   fn?: (e: DragEvent<HTMLUListElement>) => void

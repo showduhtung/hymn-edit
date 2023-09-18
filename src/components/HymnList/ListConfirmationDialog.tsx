@@ -12,7 +12,7 @@ import {
   DialogContent,
   DialogTitle,
 } from "@mui/joy";
-import { HymnType } from "../../App";
+import { HymnType } from "../../types";
 
 type HymnList = HymnType & { checked: boolean };
 type ListConfirmationDialogProps = {

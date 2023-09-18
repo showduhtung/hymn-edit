@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { Stack, StackProps, Typography } from "@mui/joy";
 import { Box } from "@mui/material";
+import { useLocalStorage } from "@uidotdev/usehooks";
 
 import { HymnType, LocalHymnsState } from "../../types";
 import { IndividualVerseForm, ControlBar } from ".";
-import { useLocalStorage } from "@uidotdev/usehooks";
+import { joinByBreakLine, splitByBreakLine } from "./utilities";
 
 const defaultState = {
   hymns: [] as HymnType[],
@@ -13,8 +14,40 @@ const defaultState = {
 
 export const HymnForm = (props: StackProps) => {
   const [selectedVerseIdx, setSelectedVerseIdx] = useState<number>(0);
-  const [{ selectedHymn } = defaultState, _saveToLocalStorage] =
+  const [localState = defaultState, saveToLocalStorage] =
     useLocalStorage<LocalHymnsState>("editing-hymns");
+  const { selectedHymn } = localState;
+
+  function handleMarkComplete(verseIdx: number) {
+    return () => {
+      if (!selectedHymn) return;
+      saveToLocalStorage({
+        hymns: localState.hymns.map((hymn, idx) =>
+          idx !== verseIdx ? hymn : { ...hymn, status: "completed" }
+        ),
+        selectedHymn: { ...selectedHymn, status: "completed" },
+      });
+    };
+  }
+
+  function handleSave(verseIdx: number) {
+    return (updatedContent: string[]) => {
+      if (!selectedHymn) return;
+
+      const verses = selectedHymn.verses.map((verse, currIdx) => {
+        if (currIdx !== verseIdx) return verse;
+        const updatedHtml =
+          `${String(currIdx + 1)}<br>` + joinByBreakLine(updatedContent);
+
+        return { ...verse, updatedHtml };
+      });
+
+      saveToLocalStorage({
+        ...localState,
+        selectedHymn: { ...selectedHymn, verses },
+      });
+    };
+  }
 
   if (!selectedHymn) {
     return <Typography>Select a Hymn to start editting</Typography>;
@@ -28,26 +61,25 @@ export const HymnForm = (props: StackProps) => {
         verses={selectedHymn.verses}
         title={selectedHymn.title}
       />
-      <Box height="12px" />
-      {selectedHymn.verses.map((verse, idx) => {
-        const [_, ...content] = splitByBreakLine(verse.html);
+
+      {selectedHymn.verses.map(({ updatedHtml, html }, idx) => {
+        const [_, ...content] = splitByBreakLine(updatedHtml);
+        const [__, ...originalContent] = splitByBreakLine(html);
+
         return (
           <Box
             key={String(idx) + content[0]}
             display={idx === selectedVerseIdx ? "block" : "none"}
           >
-            <IndividualVerseForm initialContent={content} />
+            <IndividualVerseForm
+              savedVerse={content}
+              originalVerse={originalContent}
+              onSave={handleSave(idx)}
+              onCompleted={handleMarkComplete(idx)}
+            />
           </Box>
         );
       })}
     </Stack>
   );
 };
-
-function splitByBreakLine(inputStr: string) {
-  return inputStr
-    .split("<br>")
-    .map((line) => line.trim())
-    .filter((line) => line.length > 0)
-    .map((line) => line.replace("<b>", "").replace("</b>", ""));
-}

@@ -17,11 +17,11 @@ const StyledContainer = styled(Container)(({ theme }) => ({
 function App() {
   return (
     <StyledContainer>
-      <Box display="flex" gap="24px" height="100%" maxWidth="100%">
-        <Box sx={{ flexBasis: "30%", flexGrow: 0, flexShrink: 0 }}>
-          <HymnList sx={{ maxWidth: "450px", p: "24px" }} />
-        </Box>
-        <Paper elevation={2} sx={{ flexGrow: 1, padding: "24px" }}>
+      <Box display="flex" gap="24px" maxWidth="100%">
+        <Paper sx={{ flexBasis: "30%", flexGrow: 0, flexShrink: 0 }}>
+          <HymnList />
+        </Paper>
+        <Paper elevation={2} sx={{ flexGrow: 1, padding: "24px", h: "100%" }}>
           <HymnForm />
         </Paper>
       </Box>

@@ -17,6 +17,11 @@ export const ControlBar = ({
   value,
 }: ControlBarProps) => {
   const secondRow = verses.length > 10 ? verses.slice(10) : [];
+
+  function handleChange(idx: number) {
+    return () => onChange(idx);
+  }
+
   return (
     <Box display="flex" justifyContent="space-between">
       <Typography fontSize="24px">{title}</Typography>
@@ -28,7 +33,7 @@ export const ControlBar = ({
               <Button
                 key={idx}
                 variant={idx === value ? "solid" : "outlined"}
-                onClick={() => onChange(idx)}
+                onClick={handleChange(idx)}
                 color="primary"
               >
                 {item.label}
@@ -39,8 +44,9 @@ export const ControlBar = ({
           <ButtonGroup variant="outlined">
             {secondRow.map((item, idx) => (
               <Button
+                key={idx}
                 variant={idx + 10 === value ? "solid" : "outlined"}
-                onClick={() => onChange(idx + 10)}
+                onClick={handleChange(idx + 10)}
                 color="primary"
               >
                 {item.label}
