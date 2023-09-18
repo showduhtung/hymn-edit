@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Stack, StackProps, Typography } from "@mui/joy";
+import { Stack, StackProps } from "@mui/joy";
 import { Box } from "@mui/material";
 import { useLocalStorage } from "@uidotdev/usehooks";
 
@@ -9,24 +9,23 @@ import { joinByBreakLine, splitByBreakLine } from "./utilities";
 
 const defaultState = {
   hymns: [] as HymnType[],
-  selectedHymn: undefined,
+  selectedHymnIdx: -1,
 };
 
 export const HymnForm = (props: StackProps) => {
   const [selectedVerseIdx, setSelectedVerseIdx] = useState<number>(0);
   const [localState = defaultState, saveToLocalStorage] =
     useLocalStorage<LocalHymnsState>("editing-hymns");
-  const { selectedHymn } = localState;
+  const { selectedHymnIdx, hymns } = localState;
+  const selectedHymn = hymns.find((_, idx) => idx === selectedHymnIdx);
 
   function handleMarkComplete(verseIdx: number) {
     return () => {
       if (!selectedHymn) return;
-      saveToLocalStorage({
-        hymns: localState.hymns.map((hymn, idx) =>
-          idx !== verseIdx ? hymn : { ...hymn, status: "completed" }
-        ),
-        selectedHymn: { ...selectedHymn, status: "completed" },
-      });
+      const hymns = localState.hymns.map((hymn, idx) =>
+        idx !== verseIdx ? hymn : { ...hymn, status: "completed" as const }
+      );
+      saveToLocalStorage({ ...localState, hymns });
     };
   }
 
@@ -42,15 +41,13 @@ export const HymnForm = (props: StackProps) => {
         return { ...verse, updatedHtml };
       });
 
-      saveToLocalStorage({
-        ...localState,
-        selectedHymn: { ...selectedHymn, verses },
+      const updatedHymns = hymns.map((hymn) => {
+        if (hymn.title !== selectedHymn.title) return hymn;
+        return { ...hymn, verses };
       });
-    };
-  }
 
-  if (!selectedHymn) {
-    return <Typography>Select a Hymn to start editting</Typography>;
+      saveToLocalStorage({ ...localState, hymns: updatedHymns });
+    };
   }
 
   return (
@@ -58,11 +55,11 @@ export const HymnForm = (props: StackProps) => {
       <ControlBar
         value={selectedVerseIdx}
         onChange={setSelectedVerseIdx}
-        verses={selectedHymn.verses}
-        title={selectedHymn.title}
+        verses={selectedHymn?.verses || []}
+        title={selectedHymn?.title || ""}
       />
 
-      {selectedHymn.verses.map(({ updatedHtml, html }, idx) => {
+      {selectedHymn?.verses.map(({ updatedHtml, html }, idx) => {
         const [_, ...content] = splitByBreakLine(updatedHtml);
         const [__, ...originalContent] = splitByBreakLine(html);
 

@@ -15,5 +15,5 @@ export type VerseType = {
 
 export type LocalHymnsState = {
   hymns: HymnType[];
-  selectedHymn: HymnType | undefined;
+  selectedHymnIdx: number;
 };

@@ -7,21 +7,21 @@ import { ListConfirmationDialog } from "./ListConfirmationDialog";
 import { readFileAsync, withPreventDefaults } from "./utilities";
 import { HymnType, LocalHymnsState } from "../../types";
 import { FiCheck } from "react-icons/fi";
-// import { initiatiateHtml } from "../HymnForm/utilities";
 
 const defaultState = {
   hymns: [] as HymnType[],
-  selectedHymn: undefined,
+  selectedHymnIdx: -1,
 };
 
 export const HymnList = () => {
-  const [localState = defaultState, saveToLocalStorage] =
-    useLocalStorage<LocalHymnsState>("editing-hymns");
-  const { selectedHymn } = localState;
-
   const [isDraggedOver, toggleDraggedOver] = useToggle(false);
   const [filesToBeConfirmed, setFilesToBeConfirmed] = useState<HymnType[]>([]);
+  const [localState = defaultState, saveToLocalStorage] =
+    useLocalStorage<LocalHymnsState>("editing-hymns");
+
   const [files, setFiles] = useState<HymnType[]>(localState.hymns ?? []);
+  const { selectedHymnIdx } = localState;
+  const selectedHymn = files.find((_, idx) => idx === selectedHymnIdx);
 
   async function handleFiles(files: FileList) {
     const possibleFiles: HymnType[] = await Promise.all(
@@ -35,7 +35,6 @@ export const HymnList = () => {
     const hymns = possibleFiles.map((item) => {
       const verses = item.verses.map((verse) => ({
         ...verse,
-        // updatedHtml: initiatiateHtml(verse.html),
         updatedHtml: verse.html,
       }));
       return { ...item, verses, status: "not-started" as const };
@@ -62,11 +61,11 @@ export const HymnList = () => {
   function handleConfirmFiles(selectedHymns: HymnType[]) {
     setFilesToBeConfirmed([]);
     setFiles(selectedHymns);
-    saveToLocalStorage({ ...localState, selectedHymn: selectedHymns[0] });
+    saveToLocalStorage({ ...localState, selectedHymnIdx: 0 });
   }
 
-  function handleSelectHymn(hymn: HymnType) {
-    return () => saveToLocalStorage({ ...localState, selectedHymn: hymn });
+  function handleSelectHymn(idx: number) {
+    return () => saveToLocalStorage({ ...localState, selectedHymnIdx: idx });
   }
 
   const combinedFiles = filesToBeConfirmed.reduce((acc: HymnType[], curr) => {
@@ -104,7 +103,7 @@ export const HymnList = () => {
         onDragLeave={withPreventDefaults(handleDragState(false))}
         onDrop={withPreventDefaults(handleDrop)}
       >
-        {files.map((item) => {
+        {files.map((item, idx) => {
           const { title, status, num } = item;
           return (
             <ListItemButton
@@ -116,7 +115,7 @@ export const HymnList = () => {
                 mb: "4px",
               }}
               color="primary"
-              onClick={handleSelectHymn(item)}
+              onClick={handleSelectHymn(idx)}
               selected={title === selectedHymn?.title}
             >
               <Typography>{`${num}. ${title}`}</Typography>
