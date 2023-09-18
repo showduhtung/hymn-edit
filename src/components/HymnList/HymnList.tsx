@@ -13,15 +13,22 @@ const defaultState = {
   selectedHymnIdx: -1,
 };
 
+const statusIcon = {
+  "not-started": "",
+  "in-progress": "\u{1F6A7}",
+  completed: <FiCheck />,
+};
+
 export const HymnList = () => {
   const [isDraggedOver, toggleDraggedOver] = useToggle(false);
   const [filesToBeConfirmed, setFilesToBeConfirmed] = useState<HymnType[]>([]);
   const [localState = defaultState, saveToLocalStorage] =
     useLocalStorage<LocalHymnsState>("editing-hymns");
 
-  const [files, setFiles] = useState<HymnType[]>(localState.hymns ?? []);
   const { selectedHymnIdx } = localState;
-  const selectedHymn = files.find((_, idx) => idx === selectedHymnIdx);
+  const selectedHymn = localState.hymns.find(
+    (_, idx) => idx === selectedHymnIdx
+  );
 
   async function handleFiles(files: FileList) {
     const possibleFiles: HymnType[] = await Promise.all(
@@ -60,8 +67,7 @@ export const HymnList = () => {
 
   function handleConfirmFiles(selectedHymns: HymnType[]) {
     setFilesToBeConfirmed([]);
-    setFiles(selectedHymns);
-    saveToLocalStorage({ ...localState, selectedHymnIdx: 0 });
+    saveToLocalStorage({ hymns: selectedHymns, selectedHymnIdx: 0 });
   }
 
   function handleSelectHymn(idx: number) {
@@ -71,13 +77,7 @@ export const HymnList = () => {
   const combinedFiles = filesToBeConfirmed.reduce((acc: HymnType[], curr) => {
     if (acc.find((item) => item.num === curr.num)) return acc;
     return [...acc, curr];
-  }, files);
-
-  const statusIcon = {
-    "not-started": "",
-    "in-progress": "\u{1F6A7}",
-    completed: <FiCheck />,
-  };
+  }, localState.hymns);
 
   return (
     <Box padding="24px">
@@ -103,11 +103,11 @@ export const HymnList = () => {
         onDragLeave={withPreventDefaults(handleDragState(false))}
         onDrop={withPreventDefaults(handleDrop)}
       >
-        {files.map((item, idx) => {
+        {localState.hymns.map((item, idx) => {
           const { title, status, num } = item;
           return (
             <ListItemButton
-              key={title}
+              key={title + status}
               sx={{
                 display: "flex",
                 justifyContent: "space-between",

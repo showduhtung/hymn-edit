@@ -3,8 +3,10 @@ export type HymnType = {
   num: string;
   title: string;
   verses: VerseType[];
-  status: "completed" | "in-progress" | "not-started";
+  status: HymnStatus;
 };
+
+export type HymnStatus = "completed" | "in-progress" | "not-started";
 
 export type VerseType = {
   label: string;

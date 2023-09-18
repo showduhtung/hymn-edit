@@ -16,17 +16,19 @@ export const HymnForm = (props: StackProps) => {
   const [selectedVerseIdx, setSelectedVerseIdx] = useState<number>(0);
   const [localState = defaultState, saveToLocalStorage] =
     useLocalStorage<LocalHymnsState>("editing-hymns");
+
   const { selectedHymnIdx, hymns } = localState;
   const selectedHymn = hymns.find((_, idx) => idx === selectedHymnIdx);
 
-  function handleMarkComplete(verseIdx: number) {
-    return () => {
-      if (!selectedHymn) return;
-      const hymns = localState.hymns.map((hymn, idx) =>
-        idx !== verseIdx ? hymn : { ...hymn, status: "completed" as const }
-      );
-      saveToLocalStorage({ ...localState, hymns });
-    };
+  function handleMarkComplete() {
+    if (!selectedHymn) return;
+
+    const hymns = localState.hymns.map((hymn) => {
+      if (hymn.title !== selectedHymn.title) return hymn;
+      return { ...hymn, status: "completed" as const };
+    });
+
+    saveToLocalStorage({ ...localState, hymns });
   }
 
   function handleSave(verseIdx: number) {
@@ -43,7 +45,7 @@ export const HymnForm = (props: StackProps) => {
 
       const updatedHymns = hymns.map((hymn) => {
         if (hymn.title !== selectedHymn.title) return hymn;
-        return { ...hymn, verses };
+        return { ...hymn, verses, status: "in-progress" as const };
       });
 
       saveToLocalStorage({ ...localState, hymns: updatedHymns });
@@ -72,7 +74,8 @@ export const HymnForm = (props: StackProps) => {
               savedVerse={content}
               originalVerse={originalContent}
               onSave={handleSave(idx)}
-              onCompleted={handleMarkComplete(idx)}
+              onCompleted={handleMarkComplete}
+              status={selectedHymn.status}
             />
           </Box>
         );
