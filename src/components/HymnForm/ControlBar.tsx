@@ -1,6 +1,5 @@
 import { Box, Button, ButtonGroup, Typography, Stack } from "@mui/joy";
-
-import { type VerseType } from "../../types";
+import type { VerseType } from "../../types";
 
 type ControlBarProps = {
   verses: VerseType[];

@@ -1,21 +1,16 @@
 import { DragEvent, useState } from "react";
-import { Box, Divider, Typography, List, ListItemButton } from "@mui/joy";
+import { Box, Typography, List, Stack, Button } from "@mui/joy";
 import { useToggle, useLocalStorage } from "@uidotdev/usehooks";
-import { FiCheck } from "react-icons/fi";
+import { FiDownload } from "react-icons/fi";
 
 import { ListConfirmationDialog } from "./ListConfirmationDialog";
 import { readFileAsync, withPreventDefaults } from "./utilities";
-import { HymnType, LocalHymnsState } from "../../types";
+import type { HymnType, LocalHymnsState } from "../../types";
+import { HymnListButton } from "./HymnListButton";
 
 const defaultState = {
   hymns: [] as HymnType[],
   selectedHymnIdx: -1,
-};
-
-const statusIcon = {
-  "not-started": "",
-  "in-progress": "\u{1F6A7}",
-  completed: <FiCheck />,
 };
 
 export const HymnList = () => {
@@ -24,10 +19,8 @@ export const HymnList = () => {
   const [localState = defaultState, saveToLocalStorage] =
     useLocalStorage<LocalHymnsState>("editing-hymns");
 
-  const { selectedHymnIdx } = localState;
-  const selectedHymn = localState.hymns.find(
-    (_, idx) => idx === selectedHymnIdx
-  );
+  const { selectedHymnIdx, hymns } = localState;
+  const selectedHymn = hymns.find((_, idx) => idx === selectedHymnIdx);
 
   async function handleFiles(files: FileList) {
     const possibleFiles: HymnType[] = await Promise.all(
@@ -38,7 +31,7 @@ export const HymnList = () => {
 
     if (possibleFiles.length === 0) return;
 
-    const hymns = possibleFiles.map((item) => {
+    const possibleHymns = possibleFiles.map((item) => {
       const verses = item.verses.map((verse) => ({
         ...verse,
         updatedHtml: verse.html,
@@ -46,8 +39,8 @@ export const HymnList = () => {
       return { ...item, verses, status: "not-started" as const };
     });
 
-    setFilesToBeConfirmed(hymns);
-    saveToLocalStorage({ ...localState, hymns });
+    setFilesToBeConfirmed(possibleHymns);
+    saveToLocalStorage({ ...localState, hymns: possibleHymns });
   }
 
   function handleDrop(e: DragEvent<HTMLUListElement>) {
@@ -69,60 +62,87 @@ export const HymnList = () => {
     saveToLocalStorage({ hymns: selectedHymns, selectedHymnIdx: 0 });
   }
 
-  function handleSelectHymn(idx: number) {
-    return () => saveToLocalStorage({ ...localState, selectedHymnIdx: idx });
+  function handleSelectHymn(hymnIdx: number) {
+    return () => {
+      console.log("is this also running?");
+      saveToLocalStorage({ ...localState, selectedHymnIdx: hymnIdx });
+    };
+  }
+
+  function handleDeleteHymn(hymnIdx: number) {
+    return () => {
+      const updatedHymns = hymns.filter((_, currIdx) => currIdx !== hymnIdx);
+      saveToLocalStorage({ hymns: updatedHymns, selectedHymnIdx: 0 });
+    };
+  }
+
+  function handleDownloadHymn(_hymnIdxs?: number[]) {
+    return () => {
+      // const idxs =
+      //   hymnIdxs ||
+      //   hymns.reduce((acc: number[], hymn, idx) => {
+      //     if (hymn.status === "completed") return [...acc, idx];
+      //     return acc;
+      //   }, []);
+    };
   }
 
   const combinedFiles = filesToBeConfirmed.reduce((acc: HymnType[], curr) => {
     if (acc.find((item) => item.num === curr.num)) return acc;
     return [...acc, curr];
-  }, localState.hymns);
+  }, hymns);
 
   return (
-    <Box padding="24px">
-      <Box px="12px">
-        <Typography fontSize={24} sx={{ textDecoration: "underline" }}>
-          Hymns to be Reviewed
-        </Typography>
-        <Box height="2px" />
-        <Typography fontSize={12}>
-          Please drag JSON file(s) into this box
-        </Typography>
-      </Box>
-      <Divider sx={{ mt: "24px", mb: "8px" }} />
+    <>
+      <Stack padding="24px" spacing="24px">
+        <Box px="12px" display="flex" justifyContent="space-between">
+          <Typography fontSize={24} sx={{ textDecoration: "underline" }}>
+            Review Hymns
+          </Typography>
+          <Button
+            variant="soft"
+            startDecorator={<FiDownload size="12" />}
+            disabled={!hymns.find((hymn) => hymn.status === "completed")}
+            onClick={handleDownloadHymn()}
+          >
+            Download
+          </Button>
+        </Box>
 
-      <List
-        sx={{
-          ...(isDraggedOver ? draggedStyle : {}),
-          borderRadius: 3,
-          minHeight: 300,
-        }}
-        onDragEnter={withPreventDefaults()}
-        onDragOver={withPreventDefaults(handleDragState(true))}
-        onDragLeave={withPreventDefaults(handleDragState(false))}
-        onDrop={withPreventDefaults(handleDrop)}
-      >
-        {localState.hymns.map((item, idx) => {
-          const { title, status, num } = item;
-          return (
-            <ListItemButton
-              key={title + status}
-              sx={{
-                display: "flex",
-                justifyContent: "space-between",
-                borderRadius: 3,
-                mb: "4px",
-              }}
-              color="primary"
-              onClick={handleSelectHymn(idx)}
-              selected={title === selectedHymn?.title}
-            >
-              <Typography>{`${num}. ${title}`}</Typography>
-              {statusIcon[status]}
-            </ListItemButton>
-          );
-        })}
-      </List>
+        <Box>
+          <Box px="12px">
+            <Typography fontSize={12}>
+              Please drag JSON file(s) into this list
+            </Typography>
+          </Box>
+
+          <List
+            sx={{
+              ...(isDraggedOver ? draggedStyle : {}),
+              borderRadius: 3,
+              minHeight: 300,
+            }}
+            onDragEnter={withPreventDefaults()}
+            onDragOver={withPreventDefaults(handleDragState(true))}
+            onDragLeave={withPreventDefaults(handleDragState(false))}
+            onDrop={withPreventDefaults(handleDrop)}
+          >
+            {hymns.map((item, idx) => {
+              const { title, status } = item;
+              return (
+                <HymnListButton
+                  key={title + status}
+                  onClick={handleSelectHymn(idx)}
+                  selected={title === selectedHymn?.title}
+                  data={item}
+                  onDelete={handleDeleteHymn(idx)}
+                  onDownload={handleDownloadHymn([idx])}
+                />
+              );
+            })}
+          </List>
+        </Box>
+      </Stack>
 
       {/* need to use the ternary to force mount/unmount */}
       {filesToBeConfirmed.length > 0 && (
@@ -133,7 +153,7 @@ export const HymnList = () => {
           onConfirm={handleConfirmFiles}
         />
       )}
-    </Box>
+    </>
   );
 };
 

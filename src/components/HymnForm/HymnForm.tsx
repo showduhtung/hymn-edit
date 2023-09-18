@@ -37,14 +37,27 @@ export const HymnForm = (props: StackProps) => {
       const verses = selectedHymn.verses.map((verse, currIdx) => {
         if (currIdx !== verseIdx) return verse;
         const updatedHtml =
-          `${String(currIdx + 1)}<br>` + joinByBreakLine(updatedContent);
+          `<b>${String(currIdx + 1)}</b><br>` + joinByBreakLine(updatedContent);
 
         return { ...verse, updatedHtml };
       });
 
       const updatedHymns = hymns.map((hymn) => {
         if (hymn.title !== selectedHymn.title) return hymn;
-        return { ...hymn, verses, status: "in-progress" as const };
+
+        const isSameAsOriginal = hymn.verses.every((verse, idx) => {
+          const splitOriginal = splitByBreakLine(verse.html);
+          const splitUpdated = splitByBreakLine(verses[idx].updatedHtml);
+          return splitOriginal.every((line, idx) => line === splitUpdated[idx]);
+        });
+
+        return {
+          ...hymn,
+          verses,
+          status: isSameAsOriginal
+            ? ("not-started" as const)
+            : ("in-progress" as const),
+        };
       });
 
       saveToLocalStorage({ ...localState, hymns: updatedHymns });

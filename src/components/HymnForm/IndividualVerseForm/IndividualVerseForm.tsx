@@ -86,9 +86,8 @@ export const IndividualVerseForm = ({
   };
 
   const canSave = verse.some((line, idx) => line !== savedVerse[idx]);
-  const canComplete = savedVerse.some(
-    (line, idx) => line !== originalVerse[idx]
-  );
+  const canComplete = verse.every((line, idx) => line === savedVerse[idx]);
+
   const { danger } = theme.palette;
   return (
     <>
@@ -183,7 +182,7 @@ export const IndividualVerseForm = ({
         <Button
           variant="solid"
           onClick={onCompleted}
-          disabled={status === "completed" || !(canSave || canComplete)}
+          disabled={status === "completed" || !canComplete}
           endDecorator={<FiCheck size="14" />}
         >
           Mark complete
