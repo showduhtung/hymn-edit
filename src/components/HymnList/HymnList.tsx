@@ -1,12 +1,13 @@
-import { DragEvent, useState } from "react";
-import { Box, Typography, List, Stack, Button } from "@mui/joy";
-import { useToggle, useLocalStorage } from "@uidotdev/usehooks";
+import { useState } from "react";
+import { Box, Typography, Stack, Button } from "@mui/joy";
+import { useLocalStorage } from "@uidotdev/usehooks";
 import { FiDownload } from "react-icons/fi";
 
 import { ListConfirmationDialog } from "./ListConfirmationDialog";
-import { downloadAsZip, readFileAsync, withPreventDefaults } from "./utilities";
+import { downloadAsZip, readFileAsync } from "./utilities";
 import type { HymnType, LocalHymnsState } from "../../types";
 import { HymnListButton } from "./HymnListButton";
+import { DroppableList } from "./DroppableList";
 
 const defaultState = {
   hymns: [] as HymnType[],
@@ -14,7 +15,6 @@ const defaultState = {
 };
 
 export const HymnList = () => {
-  const [isDraggedOver, toggleDraggedOver] = useToggle(false);
   const [filesToBeConfirmed, setFilesToBeConfirmed] = useState<HymnType[]>([]);
   const [localState = defaultState, saveToLocalStorage] =
     useLocalStorage<LocalHymnsState>("editing-hymns");
@@ -41,16 +41,6 @@ export const HymnList = () => {
 
     setFilesToBeConfirmed(possibleHymns);
     saveToLocalStorage({ ...localState, hymns: possibleHymns });
-  }
-
-  function handleDrop(e: DragEvent<HTMLUListElement>) {
-    toggleDraggedOver(false);
-    const { files } = e.dataTransfer ?? { files: [] };
-    handleFiles(files);
-  }
-
-  function handleDragState(state: boolean) {
-    return () => toggleDraggedOver(state);
   }
 
   function handleCloseDialog() {
@@ -126,16 +116,9 @@ export const HymnList = () => {
             </Typography>
           </Box>
 
-          <List
-            sx={{
-              ...(isDraggedOver ? draggedStyle : {}),
-              borderRadius: 3,
-              minHeight: 300,
-            }}
-            onDragEnter={withPreventDefaults()}
-            onDragOver={withPreventDefaults(handleDragState(true))}
-            onDragLeave={withPreventDefaults(handleDragState(false))}
-            onDrop={withPreventDefaults(handleDrop)}
+          <DroppableList
+            onDroppedFiles={handleFiles}
+            sx={{ borderRadius: 3, minHeight: 300 }}
           >
             {hymns.map((item, idx) => {
               const { title, status } = item;
@@ -150,7 +133,7 @@ export const HymnList = () => {
                 />
               );
             })}
-          </List>
+          </DroppableList>
         </Box>
       </Stack>
 
@@ -165,10 +148,4 @@ export const HymnList = () => {
       )}
     </>
   );
-};
-
-const draggedStyle = {
-  opacity: 0.5,
-  backgroundColor: "rgba(0,0,0,0.1)",
-  borderStyle: "dashed",
 };
