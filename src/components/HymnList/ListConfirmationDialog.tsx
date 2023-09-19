@@ -59,9 +59,8 @@ export const ListConfirmationDialog = ({
   return (
     <Modal open={open} onClose={onClose(false)}>
       <ModalDialog>
-        <DialogTitle>
-          Are you sure that you want to accept these files?
-        </DialogTitle>
+        <DialogTitle>Please select all files intended for review.</DialogTitle>
+
         <Box height="8px" />
         <DialogContent>
           <Box

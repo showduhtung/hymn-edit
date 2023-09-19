@@ -40,7 +40,6 @@ export const HymnList = () => {
     });
 
     setFilesToBeConfirmed(possibleHymns);
-    saveToLocalStorage({ ...localState, hymns: possibleHymns });
   }
 
   function handleCloseDialog() {
@@ -88,8 +87,8 @@ export const HymnList = () => {
   }
 
   const combinedFiles = filesToBeConfirmed.reduce((acc: HymnType[], curr) => {
-    if (acc.find((item) => item.num === curr.num)) return acc;
-    return [...acc, curr];
+    const doesHymnExist = hymns.find((hymn) => hymn.num === curr.num);
+    return doesHymnExist ? acc : [...acc, curr];
   }, hymns);
 
   return (
