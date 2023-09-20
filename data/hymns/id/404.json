@@ -1,0 +1,38 @@
+{
+    "lang": "id",
+    "num": "404",
+    "oldnum": "481",
+    "title": "Pujilah Dia!",
+    "verses": [
+        {
+            "label": "1",
+            "num": 1,
+            "html": "1<br><b>P</b>uji Dia! <br><b>Y</b>esus Juruslamat kita! <br><b>W</b>ahai dunia, nyatakan kasihNya! <br><b>S</b>ambut Dia! Hai malak di surga mulia; <br><b>H</b>ormat, kuasa, bagi nama Yesus! "
+        },
+		{
+			"label": "1C",
+			"num": 1,
+			"html": "<b>1</b><br><b>D</b>ia gembala bagi semua anakNya; <br><b>S</b>iang, malam, kasihNya menjaga: <br><b>P</b>uji Dia! <br><b>B</b>ritakan keagunganNya; <br><b>P</b>uji Dia! dengan lagu girang! "
+		},
+        {
+            "label": "2",
+            "num": 2,
+            "html": "2<br><b>P</b>uji Dia! <br><b>Y</b>esus Juruslamat kita! <br><b>Y</b>ang tlah mati tebus dosa kita! <br><b>B</b>atu karang keslamatan kekal kita; <br><b>S</b>ambut Dia, Yesus korban mulia; "
+        },
+		{
+			"label": "2C",
+			"num": 2,
+			"html": "<b>2</b><br><b>P</b>uji Yesus yang tanggung duka kita, <br><b>K</b>asih ajaib, dalam tak terhingga:  <br><b>P</b>uji Dia! <br><b>B</b>ritakan keagunganNya; <br><b>P</b>uji Dia! dengan lagu girang! "
+		},
+        {
+            "label": "3",
+            "num": 3,
+            "html": "3<br><b>P</b>uji Dia! <br><b>Y</b>esus Juruslamat kita! <br><b>B</b>ala surga bersorak “Hosana” <br><b>J</b>uruslamat berkuasa selamanya; <br><b>M</b>uliakan Dia, Nabi, Imam, Raja! "
+        },
+		{
+			"label": "3C",
+			"num": 3,
+			"html": "<b>3</b><br><b>K</b>ristus datang membawa kemenangan, <br><b>K</b>uasa, mulia hanya bagi Tuhan: <br><b>P</b>uji Dia! <br><b>B</b>ritakan keagunganNya; <br><b>P</b>uji Dia! dengan lagu girang! "
+		}
+    ]
+}

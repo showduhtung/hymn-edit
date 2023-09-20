@@ -1,0 +1,38 @@
+{
+    "lang": "id",
+    "num": "203",
+    "oldnum": "203",
+    "title": "Bunga Bakung",
+    "verses": [
+        {
+            "label": "1",
+            "num": 1,
+            "html": "1<br><b>B</b>akung di lembah, indah, harum, <br><b>A</b>llah plihara, ia milikNya; <br><b>W</b>alau hidup di tengah duri, <br><b>t</b>etaplah mekar tanpa cela. "
+        },
+		{
+			"label": "1C",
+			"num": 1,
+			"html": "<b>1</b><br><b>B</b>akung yang indah, suci bersih, <br><b>t</b>anda nyata janji Tuhan ku; <br><b>B</b>etapa dalam kasih Tuhan ku, <br><b>k</b>u mau serahkan sluruh hidup ku. "
+		},
+        {
+            "label": "2",
+            "num": 2,
+            "html": "2<br><b>B</b>akung di padang Dia plihara, <br><b>t</b>idak bekerja dan memintal; <br><b>R</b>aja Salomo, walau mulia, <br><b>t</b>idak seindah bunga ini. "
+        },
+		{
+			"label": "2C",
+			"num": 2,
+			"html": "<b>2</b><br><b>B</b>akung yang indah, suci bersih, <br><b>t</b>anda nyata janji Tuhan ku; <br><b>B</b>etapa dalam kasih Tuhan ku, <br><b>k</b>u mau serahkan sluruh hidup ku. "
+		},
+        {
+            "label": "3",
+            "num": 3,
+            "html": "3<br><b>T</b>iba saatnya musim semi, <br><b>t</b>ampak hamparan bakung mekar; <br><b>T</b>iba saatNya kita bangkit, <br><b>b</b>ertemu Tuhan, naik ke surga. "
+        },
+		{
+			"label": "3C",
+			"num": 3,
+			"html": "<b>3</b><br><b>B</b>akung yang indah, suci bersih, <br><b>t</b>anda nyata janji Tuhan ku; <br><b>B</b>etapa dalam kasih Tuhan ku, <br><b>k</b>u mau serahkan sluruh hidup ku. "
+		}
+    ]
+}

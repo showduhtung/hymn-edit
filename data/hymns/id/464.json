@@ -1,0 +1,38 @@
+{
+    "lang": "id",
+    "num": "464",
+    "oldnum": "443",
+    "title": "Iman UmatUmat Kudus",
+    "verses": [
+        {
+            "label": "1",
+            "num": 1,
+            "html": "1<br><b>I</b>man umat umat kudus! <br><b>T</b>etap hidup walau bahya,<br><b>S</b>ungguh girang hati kita <br><b>k</b>ala dengar Firman mulia! "
+        },
+		{
+			"label": "1C",
+			"num": 1,
+			"html": "<b>1</b><br><b>I</b>man umatMu, imanku! <br><b>K</b>u kan setia selamanya. "
+		},
+        {
+            "label": "2",
+            "num": 2,
+            "html": "2<br><b>I</b>man umat umat kudus! <br><b>K</b>an menangkan sgala bangsa, <br><b>K</b>ebenaran dari Tuhan <br><b>b</b>ebaskan sluruh manusia; "
+        },
+		{
+			"label": "2C",
+			"num": 2,
+			"html": "<b>2</b><br><b>I</b>man umatMu, imanku! <br><b>K</b>u kan setia selamanya. "
+		},
+        {
+            "label": "3",
+            "num": 3,
+            "html": "3<br><b>I</b>man umat umat kudus! <br><b>k</b>asihi kawan dan lawan, <br><b>T</b>iap ucapan dan perbuatan <br><b>m</b>enyatakan kasih Allah; "
+        },
+		{
+			"label": "3C",
+			"num": 3,
+			"html": "<b>3</b><br><b>I</b>man umatMu, imanku! <br><b>K</b>u kan setia selamanya. "
+		}
+    ]
+}

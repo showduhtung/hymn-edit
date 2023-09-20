@@ -1,0 +1,38 @@
+{
+    "lang": "id",
+    "num": "168",
+    "oldnum": "168",
+    "title": "Laskar Kristus Maju",
+    "verses": [
+        {
+            "label": "1",
+            "num": 1,
+            "html": "1<br><b>L</b>askar Kristus maju, melawan iblis, <br><b>s</b>andar pada Yesus, Iman tak goyah; <br><b>K</b>ristus Panglimaku, pimpin jalanku, <br><b>P</b>anjiNya berkibar, semua menyerang. "
+        },
+		{
+			"label": "1C",
+			"num": 1,
+			"html": "<b>1</b><br><b>M</b>aju, maju maju! <br><b>D</b>engar printahNya, <br><b>H</b>aleluya Amin! Menang trus menang. "
+		},
+        {
+            "label": "2",
+            "num": 2,
+            "html": "2<br><b>L</b>askar Kristus maju, setan pun lari, <br><b>s</b>andar kuasa RohNya, Mujizat nyata; <br><b>s</b>ehati berjuang, di sgala tempat, <br><b>D</b>irikan grejaNya, di sgala tempat. "
+        },
+		{
+			"label": "2C",
+			"num": 2,
+			"html": "<b>2</b><br><b>M</b>aju, maju maju! <br><b>D</b>engar printahNya, <br><b>H</b>aleluya Amin! Menang trus menang. "
+		},
+        {
+            "label": "3",
+            "num": 3,
+            "html": "3<br><b>L</b>askar Kristus maju, bersatu padu, <br><b>t</b>urut komandoNya, Serentak maju; <br><b>w</b>alau iblis lawan, firmanNya menang, <br><b>B</b>ernyanyi bersama, trus puji Tuhan. "
+        },
+		{
+			"label": "3C",
+			"num": 3,
+			"html": "<b>3</b><br><b>M</b>aju, maju maju! <br><b>D</b>engar printahNya, <br><b>H</b>aleluya Amin! Menang trus menang. "
+		}
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "lang": "id",
+    "num": "128",
+    "oldnum": "128",
+    "title": "Hari Kudus Nan Bahagia",
+    "verses": [
+        {
+            "label": "1",
+            "num": 1,
+            "html": "1<br><b>P</b>eringati hari kudus, <br><b>T</b>uhan berkat sejahtralah; <br><b>Y</b>esus, rasul pegang Sabat, <br><b>s</b>perti biasa masuk BaitNya. "
+        },
+		{
+			"label": "1C",
+			"num": 1,
+			"html": "<b>1</b><br><b>B</b>ahagia, bahagia, <br><b>d</b>arah Yesus hapus dosa; <br><b>H</b>ari Sabat Dia berkati, <br><b>R</b>ohNya penuh di hatiku; <br><b>B</b>ahagia, bahagia, <br><b>p</b>egang Sabat sejahtralah. "
+		},
+        {
+            "label": "2",
+            "num": 2,
+            "html": "2<br><b>P</b>ada hari sabat kudus, <br><b>k</b>ita girang beribadah; <br><b>D</b>engar firman tekun berdoa, <br><b>r</b>oh dan jiwa dipuaskan. "
+        },
+		{
+			"label": "2C",
+			"num": 2,
+			"html": "<b>2</b><br><b>B</b>ahagia, bahagia, <br><b>d</b>arah Yesus hapus dosa; <br><b>H</b>ari Sabat Dia berkati, <br><b>R</b>ohNya penuh di hatiku; <br><b>B</b>ahagia, bahagia, <br><b>p</b>egang Sabat sejahtralah. "
+		},
+        {
+            "label": "3",
+            "num": 3,
+            "html": "3<br><b>S</b>atu hati menyembahNya, <br><b>H</b>aleluya, Puji Tuhan; <br><b>D</b>i dunia pegang Sabat, <br><b>d</b>alam surga Sabat kekal. "
+        },
+		{
+			"label": "3C",
+			"num": 3,
+			"html": "<b>3</b><br><b>B</b>ahagia, bahagia, <br><b>d</b>arah Yesus hapus dosa; <br><b>H</b>ari Sabat Dia berkati, <br><b>R</b>ohNya penuh di hatiku; <br><b>B</b>ahagia, bahagia, <br><b>p</b>egang Sabat sejahtralah. "
+		}
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "lang": "id",
+    "num": "159",
+    "oldnum": "159",
+    "title": "Tuhan Beri Sejahtera",
+    "verses": [
+        {
+            "label": "1",
+            "num": 1,
+            "html": "1<br><b>D</b>ihina karna Dia, <br><b>k</b>u rasa kuatir; <br><b>I</b>ngat, Dia disesah, <br><b>k</b>u jadi tentram. "
+        },
+		{
+			"label": "1C",
+			"num": 1,
+			"html": "<b>1</b><br><b>T</b>uhan bri sejahtra, <br><b>T</b>uhan bri sejahtra, <br><b>S</b>ejahtra dari Dia, <br><b>l</b>ain dari dunia; <br><b>D</b>alam Dia terjaga, <br><b>s</b>lalu sejahtra. "
+		},
+        {
+            "label": "2",
+            "num": 2,
+            "html": "2<br><b>B</b>uang semua, ikut Dia, <br><b>k</b>u rasa kuatir; <br><b>I</b>ngat, Dia berklana, <br><b>k</b>u jadi tentram. "
+        },
+		{
+			"label": "2C",
+			"num": 2,
+			"html": "<b>2</b><br><b>T</b>uhan bri sejahtra, <br><b>T</b>uhan bri sejahtra, <br><b>S</b>ejahtra dari Dia, <br><b>l</b>ain dari dunia; <br><b>D</b>alam Dia terjaga, <br><b>s</b>lalu sejahtra. "
+		},
+        {
+            "label": "3",
+            "num": 3,
+            "html": "3<br><b>M</b>endrita demiNya, <br><b>k</b>u rasa susah; <br><b>I</b>ngat, Dia di salib, <br><b>k</b>u jadi tentram. "
+        },
+		{
+			"label": "3C",
+			"num": 3,
+			"html": "<b>3</b><br><b>T</b>uhan bri sejahtra, <br><b>T</b>uhan bri sejahtra, <br><b>S</b>ejahtra dari Dia, <br><b>l</b>ain dari dunia; <br><b>D</b>alam Dia terjaga, <br><b>s</b>lalu sejahtra. "
+		}
+    ]
+}

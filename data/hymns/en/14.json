@@ -1,0 +1,37 @@
+{
+  "lang": "en",
+  "num": "14",
+  "title": "Welcome, Delightful Morn",
+  "verses": [
+    {
+      "label": "1",
+      "num": 1,
+      "html": "1<br><b>W</b>elcome, delightful morn, <br><b>T</b>hou day of sacred rest! <br><b>I</b> hail thy kind return; <br><b>L</b>ord, make these moments blest:"
+    },
+    {
+      "label": "1C",
+      "num": 1,
+      "html": "<b>1</b><br><b>F</b>rom the low plane of mortal toys, <br><b>I</b> soar to reach immortal joys, <br><b>I</b> soar to reach immortal joys. "
+    },
+    {
+      "label": "2",
+      "num": 2,
+      "html": "2<br><b>N</b>ow may the King descend, <br><b>A</b>nd fill His throne with grace; <br><b>T</b>hy scepter, Lord, extends, <br><b>W</b>hile saints address Thy face;"
+    },
+    {
+      "label": "2C",
+      "num": 2,
+      "html": "<b>2</b><br><b>L</b>et sinners feel Thy quick’ning word, <br><b>A</b>nd learn to know and fear the Lord, <br><b>A</b>nd learn to know and fear the Lord. "
+    },
+    {
+      "label": "3",
+      "num": 3,
+      "html": "3<br><b>D</b>escend, celestial Dove, <br><b>W</b>ith all Thy quick’ning powers; <br><b>D</b>isclose a Saviour’s love, <br><b>A</b>nd bless the sacred hours:"
+    },
+    {
+      "label": "3C",
+      "num": 3,
+      "html": "<b>3</b><br><b>T</b>hen shall my soul new life obtain, <br><b>N</b>or Sabbaths be enjoyed in vain, <br><b>N</b>or Sabbaths be enjoyed in vain. "
+    }
+  ]
+}

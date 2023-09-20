@@ -1,0 +1,38 @@
+{
+    "lang": "id",
+    "num": "119",
+    "oldnum": "119",
+    "title": "Semuanya Bagi Yesus",
+    "verses": [
+        {
+            "label": "1",
+            "num": 1,
+            "html": "1<br><b>B</b>iarlah hati dan karyaku, <br><b>s</b>emuanya bagi Yesus; <br><b>K</b>alau telah dislamatkan, <br><b>p</b>atutlah turut Yesus. "
+        },
+		{
+			"label": "1C",
+			"num": 1,
+			"html": "<b>1</b><br><b>B</b>agi Yesus, bagi Yesus, <br><b>s</b>emuanya bagi Yesus; <br><b>B</b>agi Yesus, bagi Yesus, <br><b>s</b>emuanya bagi Yesus. "
+		},
+        {
+            "label": "2",
+            "num": 2,
+            "html": "2<br><b>B</b>iarlah tanganku bekerja, <br><b>k</b>akiku ikut Yesus; <br><b>M</b>ataku memandang Yesus, <br><b>m</b>ulutku puji Yesus. "
+        },
+		{
+			"label": "2C",
+			"num": 2,
+			"html": "<b>2</b><br><b>B</b>agi Yesus, bagi Yesus, <br><b>s</b>emuanya bagi Yesus; <br><b>B</b>agi Yesus, bagi Yesus, <br><b>s</b>emuanya bagi Yesus. "
+		},
+        {
+            "label": "3",
+            "num": 3,
+            "html": "3<br><b>B</b>iarlah orang tamak dunia, <br><b>m</b>engejar kehampaan; <br><b>B</b>ila teringat salibNya, <br><b>k</b>u memuliakan Yesus. "
+        },
+		{
+			"label": "3C",
+			"num": 3,
+			"html": "<b>3</b><br><b>B</b>agi Yesus, bagi Yesus, <br><b>s</b>emuanya bagi Yesus; <br><b>B</b>agi Yesus, bagi Yesus, <br><b>s</b>emuanya bagi Yesus. "
+		}
+    ]
+}

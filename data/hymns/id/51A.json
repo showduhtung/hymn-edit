@@ -1,0 +1,38 @@
+{
+    "lang": "id",
+    "num": "051A",
+    "oldnum": "051A",
+    "title": " Batu Zaman",
+    "verses": [
+        {
+            "label": "1",
+            "num": 1,
+            "html": "1<br><b>B</b>atu zaman terbuka <br><b>K</b>u bernaung dipangkuanNya; <br><b>L</b>ambung Tuhan terluka, <br><b>M</b>engalir darah dan air, "
+        },
+		{
+			"label": "1C",
+			"num": 1,
+			"html": "<b>1</b><br><b>M</b>endrita slamatkanku, <br><b>C</b>uci bersih dosaku. <br><b>M</b>endrita slamatkanku, <br><b>C</b>uci bersih dosaku. "
+		},
+        {
+            "label": "2",
+            "num": 2,
+            "html": "2<br><b>W</b>alau berbuat amal, <br><b>G</b>iat lakukan Taurat; <br><b>S</b>iang malam bekerja, <br><b>T</b>ak akan dibenarkan, "
+        },
+		{
+			"label": "2C",
+			"num": 2,
+			"html": "<b>2</b><br><b>H</b>anya sandar darahNya, <br><b>M</b>anusia dibenarkan. <br><b>H</b>anya sandar darahNya, <br><b>M</b>anusia dibenarkan. "
+		},
+        {
+            "label": "3",
+            "num": 3,
+            "html": "3<br><b>B</b>aik hidup di dunia, <br><b>A</b>tau mati dalam Dia; <br><b>A</b>khir zaman ku bangkit, <br><b>L</b>ihat Dia menghakimi, "
+        },
+		{
+			"label": "3C",
+			"num": 3,
+			"html": "<b>3</b><br><b>B</b>atu zaman terbuka, <br><b>K</b>u bernaung dipangkuanNya. <br><b>B</b>atu zaman terbuka, <br><b>K</b>u bernaung dipangkuanNya. "
+		}
+    ]
+}

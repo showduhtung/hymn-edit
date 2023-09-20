@@ -1,0 +1,23 @@
+{
+  "lang": "en",
+  "num": "10",
+  "oldnum": "10",
+  "title": "Muliakanlah Yesus",
+  "verses": [
+    {
+      "label": "1",
+      "num": 1,
+      "html": "1<br><b>M</b>uliakan Yesus, <br><b>y</b>ang Mahakuasa; <br><b>M</b>uliakan Yesus, <br><b>T</b>uhanku; <br><b>H</b>aleluya, Haleluya! <br><b>M</b>uliakan Yesus, <br><b>T</b>uhanku."
+    },
+    {
+      "label": "2",
+      "num": 2,
+      "html": "2<br><b>M</b>uliakan Yesus, <br><b>y</b>ang tak berubah; <br><b>M</b>uliakan Yesus,<br><b>T</b>uhanku; <br><b>H</b>aleluya, Haleluya! <br><b>M</b>uliakan Yesus, <br><b>T</b>uhanku."
+    },
+    {
+      "label": "3",
+      "num": 3,
+      "html": "3<br><b>M</b>uliakan Yesus, <br><b>y</b>ang segra datang; <br><b>M</b>uliakan Yesus, <br><b>T</b>uhanku; <br><b>H</b>aleluya, Haleluya! <br><b>M</b>uliakan Yesus, <br><b>T</b>uhanku."
+    }
+  ]
+}

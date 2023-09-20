@@ -1,0 +1,38 @@
+{
+    "lang": "id",
+    "num": "516",
+    "oldnum": "507",
+    "title": "Beban Terangkat di Kalvari",
+    "verses": [
+        {
+            "label": "1",
+            "num": 1,
+            "html": "1<br><b>H</b>ari penuh keluh kesah, <br><b>h</b>ati sunyi, hampa <br><b>B</b>eban terangkat di Kalvari <br><b>k</b>arna Yesus serta "
+        },
+		{
+			"label": "1C",
+			"num": 1,
+			"html": "<b>1</b><br><b>B</b>eban terangkat di Kalvari, <br><b>K</b>alvari, Kalvari <br><b>B</b>eban terangkat di Kalvari <br><b>k</b>arna Yesus serta "
+		},
+        {
+            "label": "2",
+            "num": 2,
+            "html": "2<br><b>S</b>rahkan kuatir pada Yesus, <br><b>t</b>anggalkan dritamu <br><b>B</b>eban terangkat di Kalvari <br><b>k</b>arna Yesus serta "
+        },
+		{
+			"label": "2C",
+			"num": 2,
+			"html": "<b>2</b><br><b>B</b>eban terangkat di Kalvari, <br><b>K</b>alvari, Kalvari <br><b>B</b>eban terangkat di Kalvari <br><b>k</b>arna Yesus serta "
+		},
+        {
+            "label": "3",
+            "num": 3,
+            "html": "3<br><b>J</b>uruslamat lihat semua <br><b>d</b>uka dan air mata <br><b>B</b>eban terangkat di Kalvari <br><b>k</b>arna Yesus serta "
+        },
+		{
+			"label": "3C",
+			"num": 3,
+			"html": "<b>3</b><br><b>B</b>eban terangkat di Kalvari, <br><b>K</b>alvari, Kalvari <br><b>B</b>eban terangkat di Kalvari <br><b>k</b>arna Yesus serta "
+		}
+    ]
+}

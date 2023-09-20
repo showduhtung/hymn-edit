@@ -1,0 +1,38 @@
+{
+    "lang": "id",
+    "num": "217",
+    "oldnum": "217",
+    "title": "Melakukan Firman Tuhan",
+    "verses": [
+        {
+            "label": "1",
+            "num": 1,
+            "html": "1<br><b>I</b>stri tunduk pada suami, <br><b>s</b>uami kasihi istri, <br><b>a</b>nak hormat ibu bapa, <br><b>o</b>rang tua sayang anak, "
+        },
+		{
+			"label": "1C",
+			"num": 1,
+			"html": "<b>1</b><br><b>H</b>amba kerja dengan setia, <br><b>t</b>uan berlaku kasih, <br><b>y</b>ang muda bersikap hormat, <br><b>y</b>ang tua ramah pnuh kasih. "
+		},
+        {
+            "label": "2",
+            "num": 2,
+            "html": "2<br><b>P</b>erempuan slalu rajin <br><b>m</b>engatur rumah tangga, <br><b>l</b>aki laki hidup kudus, <br><b>p</b>anjang sabar, tak marah, "
+        },
+		{
+			"label": "2C",
+			"num": 2,
+			"html": "<b>2</b><br><b>I</b>bu mertua dan menantu <br><b>h</b>idup rukun dan damai,<br><b>a</b>ntar sesama saudara <br><b>t</b>iada iri hati. "
+		},
+        {
+            "label": "3",
+            "num": 3,
+            "html": "3<br><b>R</b>ekan kerja dalam greja <br><b>s</b>aling bantu dan kasih, <br><b>s</b>emua pekerja kudus <br><b>g</b>iat melayani Tuhan, "
+        },
+		{
+			"label": "3C",
+			"num": 3,
+			"html": "<b>3</b><br><b>U</b>mat Tuhan satu tubuh, <br><b>s</b>usah senang bersama, <br><b>b</b>ila greja satu hati, <br><b>T</b>uhan pasti berkati. "
+		}
+    ]
+}

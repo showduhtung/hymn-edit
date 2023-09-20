@@ -1,0 +1,38 @@
+{
+    "lang": "id",
+    "num": "400",
+    "oldnum": "400",
+    "title": "Aku Mau Seperti Yesus",
+    "verses": [
+        {
+            "label": "1",
+            "num": 1,
+            "html": "1<br><b>K</b>u mau seperti Yesus, <br><b>b</b>iar Dia tinggal dalamku; <br><b>P</b>enuh damai dan kasih, <br><b>m</b>elembutkan hatiku; "
+        },
+		{
+			"label": "1C",
+			"num": 1,
+			"html": "<b>1</b><br><b>K</b>u mau seperti Yesus, <br><b>s</b>aat lalui dunia; <br><b>K</b>u kan rendahkan hati, <br><b>b</b>iarlah Tuhan sertaku. "
+		},
+        {
+            "label": "2",
+            "num": 2,
+            "html": "2<br><b>B</b>ila Dia mengawasi, <br><b>d</b>an selalu mendengar <br><b>S</b>uara tangisan burung, <br><b>p</b>asti Dia pun dengarku; "
+        },
+		{
+			"label": "2C",
+			"num": 2,
+			"html": "<b>2</b><br><b>D</b>ia kan pimpin hidupku <br><b>d</b>an ampuni dosaku; <br><b>H</b>atiku tulus slalu, <br><b>b</b>iarlah Tuhan sertaku. "
+		},
+        {
+            "label": "3",
+            "num": 3,
+            "html": "3<br><b>S</b>perti Yesus, ku berdoa, <br><b>s</b>perti Yesus tiap hari; <br><b>B</b>iar ku teduh dekat Dia, <br><b>d</b>i tepi air yang tenang; "
+        },
+		{
+			"label": "3C",
+			"num": 3,
+			"html": "<b>3</b><br><b>N</b>ugrahNya perbaruiku, <br><b>k</b>asihNya liputiku; <br><b>K</b>u kan tetap beriman, <br><b>b</b>iarlah Tuhan sertaku. "
+		}
+    ]
+}

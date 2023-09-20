@@ -1,0 +1,27 @@
+{
+  "lang": "en",
+  "num": "94",
+  "title": "Thank the Father",
+  "verses": [
+    {
+      "label": "1",
+      "num": 1,
+      "html": "1<br><b>T</b>hank the Father, He’s the only God, <br><b>H</b>e redeems me from all my sins. <br><b>O</b> dear Lord, my Spirit renew! <br><b>O</b> praise His name, <br><b>T</b>hank Him for His great love."
+    },
+    {
+      "label": "1C",
+      "num": 1,
+      "html": "<b>1</b><br><b>S</b>ing to the Lord, sing joyfully, Sing! <br><b>S</b>ing of His love, sing joyfully, Sing! <br><b>H</b>allelujah, Hallelujah!"
+    },
+    {
+      "label": "2",
+      "num": 2,
+      "html": "2<br><b>T</b>hank the Father, He’s the Only God, <br><b>W</b>ho fulfils the needs of my soul. <br><b>O</b> dear Lord, send Thy manna to me! <br><b>O</b> praise His name, <br><b>T</b>hank Him for His great love."
+    },
+    {
+      "label": "2C",
+      "num": 2,
+      "html": "<b>2</b><br><b>S</b>ing to the Lord, sing joyfully, Sing! <br><b>S</b>ing of His love, sing joyfully, Sing! <br><b>H</b>allelujah, Hallelujah!"
+    }
+  ]
+}

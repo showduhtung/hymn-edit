@@ -1,0 +1,27 @@
+{
+  "lang": "en",
+  "num": "314",
+  "title": "Jesus Calls Us",
+  "verses": [
+    {
+      "label": "1",
+      "num": 1,
+      "html": "1<br><b>J</b>esus calls us o’er the tumult <br><b>O</b>f our life’s wild, restless sea; <br><b>D</b>ay by day His sweet voice soundeth, <br><b>S</b>aying, “Christian, follow me!” "
+    },
+    {
+      "label": "2",
+      "num": 2,
+      "html": "2<br><b>J</b>esus calls us from the worship <br><b>O</b>f the vain world’s golden store, <br><b>F</b>rom each idol that would keep us <br><b>S</b>aying, “Christian, love me more.” "
+    },
+    {
+      "label": "3",
+      "num": 3,
+      "html": "3<br><b>I</b>n our joys and in our sorrows, <br><b>D</b>ays of toil and hours of ease, <br><b>S</b>till He calls, in cares and pleasures,\n“Christian, love me more than these.” "
+    },
+    {
+      "label": "4",
+      "num": 4,
+      "html": "4<br><b>J</b>esus calls us: by Thy mercies, <br><b>S</b>aviour, may we hear Thy call, <br><b>G</b>ive our hearts to Thine obedience, <br><b>S</b>erve and love Thee best of all. "
+    }
+  ]
+}

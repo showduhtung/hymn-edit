@@ -1,0 +1,37 @@
+{
+  "lang": "en",
+  "num": "37",
+  "title": "Though Your Sins Be as Scarlet",
+  "verses": [
+    {
+      "label": "1",
+      "num": 1,
+      "html": "1<br>“Though your sins be as scarlet, <br><b>T</b>hey shall be as white as snow; <br><b>T</b>hough your sins be as scarlet, <br><b>T</b>hey shall be as white as snow; <br><b>T</b>hough they be red like crimson, <br><b>T</b>hey shall be as wool!"
+    },
+    {
+      "label": "1C",
+      "num": 1,
+      "html": "“Though your sins be as scarlet, <br><b>T</b>hough your sins be as scarlet, <br><b>T</b>hey shall be as white as snow, <br><b>T</b>hey shall be as white as snow.”"
+    },
+    {
+      "label": "2",
+      "num": 2,
+      "html": "2<br><b>H</b>ear the voice that entreats you, <br><b>O</b>h, return ye unto God! <br><b>H</b>ear the voice that entreats you, <br><b>O</b>h, return ye unto God! <br><b>H</b>e is of great compassion, <br><b>A</b>nd of wondrous love;"
+    },
+    {
+      "label": "2C",
+      "num": 2,
+      "html": "<b>2</b><br><b>H</b>ear the voice that entreats you, <br><b>H</b>ear the voice that entreats you, <br><b>O</b>h, return ye unto God! <br><b>O</b>h, return ye unto God! "
+    },
+    {
+      "label": "3",
+      "num": 3,
+      "html": "3<br><b>H</b>e’ll forgive your transgressions, <br><b>A</b>nd remember them no more! <br><b>H</b>e’ll forgive your transgressions, <br><b>A</b>nd remember them no more! “Look unto Me ye people,” <br><b>S</b>aith the Lord your God;"
+    },
+    {
+      "label": "3C",
+      "num": 3,
+      "html": "<b>3</b><br><b>H</b>e’ll forgive your transgressions, <br><b>H</b>e’ll forgive your transgressions, <br><b>A</b>nd remember them no more, <br><b>A</b>nd remember them no more. "
+    }
+  ]
+}

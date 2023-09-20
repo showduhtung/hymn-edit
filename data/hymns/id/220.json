@@ -1,0 +1,48 @@
+{
+  "lang": "id",
+  "num": "220",
+  "oldnum": "220",
+  "title": "Api Pengujian",
+  "verses": [
+    {
+      "label": "1",
+      "num": 1,
+      "html": "1<br><b>B</b>aca Alkitab mengerti nugrahNya, <br><b>i</b>man tlah teguh, tidak akan goyah; <br><b>A</b>llah berjanji briku hidup kekal, "
+    },
+    {
+      "label": "1C",
+      "num": 1,
+      "html": "<b>1</b><br><b>K</b>u tlah terima, <br><b>t</b>ak akan berubah, <br><b>K</b>u tlah terima, tak a- <br><b>k</b>an berubah. "
+    },
+    {
+      "label": "2",
+      "num": 2,
+      "html": "2<br><b>W</b>alau alami sakit maupun sehat, <br><b>h</b>idup berlimpah, atau kekurangan; <br><b>D</b>i daratan ataupun di lautan, "
+    },
+    {
+      "label": "2C",
+      "num": 2,
+      "html": "<b>2</b><br><b>T</b>uhan besertaku <br><b>t</b>ak sendirian, <br><b>T</b>uhan besertaku tak <br><b>s</b>endirian. "
+    },
+    {
+      "label": "3",
+      "num": 3,
+      "html": "3<br><b>W</b>alau alami badai pendritaan, <br><b>o</b>mbak menerjang, ku tetap tak hanyut; <br><b>T</b>uhan menjaga, sengsara jadi snang,"
+    },
+    {
+      "label": "3C",
+      "num": 3,
+      "html": "<b>3</b><br><b>P</b>enderitaan buatku <br><b>d</b>ekat Tuhan, <br><b>P</b>enderitaan buatku <br><b>d</b>ekat Tuhan."
+    },
+	{
+      "label": "4",
+      "num": 4,
+      "html": "4<br><b>W</b>alau diuji bagai lalui api, <br><b>a</b>nugrah Tuhan tetaplah berlimpah; <br><b>A</b>pi tak akan lukai diriku,"
+    },
+    {
+      "label": "4C",
+      "num": 4,
+      "html": "<b>4</b><br><b>T</b>uhan menguji, ku ja- <br><b>d</b>i mas murni, <br><b>T</b>uhan menguji, ku ja- <br><b>d</b>i mas murni. "
+    }
+  ]
+}

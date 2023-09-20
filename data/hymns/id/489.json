@@ -1,0 +1,38 @@
+{
+    "lang": "id",
+    "num": "489",
+    "oldnum": "382",
+    "title": "Di hatiku Ada Melodi Kasih",
+    "verses": [
+        {
+            "label": "1",
+            "num": 1,
+            "html": "1<br><b>Y</b>esus beriku sebuah lagu, <br><b>P</b>ujian dari surga; <br><b>T</b>iada melodi yang lebih indah, <br><b>s</b>uatu melodi kasih. "
+        },
+		{
+			"label": "1C",
+			"num": 1,
+			"html": "<b>1</b><br><b>D</b>i hatiku ada melodi, <br><b>s</b>uatu melodi nyanyian surgawi; <br><b>D</b>i hatiku ada melodi, <br><b>s</b>uatu melodi kasih "
+		},
+        {
+            "label": "2",
+            "num": 2,
+            "html": "2<br><b>K</b>u cinta Yesus yang tlah mati <br>'<b>t</b>uk menghapus dosaku; <br><b>D</b>ia bri melodi dalam hatiku <br><b>t</b>uk hiburku slamanya. "
+        },
+		{
+			"label": "2C",
+			"num": 2,
+			"html": "<b>2</b><br><b>D</b>i hatiku ada melodi, <br><b>s</b>uatu melodi nyanyian surgawi; <br><b>D</b>i hatiku ada melodi, <br><b>s</b>uatu melodi kasih "
+		},
+        {
+            "label": "3",
+            "num": 3,
+            "html": "3<br><b>K</b>u nyanyi lagu mulia kekal <br><b>d</b>engan malaikat surga; <br><b>I</b>nilah lagu kemuliaanNya <br><b>s</b>aat harinya datang. "
+        },
+		{
+			"label": "3C",
+			"num": 3,
+			"html": "<b>3</b><br><b>D</b>i hatiku ada melodi, <br><b>s</b>uatu melodi nyanyian surgawi; <br><b>D</b>i hatiku ada melodi, <br><b>s</b>uatu melodi kasih "
+		}
+    ]
+}

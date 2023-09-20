@@ -1,0 +1,37 @@
+{
+  "lang": "en",
+  "num": "59",
+  "title": "Guide Me, O Thou Great Redeemer",
+  "verses": [
+    {
+      "label": "1",
+      "num": 1,
+      "html": "1<br><b>G</b>uide me, O Thou great Redeemer, <br><b>P</b>ilgrim through this barren land; <br><b>I</b> am weak, but Thou art mighty; <br><b>H</b>old me with Thy pow’rful hand;"
+    },
+    {
+      "label": "1C",
+      "num": 1,
+      "html": "<b>1</b><br><b>B</b>read of heaven, Bread of heaven, <br><b>F</b>eed me till I want no more; <br><b>B</b>read of heaven, Bread of heaven, <br><b>F</b>eed me till I want no more. "
+    },
+    {
+      "label": "2",
+      "num": 2,
+      "html": "2<br><b>O</b>pen now the crystal fountain, <br><b>W</b>hence the healing stream doth flow; <br><b>L</b>et the fire and cloudy pillar <br><b>L</b>ead me all my journey through;"
+    },
+    {
+      "label": "2C",
+      "num": 2,
+      "html": "<b>2</b><br><b>S</b>trong Deliverer, strong Deliverer, <br><b>B</b>e Thou still my strength and shield; <br><b>S</b>trong Deliverer, strong Deliverer, <br><b>B</b>e Thou still my strength and shield. "
+    },
+    {
+      "label": "3",
+      "num": 3,
+      "html": "3<br><b>W</b>hen I tread the verge of Jordan, <br><b>B</b>id my anxious fears subside; <br><b>B</b>ear me through the swelling current, <br><b>L</b>and me safe on Canaan’s side;"
+    },
+    {
+      "label": "3C",
+      "num": 3,
+      "html": "<b>3</b><br><b>S</b>ongs of praises, songs of praises, <br><b>I</b> will ever give to Thee; <br><b>S</b>ongs of praises, songs of praises, <br><b>I</b> will ever give to Thee. "
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+    "lang": "id",
+    "num": "361",
+    "oldnum": "504",
+    "title": "Pimpin ke Kalvari",
+    "verses": [
+        {
+            "label": "1",
+            "num": 1,
+            "html": "1<br><b>K</b>u muliakan Kau Rajaku, <br><b>A</b>gunglah namaMu <br><b>B</b>ila ku lupa salibMu, <br><b>p</b>impin ke Kalvari "
+        },
+		{
+			"label": "1C",
+			"num": 1,
+			"html": "<b>1</b><br><b>B</b>ila lupa Getsemani, <br><b>b</b>ila ku lupa dritaMu <br><b>B</b>ila ku lupa kasihMu, <br><b>p</b>impin ke Kalvari "
+		},
+        {
+            "label": "2",
+            "num": 2,
+            "html": "2<br><b>T</b>unjukkan kubur batuMu <br><b>y</b>ang pnuh duka cita <br><b>N</b>ampak malak berjubah trang <br><b>m</b>enjaga kuburMu "
+        },
+		{
+			"label": "2C",
+			"num": 2,
+			"html": "<b>2</b><br><b>B</b>ila lupa Getsemani, <br><b>b</b>ila ku lupa dritaMu <br><b>B</b>ila ku lupa kasihMu, <br><b>p</b>impin ke Kalvari "
+		},
+        {
+            "label": "3",
+            "num": 3,
+            "html": "3<br><b>T</b>uhan, ajarku tiap hari <br><b>m</b>emikul salibMu <br><b>K</b>arna cawan deritaku <br><b>K</b>au yang menanggungNya "
+        },
+		{
+			"label": "3C",
+			"num": 3,
+			"html": "<b>3</b><br><b>B</b>ila lupa Getsemani, <br><b>b</b>ila ku lupa dritaMu <br><b>B</b>ila ku lupa kasihMu, <br><b>p</b>impin ke Kalvari "
+		}
+    ]
+}

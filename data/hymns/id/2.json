@@ -1,0 +1,28 @@
+{
+	"lang": "id",
+	"num": "2",
+	"oldnum": "2",
+	"title": "Pujilah Allah Yang Mahakudus",
+	"verses": [
+		{
+			"label": "1",
+			"num": 1,
+			"html": "1<br><b>H</b>aleluya, puji Allah!<br><b>A</b>min, amin, Haleluya!<br><b>P</b>uji Allah Mahakasih, <br><b>s</b>orak: “Haleluya!” "
+		},
+		{
+			"label": "2",
+			"num": 2,
+			"html": "2<br><b>H</b>aleluya, puji Yesus! <br><b>A</b>min, amin, Haleluya! <br><b>P</b>uji Yesus, Juru slamat,<br><b>s</b>orak: “Haleluya!” "
+		},
+		{
+			"label": "3",
+			"num": 3,
+			"html": "3<br><b>H</b>aleluya, puji RohNya!<br><b>A</b>min, amin, Haleluya! <br><b>P</b>uji Roh Kudus yang kuasa,<br><b>s</b>orak: “Haleluya!”  "
+		},
+		{
+			"label": "4",
+			"num": 4,
+			"html": "4<br><b>M</b>ulia, mulia, Haleluya! <br><b>M</b>ulia, mulia, Haleluya!<br><b>L</b>ift your voice, and sing His praises,<br>“<b>P</b>uji, terus puji!” "
+		}
+	]
+}

@@ -1,0 +1,28 @@
+{
+    "lang": "id",
+    "num": "500",
+    "oldnum": "432",
+    "title": "Pengertian Yang Mendalam",
+    "verses": [
+        {
+            "label": "1",
+            "num": 1,
+            "html": "1<br><b>A</b>da pengertian yang dalam <br><b>s</b>aat bersatu dalam Roh, <br><b>B</b>erkumpul dalam namaNya, <br><b>I</b>nilah janji Tuhan. "
+        },
+		{
+			"label": "1C",
+			"num": 1,
+			"html": "<b>1</b><br><b>A</b>da kasih dalam Yesus, <br><b>a</b>da manna bagi kita, <br><b>B</b>erkumpul dalam namaNya <br><b>I</b>nilah janji Tuhan. "
+		},
+        {
+            "label": "2",
+            "num": 2,
+            "html": "2<br><b>B</b>erkumpul dalam kasihNya, <br><b>k</b>ita saling memahami <br><b>B</b>ahwa saudara seiman <br><b>s</b>atu di dalam Tuhan. "
+        },
+		{
+			"label": "2C",
+			"num": 2,
+			"html": "<b>2</b><br><b>T</b>rima kasih Tuhan Yesus, <br><b>a</b>tas kasih yang Kau bri kan, <br><b>K</b>au telah menuntun kami, <br><b>T</b>erima kasih "
+		}
+    ]
+}

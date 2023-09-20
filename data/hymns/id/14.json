@@ -1,0 +1,48 @@
+{
+  "lang": "id",
+  "num": "14",
+  "oldnum": "14",
+  "title": "Kristus Maharaja",
+  "verses": [
+    {
+      "label": "1",
+      "num": 1,
+      "html": "1<br><b>K</b>ristus Maharaja, <br><b>m</b>endrita karnaku; <br><b>K</b>ini naik tahta,  <br><b>p</b>atutlah dipuji. "
+    },
+    {
+      "label": "1C",
+      "num": 1,
+      "html": "<b>1</b><br><b>T</b>ahun Yobel telah tiba, <br><b>R</b>oh Kudus tlah dicurahkan; <br><b>U</b>mat bangkit, hidup bahgia. "
+    },
+    {
+      "label": "2",
+      "num": 2,
+      "html": "2<br><b>K</b>ristus Maharaja, <br><b>t</b>lah bangkit kembali; <br><b>H</b>idup selamanya, <br><b>m</b>engalahkan maut."
+    },
+    {
+      "label": "2C",
+      "num": 2,
+      "html": "<b>2</b><br><b>T</b>ahun Yobel telah tiba, <br><b>R</b>oh Kudus tlah dicurahkan; <br><b>U</b>mat bangkit, hidup bahgia. "
+    },
+    {
+      "label": "3",
+      "num": 3,
+      "html": "3<br><b>K</b>ristus Maharaja, <br><b>t</b>erangi dunia; <br><b>D</b>arahNya tercurah, <br><b>f</b>irmanNya tersebar."
+    },
+    {
+      "label": "3C",
+      "num": 3,
+      "html": "<b>3</b><br><b>T</b>ahun Yobel telah tiba, <br><b>R</b>oh Kudus tlah dicurahkan; <br><b>U</b>mat bangkit, hidup bahgia. "
+    },
+	{
+      "label": "4",
+      "num": 4,
+      "html": "4<br><b>K</b>ristus Maharaja, <br><b>b</b>uka tujuh metrai; <br><b>H</b>ikmat, kemuliaan, <br><b>b</b>agi Anak Domba."
+    },
+    {
+      "label": "4C",
+      "num": 4,
+      "html": "<b>4</b><br><b>T</b>ahun Yobel telah tiba, <br><b>R</b>oh Kudus tlah dicurahkan; <br><b>U</b>mat bangkit, hidup bahgia. "
+    }
+  ]
+}

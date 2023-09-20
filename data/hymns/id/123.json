@@ -1,0 +1,48 @@
+{
+    "lang": "id",
+    "num": "123",
+    "oldnum": "123",
+    "title": "Sampai Bertemu Lagi",
+    "verses": [
+        {
+            "label": "1",
+            "num": 1,
+            "html": "1<br><b>S</b>emoga Tuhan menjagamu, <br><b>k</b>asihNya slalu tuntunMu; <br><b>B</b>agai domba disayangi. <br><b>S</b>ampai kita bertemu lagi. "
+        },
+		{
+			"label": "1C",
+			"num": 1,
+			"html": "<b>1</b><br><b>B</b>ertemu, bertemu, <br><b>b</b>ertemu di kaki Yesus, <br><b>B</b>ertemu, bertemu, <br><b>s</b>ampai kita bertemu lagi. "
+		},
+        {
+            "label": "2",
+            "num": 2,
+            "html": "2<br><b>S</b>emoga Tuhan menjagamu, <br><b>p</b>anjiNya slalu pimpinMu; <br><b>F</b>irmanNya nasehatimu. <br><b>S</b>ampai kita bertemu lagi.  "
+        },
+		{
+			"label": "2C",
+			"num": 2,
+			"html": "<b>2</b><br><b>B</b>ertemu, bertemu, <br><b>b</b>ertemu di kaki Yesus, <br><b>B</b>ertemu, bertemu, <br><b>s</b>ampai kita bertemu lagi. "
+		},
+        {
+            "label": "3",
+            "num": 3,
+            "html": "3<br><b>S</b>emoga Tuhan menjagamu, <br><b>m</b>eskipun aral melintang; <br><b>T</b>anganNya melindungimu. <br><b>S</b>ampai kita bertemu lagi. "
+        },
+		{
+			"label": "3C",
+			"num": 3,
+			"html": "<b>3</b><br><b>B</b>ertemu, bertemu, <br><b>b</b>ertemu di kaki Yesus, <br><b>B</b>ertemu, bertemu, <br><b>s</b>ampai kita bertemu lagi. "
+		},
+        {
+            "label": "4",
+            "num": 4,
+            "html": "4<br><b>S</b>emoga Tuhan menjagamu, <br><b>k</b>uasaNya menaungiMu; <br><b>B</b>erkatNya menyertaimu. <br><b>S</b>ampai kita bertemu lagi. "
+        },
+		{
+			"label": "4C",
+			"num": 4,
+			"html": "<b>4</b><br><b>B</b>ertemu, bertemu, <br><b>b</b>ertemu di kaki Yesus, <br><b>B</b>ertemu, bertemu, <br><b>s</b>ampai kita bertemu lagi. "
+		}
+    ]
+}

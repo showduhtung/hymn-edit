@@ -1,0 +1,47 @@
+{
+  "lang": "en",
+  "num": "216",
+  "title": "Hark! Ten Thousand Harps and Voices",
+  "verses": [
+    {
+      "label": "1",
+      "num": 1,
+      "html": "1<br><b>H</b>ark, ten thousand harps and voices <br><b>S</b>ound the note of praise above; <br><b>J</b>esus reigns and heav’n rejoices, <br><b>J</b>esus reigns, the God of love;"
+    },
+    {
+      "label": "1C",
+      "num": 1,
+      "html": "<b>1</b><br><b>S</b>ee, He sits on yonder throne, <br><b>J</b>esus rules the world alone: <br><b>A</b>lleluia! Alleluia! Alleluia! Amen."
+    },
+    {
+      "label": "2",
+      "num": 2,
+      "html": "2<br><b>J</b>esus, hail! Whose glory brightens <br><b>A</b>ll above, and gives it worth; <br><b>L</b>ord of life, Thy smile enlightens, <br><b>C</b>heers and charms Thy saints on earth;"
+    },
+    {
+      "label": "2C",
+      "num": 2,
+      "html": "<b>2</b><br><b>W</b>hen we think of love like Thine, <br><b>L</b>ord, we own it love divine: <br><b>A</b>lleluia! Alleluia! Alleluia! Amen."
+    },
+    {
+      "label": "3",
+      "num": 3,
+      "html": "3<br><b>K</b>ing of glory, reign forever; <br><b>T</b>hine an everlasting crown: <br><b>N</b>othing from Thy love shall sever <br><b>T</b>hose whom Thou hast made Thine own;"
+    },
+    {
+      "label": "3C",
+      "num": 3,
+      "html": "<b>3</b><br><b>H</b>appy objects of Thy grace, <br><b>D</b>estined to behold Thy face, <br><b>A</b>lleluia! Alleluia! Alleluia! Amen."
+    },
+    {
+      "label": "4",
+      "num": 4,
+      "html": "4<br><b>S</b>aviour, hasten Thine appearing; <br><b>B</b>ring, O bring the glorious day, <br><b>W</b>hen, the awful summons hearing, <br><b>H</b>eav’n and earth shall pass away;"
+    },
+    {
+      "label": "4C",
+      "num": 4,
+      "html": "<b>4</b><br><b>T</b>hen with golden harps we’ll sing,\n“Glory, glory to our King!”<br><b>A</b>lleluia! Alleluia! Alleluia! Amen."
+    }
+  ]
+}

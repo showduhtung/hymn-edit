@@ -1,0 +1,38 @@
+{
+    "lang": "id",
+    "num": "281",
+    "oldnum": "281",
+    "title": "Keluhan Jiwa",
+    "verses": [
+        {
+            "label": "1",
+            "num": 1,
+            "html": "1<br><b>J</b>ika skarang kumeninggal, <br><b>d</b>apatkah masuk Firdaus? <br><b>K</b>urang berbuah untuk Tuhan, <br><b>p</b>ercuma trima nugrah. "
+        },
+		{
+			"label": "1C",
+			"num": 1,
+			"html": "<b>1</b><br><b>T</b>ugasku belum selesai, <br><b>m</b>ana dapat jumpa Dia? <br><b>B</b>elum bawa satu jiwa, <br><b>m</b>ana bolehku pulang. "
+		},
+        {
+            "label": "2",
+            "num": 2,
+            "html": "2<br><b>J</b>ika mati ku tak cemas, <br><b>s</b>bab Yesus tlah slamatkan; <br><b>H</b>anya satu yang ku risau <br><b>m</b>akan tempat tak berbuah. "
+        },
+		{
+			"label": "2C",
+			"num": 2,
+			"html": "<b>2</b><br><b>T</b>ugasku belum selesai, <br><b>m</b>ana dapat jumpa Dia? <br><b>B</b>elum bawa satu jiwa, <br><b>m</b>ana bolehku pulang. "
+		},
+        {
+            "label": "3",
+            "num": 3,
+            "html": "3<br><b>K</b>ita harus giat bekerja, <br><b>s</b>elagi masih siang; <br><b>S</b>bentar lagi malam tiba, <br><b>l</b>ekas menangkan jiwa. "
+        },
+		{
+			"label": "3C",
+			"num": 3,
+			"html": "<b>3</b><br><b>T</b>ugasku belum selesai, <br><b>m</b>ana dapat jumpa Dia? <br><b>B</b>elum bawa satu jiwa, <br><b>m</b>ana bolehku pulang. "
+		}
+    ]
+}

@@ -1,0 +1,37 @@
+{
+  "lang": "en",
+  "num": "51A",
+  "title": "Rock of Ages",
+  "verses": [
+    {
+      "label": "1",
+      "num": 1,
+      "html": "1<br><b>R</b>ock of Ages, cleft for me, <br><b>L</b>et me hide myself in Thee; <br><b>L</b>et the water and the blood, <br><b>F</b>rom Thy wounded side which flowed,"
+    },
+    {
+      "label": "1C",
+      "num": 1,
+      "html": "<b>1</b><br><b>B</b>e of sin the double cure, <br><b>S</b>ave from wrath and make me pure. <br><b>B</b>e of sin the double cure, <br><b>S</b>ave from wrath and make me pure."
+    },
+    {
+      "label": "2",
+      "num": 2,
+      "html": "2<br><b>C</b>ould my tears for ever flow, <br><b>C</b>ould my zeal no languor know–<br><b>T</b>hese for sin could not atone, <br><b>T</b>hou must save, and Thou alone;"
+    },
+    {
+      "label": "2C",
+      "num": 2,
+      "html": "<b>2</b><br><b>I</b>n my hand no price I bring, <br><b>S</b>imply to Thy cross I cling. <br><b>I</b>n my hand no price I bring, <br><b>S</b>imply to Thy cross I cling."
+    },
+    {
+      "label": "3",
+      "num": 3,
+      "html": "3<br><b>W</b>hile I draw this fleeting breath, <br><b>W</b>hen mine eyes shall close in death, <br><b>W</b>hen I soar to worlds unknown, <br><b>S</b>ee Thee on Thy judgment throne."
+    },
+    {
+      "label": "3C",
+      "num": 3,
+      "html": "<b>3</b><br><b>R</b>ock of Ages, cleft for me, <br><b>L</b>et me hide myself in Thee.<br><b>R</b>ock of Ages, cleft for me, <br><b>L</b>et me hide myself in Thee."
+    }
+  ]
+}

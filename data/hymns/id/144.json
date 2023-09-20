@@ -1,0 +1,38 @@
+{
+    "lang": "id",
+    "num": "144",
+    "oldnum": "144",
+    "title": "Percayalah Tuhan Dengan Sungguh",
+    "verses": [
+        {
+            "label": "1",
+            "num": 1,
+            "html": "1<br><b>P</b>ercayalah Tuhan dengan sungguh, <br><b>j</b>angan sandar diri, sandarlah Tuhan; <br><b>D</b>alam sgala perbuatanmu, "
+        },
+		{
+			"label": "1C",
+			"num": 1,
+			"html": "<b>1</b><br><b>i</b>ngatlah Tuhan, Dia memimpinmu. <br><b>J</b>angan kira kau berhikmat, <br><b>T</b>akutlah padaNya, jauhkan dosa. "
+		},
+        {
+            "label": "2",
+            "num": 2,
+            "html": "2<br><b>P</b>ercayalah Tuhan dengan sungguh, <br><b>j</b>angan kau menyimpang, ikutlah Tuhan; <br><b>D</b>alam sgala perbuatanmu, "
+        },
+		{
+			"label": "2C",
+			"num": 2,
+			"html": "<b>2</b><br><b>t</b>urut padaNya, Dia berkatimu. <br><b>J</b>angan kira kau berhikmat, <br><b>T</b>akutlah padaNya, jauhkan dosa. "
+		},
+        {
+            "label": "3",
+            "num": 3,
+            "html": "3<br><b>P</b>ercayalah Tuhan dengan sungguh, <br><b>j</b>angan megah diri, megahkan Tuhan; <br><b>D</b>alam sgala perbuatanmu, "
+        },
+		{
+			"label": "3C",
+			"num": 3,
+			"html": "<b>3</b><br><b>m</b>uliakan Tuhan, Dia tinggikanmu. <br><b>J</b>angan kira kau berhikmat, <br><b>T</b>akutlah padaNya, jauhkan dosa. "
+		}
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "lang": "id",
+    "num": "487",
+    "oldnum": "372",
+    "title": "Saat Ini",
+    "verses": [
+        {
+            "label": "1",
+            "num": 1,
+            "html": "1<br><b>S</b>aat ini, kau perlu Tuhan; <br><b>S</b>aat ini, kau perlu sauh <br><b>D</b>an yakinlah bahwa sauhmu <br><b>k</b>uat terkait pada Batu Karang "
+        },
+		{
+			"label": "1C",
+			"num": 1,
+			"html": "<b>1</b><br><b>H</b>anyalah Yesus <br><b>B</b>atu Karang; Hanyalah Yesus Batu Karang. <br><b>D</b>an yakinlah bahwa sauhmu <br><b>k</b>uat terkait pada Batu Karang "
+		},
+        {
+            "label": "2",
+            "num": 2,
+            "html": "2<br><b>S</b>aat ini, kau perlu Injil; <br><b>S</b>aat ini, janganlah malas <br><b>D</b>an yakinlah bahwa sauhmu <br><b>k</b>uat terkait pada Batu Karang "
+        },
+		{
+			"label": "2C",
+			"num": 2,
+			"html": "<b>2</b><br><b>H</b>anyalah Yesus <br><b>B</b>atu Karang; Hanyalah Yesus Batu Karang. <br><b>D</b>an yakinlah bahwa sauhmu <br><b>k</b>uat terkait pada Batu Karang "
+		},
+        {
+            "label": "3",
+            "num": 3,
+            "html": "3<br><b>S</b>aat ini, ku ada Tuhan; <br><b>S</b>aat ini, ku punya sauh <br><b>K</b>u tlah yakin bahwa sauhku <br><b>k</b>uat terkait pada Batu Karang "
+        },
+		{
+			"label": "3C",
+			"num": 3,
+			"html": "<b>3</b><br><b>H</b>anyalah Yesus <br><b>B</b>atu Karang; Hanyalah Yesus Batu Karang. <br><b>K</b>u tlah yakin bahwa sauhku <br><b>k</b>uat terkait pada Batu Karang "
+		}
+    ]
+}

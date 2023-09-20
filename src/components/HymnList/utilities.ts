@@ -43,7 +43,7 @@ export function downloadAsZip(datas: DownloadHymnType[]) {
 
   // Add JSON data to zip
   datas.forEach((data, index) => {
-    const jsonStr = JSON.stringify(data);
+    const jsonStr = JSON.stringify(data, null, 2);
     zip.file(`${datas[index].num}.json`, jsonStr);
   });
 

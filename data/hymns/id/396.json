@@ -1,0 +1,38 @@
+{
+    "lang": "id",
+    "num": "396",
+    "oldnum": "396",
+    "title": "Aku Akan Setia",
+    "verses": [
+        {
+            "label": "1",
+            "num": 1,
+            "html": "1<br><b>K</b>u kan setia, sebab ku dipercaya; <br><b>K</b>u kan suci, sbab ku dikasihi; <br><b>K</b>u kan kuat, menanggung sgala beban; "
+        },
+		{
+			"label": "1C",
+			"num": 1,
+			"html": "<b>1</b><br><b>K</b>u kan brani melawan seteru, <br><b>K</b>u kan brani melawan seteru. "
+		},
+        {
+            "label": "2",
+            "num": 2,
+            "html": "2<br><b>K</b>u kan jadi teman bagi yang duka; <br><b>K</b>u kan membri dengan tulus hati; <br><b>S</b>bab ku lemahku akan rendah hati; "
+        },
+		{
+			"label": "2C",
+			"num": 2,
+			"html": "<b>2</b><br><b>B</b>ri perhatian dan kegembiraan, <br><b>B</b>rikan kasih dan smangat padanya. "
+		},
+        {
+            "label": "3",
+            "num": 3,
+            "html": "3<br><b>K</b>u kan berdoa, dalam kesibukanku; <br><b>K</b>u kan slalu, dekat dengan Tuhan; <br><b>K</b>u kan dengar bisikanNya yang merdu; "
+        },
+		{
+			"label": "3C",
+			"num": 3,
+			"html": "<b>3</b><br><b>K</b>u kan setia dalam jalan Kristus, <br><b>K</b>u kan setia dalam jalan Kristus. "
+		}
+    ]
+}

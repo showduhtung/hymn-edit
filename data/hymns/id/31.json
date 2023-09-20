@@ -1,0 +1,48 @@
+{
+  "lang": "id",
+  "num": "31",
+  "oldnum": "31",
+  "title": "Semuanya Demiku",
+  "verses": [
+    {
+      "label": "1",
+      "num": 1,
+      "html": "1<br><b>Y</b>esus Tuhanku turun ke dunia, <br><b>t</b>inggalkan kemuliaan yang besar; <br><b>K</b>asihNya mengharukan hatiku, <br><b>D</b>ia mencariku. "
+    },
+    {
+      "label": "1C",
+      "num": 1,
+      "html": "<b>1</b><br><b>D</b>ia mencariku, <br><b>D</b>ia mencariku <br><b>K</b>asihNya mengharukan hatiku, <br><b>D</b>ia mencariku. "
+    },
+    {
+      "label": "2",
+      "num": 2,
+      "html": "2<br><b>Y</b>esus Tuhanku mati disalib, <br><b>u</b>ntuk menebus sgala dosaku; <br><b>L</b>angit dan bumi goncang dan gentar, <br><b>D</b>ia mati untukku. "
+    },
+    {
+      "label": "2C",
+      "num": 2,
+      "html": "<b>2</b><br><b>D</b>ia mati untuk ku, <br><b>D</b>ia mati untuk ku <br><b>L</b>angit dan bumi goncang dan gentar, <br><b>D</b>ia mati untukku. "
+    },
+    {
+      "label": "3",
+      "num": 3,
+      "html": "3<br><b>K</b>ala ku tinggalkan padang Tuhan, <br><b>Y</b>esus cariku domba yang sesat; <br><b>M</b>emanggil namaku dengan lembut, <br><b>D</b>ia memanggilku. "
+    },
+    {
+      "label": "3C",
+      "num": 3,
+      "html": "<b>3</b><br><b>D</b>ia memanggilku, <br><b>D</b>ia memanggilku <br><b>M</b>emanggil namaku dengan lembut, <br><b>D</b>ia memanggilku. "
+    },
+    {
+      "label": "4",
+      "num": 4,
+      "html": "4<br><b>Y</b>esus Tuhanku telah berjanji, <br><b>d</b>i akhir zaman datang kembali; <br><b>I</b>tulah kabar yang paling baik, <br><b>D</b>ia datang sambutku. "
+    },
+    {
+      "label": "4C",
+      "num": 4,
+      "html": "<b>4</b><br><b>D</b>ia datang sambutku, <br><b>D</b>ia datang sambutku <br><b>I</b>tulah kabar yang paling baik, <br><b>D</b>ia datang sambutku."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+    "lang": "id",
+    "num": "405",
+    "oldnum": "405",
+    "title": "Berdoakah Engkau?",
+    "verses": [
+        {
+            "label": "1",
+            "num": 1,
+            "html": "1<br><b>S</b>eblum meninggalkan rumah, <br><b>b</b>erdoakah kau? <br><b>D</b>alam nama Tuhan Yesus, <br><b>m</b>ohon Tuhan mengasihi, <br><b>l</b>indung dan jaga? "
+        },
+		{
+			"label": "1C",
+			"num": 1,
+			"html": "<b>1</b><br><b>D</b>oa membri kelegaan <br><b>u</b>bah glap jadi terang; <br><b>D</b>alam suka maupun duka, <br><b>s</b>lalu berdoa."
+		},
+        {
+            "label": "2",
+            "num": 2,
+            "html": "2<br><b>B</b>ila jumpa pencobaan, <br><b>b</b>erdoakah kau? <br><b>K</b>arna kasih Dia berkorban, <br><b>m</b>ohon pimpinan Roh Kudus <br><b>m</b>enjaga slalu? "
+        },
+		{
+			"label": "2C",
+			"num": 2,
+			"html": "<b>2</b><br><b>D</b>oa membri kelegaan <br><b>u</b>bah glap jadi terang; <br><b>D</b>alam suka maupun duka, <br><b>s</b>lalu berdoa."
+		},
+        {
+            "label": "3",
+            "num": 3,
+            "html": "3<br><b>B</b>ila marah kuasaimu, <br><b>b</b>erdoakah kau? <br><b>S</b>udahkah mohon nugrahNya <br><b>u</b>ntuk dapat memaafkan <br><b>p</b>ada sesama? "
+        },
+		{
+			"label": "3C",
+			"num": 3,
+			"html": "<b>3</b><br><b>D</b>oa membri kelegaan <br><b>u</b>bah glap jadi terang; <br><b>D</b>alam suka maupun duka, <br><b>s</b>lalu berdoa."
+		},
+        {
+            "label": "4",
+            "num": 4,
+            "html": "4<br><b>B</b>ila pencobaan datang, <br><b>b</b>erdoakah kau? <br><b>K</b>ala jiwamu sengsara, <br><b>k</b>au bawakah dalam doa <br><b>k</b>epada Yesus? "
+        },
+		{
+			"label": "4C",
+			"num": 4,
+			"html": "<b>4</b><br><b>D</b>oa membri kelegaan <br><b>u</b>bah glap jadi terang; <br><b>D</b>alam suka maupun duka, <br><b>s</b>lalu berdoa."
+		}
+    ]
+}

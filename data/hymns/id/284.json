@@ -1,0 +1,38 @@
+{
+    "lang": "id",
+    "num": "284",
+    "oldnum": "284",
+    "title": "Bersinarkan Terang Injil",
+    "verses": [
+        {
+            "label": "1",
+            "num": 1,
+            "html": "1<br><b>U</b>mat dunia berseru minta tolong, <br><b>b</b>ersinar, bersinar! <br><b>B</b>anyak jiwa menanti nugrah Tuhan, <br><b>b</b>ersinar, bersinar! "
+        },
+		{
+			"label": "1C",
+			"num": 1,
+			"html": "<b>1</b><br><b>B</b>ersinar, terang Injil Tuhan, <br><b>b</b>ersinar di manapun; <br><b>B</b>ersinar, terang mulia Tuhan, <br><b>b</b>ersinar selamanya. "
+		},
+        {
+            "label": "2",
+            "num": 2,
+            "html": "2<br><b>D</b>engar orang Makedonia berseru, <br><b>b</b>ersinar, bersinar! <br><b>K</b>ita bergiat demi Injil yang murni, <br><b>b</b>ersinar, bersinar! "
+        },
+		{
+			"label": "2C",
+			"num": 2,
+			"html": "<b>2</b><br><b>B</b>ersinar, terang Injil Tuhan, <br><b>b</b>ersinar di manapun; <br><b>B</b>ersinar, terang mulia Tuhan, <br><b>b</b>ersinar selamanya. "
+		},
+        {
+            "label": "3",
+            "num": 3,
+            "html": "3<br><b>T</b>ak percuma bekerja untuk Tuhan, <br><b>b</b>ersinar, bersinar! <br><b>U</b>pah besar tlah tersedia di surga, <br><b>b</b>ersinar, bersinar! "
+        },
+		{
+			"label": "3C",
+			"num": 3,
+			"html": "<b>3</b><br><b>B</b>ersinar, terang Injil Tuhan, <br><b>b</b>ersinar di manapun; <br><b>B</b>ersinar, terang mulia Tuhan, <br><b>b</b>ersinar selamanya. "
+		}
+    ]
+}

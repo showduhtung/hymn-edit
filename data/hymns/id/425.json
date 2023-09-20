@@ -1,0 +1,38 @@
+{
+    "lang": "id",
+    "num": "425",
+    "oldnum": "509",
+    "title": "Aku Milik Raja",
+    "verses": [
+        {
+            "label": "1",
+            "num": 1,
+            "html": "1<br><b>A</b>ku milik Raja, anakNya terkasih, <br><b>k</b>ukan tinggal di istanaNya <br><b>D</b>ia ingin nyatakan kedamaian surga <br><b>y</b>ang berlimpah bagi anakNya "
+        },
+		{
+			"label": "1C",
+			"num": 1,
+			"html": "<b>1</b><br><b>A</b>ku milik Raja, anakNya terkasih, <br><b>D</b>ia takkan pernah tinggalkanku <br><b>S</b>uatu hari nanti Dia kan memanggilku <br><b>t</b>inggal dekat tahta muliaNya "
+		},
+        {
+            "label": "2",
+            "num": 2,
+            "html": "2<br><b>A</b>ku milik Raja, ku tahu Dia cintaku, <br><b>k</b>arna kasihNya cuma cuma <br><b>D</b>an nugrahNya kekal, kemanapun pergi, <br><b>D</b>ialah tempat perlindunganku "
+        },
+		{
+			"label": "2C",
+			"num": 2,
+			"html": "<b>2</b><br><b>A</b>ku milik Raja, anakNya terkasih, <br><b>D</b>ia takkan pernah tinggalkanku <br><b>S</b>uatu hari nanti Dia kan memanggilku <br><b>t</b>inggal dekat tahta muliaNya "
+		},
+        {
+            "label": "3",
+            "num": 3,
+            "html": "3<br><b>A</b>ku milik Raja, dan janjiNya pasti, <br><b>k</b>ita kan berkumpul di surga <br><b>K</b>ala pencobaan berakhirlah sudah, <br><b>k</b>u trima air hayat surga "
+        },
+		{
+			"label": "3C",
+			"num": 3,
+			"html": "<b>3</b><br><b>A</b>ku milik Raja, anakNya terkasih, <br><b>D</b>ia takkan pernah tinggalkanku <br><b>S</b>uatu hari nanti Dia kan memanggilku <br><b>t</b>inggal dekat tahta muliaNya "
+		}
+    ]
+}

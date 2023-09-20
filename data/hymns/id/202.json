@@ -1,0 +1,38 @@
+{
+    "lang": "id",
+    "num": "202",
+    "oldnum": "202",
+    "title": "Surga Tempat Bahagia",
+    "verses": [
+        {
+            "label": "1",
+            "num": 1,
+            "html": "1<br><b>D</b>i surga amatlah senang, <br><b>b</b>ahagia, bahagia, <br><b>D</b>i sana tiada dosa, <br><b>b</b>ahagia, bahagia; "
+        },
+		{
+			"label": "1C",
+			"num": 1,
+			"html": "<b>1</b><br><b>A</b>ngin harum bertiup lembut, <br><b>m</b>alak terang senyum riang, <br><b>B</b>ergemalah Pujian surga, <br><b>b</b>ahagia, bahagia! "
+		},
+        {
+            "label": "2",
+            "num": 2,
+            "html": "2<br><b>D</b>i sana tiada susah, <br><b>g</b>iranglah, giranglah, <br><b>T</b>iada tangis duka cita, <br><b>g</b>iranglah, giranglah; "
+        },
+		{
+			"label": "2C",
+			"num": 2,
+			"html": "<b>2</b><br><b>W</b>ajah Tuhan pun terlihat, <br><b>u</b>mat suci berbahagia, <br><b>S</b>urga penuh kemuliaan, <br><b>g</b>iranglah, giranglah! "
+		},
+        {
+            "label": "3",
+            "num": 3,
+            "html": "3<br><b>H</b>ai, sahabat dan saudara, <br><b>m</b>arilah percaya, <br><b>T</b>empuh jalanmu ke surga, <br><b>m</b>arilah percaya; "
+        },
+		{
+			"label": "3C",
+			"num": 3,
+			"html": "<b>3</b><br><b>M</b>usik surga amat merdu, <br><b>m</b>alak surga memainkannya, <br><b>U</b>mat surga hidup bahgia, <br><b>m</b>arilah percaya. "
+		}
+    ]
+}

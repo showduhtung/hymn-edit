@@ -1,0 +1,28 @@
+{
+    "lang": "id",
+    "num": "503",
+    "oldnum": "440",
+    "title": "Biarlah Semua Makhluk",
+    "verses": [
+        {
+            "label": "1",
+            "num": 1,
+            "html": "1<br><b>B</b>iarlah semua makhluk <br><b>n</b>yanyi dan bersorak <br><b>M</b>emuji Allah Sang Pencipta Dunia; <br><b>Y</b>ang membentuk serta <br><b>m</b>elindungi kita <br><b>D</b>an pimpin kita sampai akhir hayat; "
+        },
+		{
+			"label": "1C",
+			"num": 1,
+			"html": "<b>1</b><br><b>B</b>iarlah semua makhluk <br><b>n</b>yanyi dan bersorak <br><b>M</b>emuji Allah Sang Pencipta Dunia; <br><b>B</b>iarlah semua makhluk <br><b>n</b>yanyi dan bersorak <br><b>M</b>emuji Allah Sang Pencipta Dunia; "
+		},
+        {
+            "label": "2",
+            "num": 2,
+            "html": "2<br><b>D</b>ia mengatur semua <br><b>b</b>intang di orbitnya; <br><b>D</b>an matahari pun slalu bersinar; <br><b>S</b>emua bukit, gunung, <br><b>l</b>embah, serta sungai <br><b>D</b>alamnya laut nyatakan kuasaNya; "
+        },
+		{
+			"label": "2C",
+			"num": 2,
+			"html": "<b>2</b><br><b>D</b>ia mengatur semua <br><b>b</b>intang di orbitnya; <br><b>D</b>an matahari pun slalu bersinar; <br><b>D</b>ia mengatur semua <br><b>b</b>intang di orbitnya; <br><b>D</b>an matahari pun slalu bersinar; "
+		}
+    ]
+}

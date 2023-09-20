@@ -1,0 +1,38 @@
+{
+  "lang": "id",
+  "num": "40",
+  "oldnum": "40",
+  "title": "Darah Yesus",
+  "verses": [
+    {
+      "label": "1",
+      "num": 1,
+      "html": "1<br><b>D</b>osaku tlah dihapuskan <br><b>o</b>leh darah Yesus ku; <br><b>K</b>u dengar Dia memanggilku <br><b>a</b>gar ku mengikutNya. "
+    },
+    {
+      "label": "1C",
+      "num": 1,
+      "html": "<b>1</b><br><b>P</b>uji Yesus, Puji Yesus, <br><b>D</b>ia mati ganti kita; <br><b>M</b>ulia, mulia bagi Yesus, <br><b>d</b>arahNya hapus semua dosa. "
+    },
+    {
+      "label": "2",
+      "num": 2,
+      "html": "2<br><b>A</b>ku mau ikut Yesus, <br><b>t</b>empuh jalan ke surga; <br><b>D</b>an meninggalkan semua <br><b>k</b>emewahan dunia. "
+    },
+    {
+      "label": "2C",
+      "num": 2,
+      "html": "<b>2</b><br><b>P</b>uji Yesus, Puji Yesus, <br><b>D</b>ia mati ganti kita; <br><b>M</b>ulia, mulia bagi Yesus, <br><b>d</b>arahNya hapus semua dosa. "
+    },
+    {
+      "label": "3",
+      "num": 3,
+      "html": "3<br><b>T</b>uhan Yesus Mahakuasa <br><b>m</b>au slamatkan manusia; <br><b>K</b>u mau slalu Puji Yesus, <br><b>m</b>ulia bagi namaNya. "
+    },
+    {
+      "label": "3C",
+      "num": 3,
+      "html": "<b>3</b><br><b>P</b>uji Yesus, Puji Yesus, <br><b>D</b>ia mati ganti kita; <br><b>M</b>ulia, mulia bagi Yesus, <br><b>d</b>arahNya hapus semua dosa. "
+    }
+  ]
+}

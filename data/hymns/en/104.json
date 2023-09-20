@@ -1,0 +1,27 @@
+{
+  "lang": "en",
+  "num": "104",
+  "title": "My Jesus, I Love Thee",
+  "verses": [
+    {
+      "label": "1",
+      "num": 1,
+      "html": "1<br><b>M</b>y Jesus, I love Thee, I know Thou art mine, <br><b>F</b>or Thee all the follies of sin I resign; <br><b>M</b>y gracious Redeemer, my Saviour art Thou; <br><b>I</b>f ever I loved Thee, my Jesus, ’tis now. "
+    },
+    {
+      "label": "2",
+      "num": 2,
+      "html": "2<br><b>I</b> love Thee because Thou hast first loved me, <br><b>A</b>nd purchased my pardon on Calvary’s tree; <br><b>I</b> love Thee for wearing the thorns on Thy brow; <br><b>I</b>f ever I loved Thee, my Jesus, ’tis now. "
+    },
+    {
+      "label": "3",
+      "num": 3,
+      "html": "3<br><b>I</b>’ll love Thee in life, I will love Thee in death, <br><b>A</b>nd praise Thee as long as Thou lendest me breath; <br><b>A</b>nd say when the death dew lies cold on my brow, <br><b>I</b>f ever I loved Thee, my Jesus, ’tis now. "
+    },
+    {
+      "label": "4",
+      "num": 4,
+      "html": "4<br><b>I</b>n mansions of glory and endless delight, <br><b>I</b>’ll ever adore Thee in heaven so bright; <br><b>I</b>’ll sing with the glittering crown on my brow, <br><b>I</b>f ever I loved Thee, my Jesus, ’tis now. "
+    }
+  ]
+}

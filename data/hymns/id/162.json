@@ -1,0 +1,38 @@
+{
+    "lang": "id",
+    "num": "162",
+    "oldnum": "162",
+    "title": "Tuhan Pikul Bebanku",
+    "verses": [
+        {
+            "label": "1",
+            "num": 1,
+            "html": "1<br><b>B</b>ila ku bersandar Yesus, <br><b>b</b>eban dosa sirna; <br><b>N</b>ugrah di bawah salibNya, <br><b>p</b>asti kuterima. "
+        },
+		{
+			"label": "1C",
+			"num": 1,
+			"html": "<b>1</b><br><b>P</b>uji Tuhan, Nyanyi girang, <br><b>H</b>aleluya, Haleluya! <br><b>S</b>andar Tuhan, ku merdeka <br><b>d</b>ari dunia sampai surga. "
+		},
+        {
+            "label": "2",
+            "num": 2,
+            "html": "2<br><b>W</b>alau hidup banyak susah, <br><b>h</b>atiku tak gentar; <br><b>K</b>arna ku slalu berdoa, <br><b>b</b>ernaung padaNya. "
+        },
+		{
+			"label": "2C",
+			"num": 2,
+			"html": "<b>2</b><br><b>P</b>uji Tuhan, Nyanyi girang, <br><b>H</b>aleluya, Haleluya! <br><b>S</b>andar Tuhan, ku merdeka <br><b>d</b>ari dunia sampai surga. "
+		},
+        {
+            "label": "3",
+            "num": 3,
+            "html": "3<br><b>B</b>ila ku berdoa padaNya, <br><b>h</b>ilang semua duka; <br><b>K</b>u tahu Dia tanggung bebanku, <br><b>d</b>an mati demiku. "
+        },
+		{
+			"label": "3C",
+			"num": 3,
+			"html": "<b>3</b><br><b>P</b>uji Tuhan, Nyanyi girang, <br><b>H</b>aleluya, Haleluya! <br><b>S</b>andar Tuhan, ku merdeka <br><b>d</b>ari dunia sampai surga. "
+		}
+    ]
+}

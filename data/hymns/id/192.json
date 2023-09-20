@@ -1,0 +1,38 @@
+{
+    "lang": "id",
+    "num": "192",
+    "oldnum": "192",
+    "title": "Salib Pimpin Jalanku",
+    "verses": [
+        {
+            "label": "1",
+            "num": 1,
+            "html": "1<br><b>K</b>u akan pulang ke surga yang mulia, <br><b>s</b>alib pimpin jalanku; <br><b>B</b>ila menyimpang dari jalanNya <br><b>p</b>asti tak sampai kesana. "
+        },
+		{
+			"label": "1C",
+			"num": 1,
+			"html": "<b>1</b><br><b>S</b>alib pimpinku pulang, <br><b>s</b>alib pimpinku pulang; <br><b>S</b>lalu berharap pulang ke surga, <br><b>s</b>alib pimpinku pulang. "
+		},
+        {
+            "label": "2",
+            "num": 2,
+            "html": "2<br><b>K</b>u akan tempuh jalan yang berdarah, <br><b>y</b>ang tlah Yesus lalui; <br><b>B</b>ila bertekun sampai ke akhir <br><b>p</b>asti ku tinggal denganNya. "
+        },
+		{
+			"label": "2C",
+			"num": 2,
+			"html": "<b>2</b><br><b>S</b>alib pimpinku pulang, <br><b>s</b>alib pimpinku pulang; <br><b>S</b>lalu berharap pulang ke surga, <br><b>s</b>alib pimpinku pulang. "
+		},
+        {
+            "label": "3",
+            "num": 3,
+            "html": "3<br><b>K</b>u 'kan tinggalkan kemewahan dunia, <br><b>t</b>ak 'kan tersesat lagi; <br><b>Y</b>esus panggilku datang padaNya, <br><b>D</b>ia tunggu di pintu surga. "
+        },
+		{
+			"label": "3C",
+			"num": 3,
+			"html": "<b>3</b><br><b>S</b>alib pimpinku pulang, <br><b>s</b>alib pimpinku pulang; <br><b>S</b>lalu berharap pulang ke surga, <br><b>s</b>alib pimpinku pulang. "
+		}
+    ]
+}

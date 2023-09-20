@@ -1,0 +1,37 @@
+{
+  "lang": "en",
+  "num": "65",
+  "title": "Close to Thee",
+  "verses": [
+    {
+      "label": "1",
+      "num": 1,
+      "html": "1<br><b>T</b>hou, my everlasting portion, <br><b>M</b>ore than friend or life to me; <br><b>A</b>ll along my pilgrim journey, <br><b>S</b>aviour, let me walk with Thee."
+    },
+    {
+      "label": "1C",
+      "num": 1,
+      "html": "<b>1</b><br><b>C</b>lose to Thee, close to Thee, <br><b>C</b>lose to Thee, close to Thee;<br><b>A</b>ll along my pilgrim journey, <br><b>S</b>aviour, let me walk with Thee. "
+    },
+    {
+      "label": "2",
+      "num": 2,
+      "html": "2<br><b>N</b>ot for ease or worldly pleasure, <br><b>N</b>or for fame my prayer shall be; <br><b>G</b>ladly will I toil and suffer, <br><b>O</b>nly let me walk with Thee."
+    },
+    {
+      "label": "2C",
+      "num": 2,
+      "html": "<b>2</b><br><b>C</b>lose to Thee, close to Thee, <br><b>C</b>lose to Thee, close to Thee;<br><b>G</b>ladly will I toil and suffer, <br><b>O</b>nly let me walk with Thee. "
+    },
+    {
+      "label": "3",
+      "num": 3,
+      "html": "3<br><b>L</b>ead me through the vale of shadows, <br><b>B</b>ear me o’er life’s fitful sea; <br><b>T</b>hen the gate of life eternal <br><b>M</b>ay I enter, Lord, with Thee."
+    },
+    {
+      "label": "3C",
+      "num": 3,
+      "html": "<b>3</b><br><b>C</b>lose to Thee, close to Thee, <br><b>C</b>lose to Thee, close to Thee;<br><b>T</b>hen the gate of life eternal <br><b>M</b>ay I enter, Lord, with Thee. "
+    }
+  ]
+}

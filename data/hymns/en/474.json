@@ -1,0 +1,47 @@
+{
+  "lang": "en",
+  "num": "474",
+  "title": "How Great Thou Art",
+  "verses": [
+    {
+      "label": "1",
+      "num": 1,
+      "html": "1<br><b>O</b> Lord my God! when I in awesome wonder <br><b>C</b>onsider all the worlds Thy hands have made, <br><b>I</b> see the stars, I hear the rolling thunder, <br><b>T</b>hy pow’r throughout the universe displayed, "
+    },
+    {
+      "label": "1C",
+      "num": 1,
+      "html": "<b>1</b><br><b>T</b>hen sings my soul, my Saviour God to Thee; <br><b>H</b>ow great Thou art, how great Thou art! <br><b>T</b>hen sings my soul, my Saviour God to Thee; <br><b>H</b>ow great Thou art, how great Thou art!"
+    },
+    {
+      "label": "2",
+      "num": 2,
+      "html": "2<br><b>W</b>hen through the woods and forest glades I wander <br><b>A</b>nd hear the birds sing sweetly in the trees; <br><b>W</b>hen I look down from lofty mountain grandeur <br><b>A</b>nd hear the brook and feel the gentle breeze; "
+    },
+    {
+      "label": "2C",
+      "num": 2,
+      "html": "<b>2</b><br><b>T</b>hen sings my soul, my Saviour God to Thee; <br><b>H</b>ow great Thou art, how great Thou art! <br><b>T</b>hen sings my soul, my Saviour God to Thee; <br><b>H</b>ow great Thou art, how great Thou art!"
+    },
+    {
+      "label": "3",
+      "num": 3,
+      "html": "3<br><b>A</b>nd when I think that God, His Son not sparing, <br><b>S</b>ent Him to die, I scarce can take it in; <br><b>T</b>hat on the cross, my burden gladly bearing, <br><b>H</b>e bled and died to take away my sin; "
+    },
+    {
+      "label": "3C",
+      "num": 3,
+      "html": "<b>3</b><br><b>T</b>hen sings my soul, my Saviour God to Thee; <br><b>H</b>ow great Thou art, how great Thou art! <br><b>T</b>hen sings my soul, my Saviour God to Thee; <br><b>H</b>ow great Thou art, how great Thou art!"
+    },
+    {
+      "label": "4",
+      "num": 4,
+      "html": "4<br><b>W</b>hen Christ shall come with shout of acclamation <br><b>A</b>nd take me home, what joy shall fill my heart! <br><b>T</b>hen I shall bow in humble adoration <br><b>A</b>nd there proclaim, my God, how great Thou art! "
+    },
+    {
+      "label": "4C",
+      "num": 4,
+      "html": "<b>4</b><br><b>T</b>hen sings my soul, my Saviour God to Thee; <br><b>H</b>ow great Thou art, how great Thou art! <br><b>T</b>hen sings my soul, my Saviour God to Thee; <br><b>H</b>ow great Thou art, how great Thou art!"
+    }
+  ]
+}

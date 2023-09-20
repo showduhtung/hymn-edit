@@ -1,0 +1,37 @@
+{
+  "lang": "en",
+  "num": "95",
+  "title": "What a Friend Thou Art to Me",
+  "verses": [
+    {
+      "label": "1",
+      "num": 1,
+      "html": "1<br><b>O</b> my Redeemer, <br><b>W</b>hat a Friend Thou art to me! <br><b>O</b>h, what a refuge I have found in Thee! <br><b>W</b>hen the way was dreary, <br><b>A</b>nd my heart was sore oppress’d,"
+    },
+    {
+      "label": "1C",
+      "num": 1,
+      "html": "’Twas Thy voice that lull’d me, <br><b>T</b>o a calm, sweet rest.<br><b>N</b>earer, draw nearer, <br><b>T</b>ill my soul is lost in Thee; <br><b>N</b>earer, draw nearer, Blessed Lord, to me."
+    },
+    {
+      "label": "2",
+      "num": 2,
+      "html": "2<br><b>W</b>hen in their beauty, <br><b>S</b>tars unveil their silver light, <br><b>T</b>hen, O my Savior, Give me songs at night – <br><b>S</b>ongs of yonder mansions, <br><b>W</b>here the dear ones, gone before,"
+    },
+    {
+      "label": "2C",
+      "num": 2,
+      "html": "<b>2</b><br><b>S</b>ing Thy praise forever, <br><b>O</b>n that peaceful shore. <br><b>N</b>earer, draw nearer, <br><b>T</b>ill my soul is lost in Thee; <br><b>N</b>earer, draw nearer, Blessed Lord, to me."
+    },
+    {
+      "label": "3",
+      "num": 3,
+      "html": "3<br><b>J</b>esus, my Savior, <br><b>W</b>hen the last deep shadows fall; <br><b>W</b>hen in the silence I shall hear Thy call <br><b>I</b>n Thine arms reposing, <br><b>L</b>et me breathe my life away,"
+    },
+    {
+      "label": "3C",
+      "num": 3,
+      "html": "<b>3</b><br><b>A</b>nd awake triumphant, <br><b>I</b>n eternal day. <br><b>N</b>earer, draw nearer, <br><b>T</b>ill my soul is lost in Thee; <br><b>N</b>earer, draw nearer, Blessed Lord, to me."
+    }
+  ]
+}

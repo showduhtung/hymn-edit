@@ -1,0 +1,38 @@
+{
+    "lang": "id",
+    "num": "269",
+    "oldnum": "269",
+    "title": "Dengar Tuhan Memanggilku",
+    "verses": [
+        {
+            "label": "1",
+            "num": 1,
+            "html": "1<br><b>D</b>engar Tuhan memanggilku : <br>“<b>S</b>iapa yang mau bekerja? <br><b>L</b>ihat ladang tlah menguning, <br><b>s</b>iapa yang mau menuai?” "
+        },
+		{
+			"label": "1C",
+			"num": 1,
+			"html": "<b>1</b><br><b>S</b>udah lama Tuhan bersru <br><b>s</b>ediakan upah besar, <br><b>S</b>iapakah yang mau dipanggil? <br>“<b>K</b>u di sini, utuslah!” "
+		},
+        {
+            "label": "2",
+            "num": 2,
+            "html": "2<br><b>J</b>ika tidak dapat pergi <br><b>j</b>auh untuk InjilNya, <br><b>S</b>ekitarmu juga banyak <br><b>y</b>ang blum percaya Tuhan; "
+        },
+		{
+			"label": "2C",
+			"num": 2,
+			"html": "<b>2</b><br><b>N</b>asehatilah mereka <br><b>a</b>gar percaya Yesus; <br><b>G</b>iat bekerja untukNya, <br><b>p</b>asti kau diingatNya "
+		},
+        {
+            "label": "3",
+            "num": 3,
+            "html": "3<br><b>J</b>angan malas dan menolak <br><b>d</b>engan dalih tak kuat, <br><b>U</b>mat dunia 'kan binasa, <br><b>a</b>pakah engkau tega? "
+        },
+		{
+			"label": "3C",
+			"num": 3,
+			"html": "<b>3</b><br><b>S</b>egra turut printah Tuhan, <br><b>g</b>iat bekerja, bahgialah; <br><b>T</b>uhan panggil jawab segra, <br>“<b>K</b>u di sini, utuslah!” "
+		}
+    ]
+}

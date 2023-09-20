@@ -1,0 +1,38 @@
+{
+    "lang": "id",
+    "num": "223",
+    "oldnum": "223",
+    "title": "Kidung Umat Pilihan",
+    "verses": [
+        {
+            "label": "1",
+            "num": 1,
+            "html": "1<br><b>H</b>aleluya, Amin, Puji Tuhan, <br><b>S</b>ion bercahaya sungguh indah, <br><b>D</b>aud main kecapi, Musa nyanyi, <br><b>M</b>iriam berdendang dan menari. "
+        },
+		{
+			"label": "1C",
+			"num": 1,
+			"html": "<b>1</b><br><b>U</b>mat pilihanNya riang berkumpul, <br><b>b</b>ernyanyi kidung merdu di surga; <br><b>M</b>alakpun bersorak puji Allah, <br>“<b>H</b>aleluya!” bergema di surga."
+		},
+        {
+            "label": "2",
+            "num": 2,
+            "html": "2<br><b>H</b>aleluya, Amin, Puji Tuhan, <br><b>B</b>agai anak gadis bercahaya, <br><b>K</b>ita memplai Kristus harus kudus, <br><b>p</b>enuh dengan RohNya menyambut Dia. "
+        },
+		{
+			"label": "2C",
+			"num": 2,
+			"html": "<b>2</b><br><b>U</b>mat pilihanNya riang berkumpul, <br><b>b</b>ernyanyi kidung merdu di surga; <br><b>M</b>alakpun bersorak puji Allah, <br>“<b>H</b>aleluya!” bergema di surga."
+		},
+        {
+            "label": "3",
+            "num": 3,
+            "html": "3<br><b>H</b>aleluya, Amin, Puji Tuhan, <br><b>M</b>emplai bercahaya dan sempurna, <br><b>G</b>rejaNya yang benar 'kan diangkat, <br><b>m</b>asuk keperjamuan Anak Domba. "
+        },
+		{
+			"label": "3C",
+			"num": 3,
+			"html": "<b>3</b><br><b>U</b>mat pilihanNya riang berkumpul, <br><b>b</b>ernyanyi kidung merdu di surga; <br><b>M</b>alakpun bersorak puji Allah, <br>“<b>H</b>aleluya!” bergema di surga."
+		}
+    ]
+}

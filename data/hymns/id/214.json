@@ -1,0 +1,49 @@
+{
+    "lang": "id",
+    "num": "214",
+    "oldnum": "214",
+    "title": "Delapan Kebahagiaan",
+    "verses": [
+        {
+            "label": "1",
+            "num": 1,
+            "html": "1<br><b>B</b>erbahagialah o-<br><b>r</b>ang yang miskin hatinya, <br><b>k</b>arna mreka yang empu-<br><b>n</b>ya kerajaan surga; "
+        },
+		{
+			"label": "1C",
+			"num": 1,
+			"html": "<b>1</b><br><b>B</b>erbahagialah o-<br><b>r</b>ang yang berduka cita, <br><b>K</b>arena mereka a-<br><b>k</b>an dihibur olehNya. "
+		},
+        {
+            "label": "2",
+            "num": 2,
+            "html": "2<br><b>B</b>erbahagialah o-<br><b>r</b>ang yang lembut hatinya, <br><b>k</b>arena mreka yang a-<br><b>k</b>an memiliki bumi; "
+        },
+		{
+			"label": "2C",
+			"num": 2,
+			"html": "<b>2</b><br><b>B</b>erbahagialah orang <br><b>y</b>ang lapar kebenaran, <br><b>K</b>arena mereka a-<br><b>k</b>an dipuaskan olehNya. "
+		},
+        {
+            "label": "3",
+            "num": 3,
+            "html": "3<br><b>B</b>erbahagialah o-<br><b>r</b>ang yang murah hatinya, <br><b>k</b>arena mreka akan <br><b>b</b>eroleh kemurahan; "
+        },
+		{
+			"label": "3C",
+			"num": 3,
+			"html": "<b>3</b><br><b>B</b>erbahagialah o-<br><b>r</b>ang yang suci hatinya, <br><b>K</b>arena mereka a-<br><b>k</b>an lihat wajah Allah. "
+		},
+        {
+            "label": "4",
+            "num": 4,
+            "html": "4<br><b>B</b>erbahagialah o-<br><b>r</b>ang yang membawa damai, <br><b>K</b>arena mreka akan <br><b>d</b>isebut anak Allah; "
+        },
+		{
+			"label": "4C",
+			"num": 4,
+			"html": "<b>4</b><br><b>B</b>erbahagialah o-<br><b>r</b>ang yang drita karna Dia, <br><b>K</b>arna mreka yang empu-<br><b>n</b>ya kerajaan surga. "
+		}
+		
+    ]
+}

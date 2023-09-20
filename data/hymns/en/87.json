@@ -1,0 +1,37 @@
+{
+  "lang": "en",
+  "num": "87",
+  "title": "There's a Great Day Coming",
+  "verses": [
+    {
+      "label": "1",
+      "num": 1,
+      "html": "1<br><b>T</b>here’s a great day coming, <br><b>A</b> great day coming, <br><b>T</b>here’s a great day coming by and by; <br><b>W</b>hen the saints and the sinners shall <br><b>b</b>e parted right and left, <br><b>A</b>re you ready for that day to come?"
+    },
+    {
+      "label": "1C",
+      "num": 1,
+      "html": "<b>1</b><br><b>A</b>re you ready? Are you ready? <br><b>A</b>re you ready for the judgment day? <br><b>A</b>re you ready? <br><b>A</b>re you ready for the judgment day?"
+    },
+    {
+      "label": "2",
+      "num": 2,
+      "html": "2<br><b>T</b>here’s a bright day coming, <br><b>A</b> bright day coming, <br><b>T</b>here’s a bright day coming by and by; <br><b>B</b>ut its brightness shall only come <br><b>t</b>o them that love the Lord, <br><b>A</b>re you ready for that day to come?"
+    },
+    {
+      "label": "2C",
+      "num": 2,
+      "html": "<b>2</b><br><b>A</b>re you ready? Are you ready? <br><b>A</b>re you ready for the judgment day? <br><b>A</b>re you ready? <br><b>A</b>re you ready for the judgment day?"
+    },
+    {
+      "label": "3",
+      "num": 3,
+      "html": "3<br><b>T</b>here’s a sad day coming, <br><b>A</b> sad day coming, <br><b>T</b>here’s a sad day coming by and by; <br><b>W</b>hen the sinner shall hear his doom, “Depart, I know ye not,” <br><b>A</b>re you ready for that day to come?"
+    },
+    {
+      "label": "3C",
+      "num": 3,
+      "html": "<b>3</b><br><b>A</b>re you ready? Are you ready? <br><b>A</b>re you ready for the judgment day? <br><b>A</b>re you ready? <br><b>A</b>re you ready for the judgment day?"
+    }
+  ]
+}

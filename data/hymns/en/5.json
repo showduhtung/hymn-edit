@@ -1,0 +1,37 @@
+{
+  "lang": "en",
+  "num": "5",
+  "title": "This Is My Father's World",
+  "verses": [
+    {
+      "label": "1",
+      "num": 1,
+      "html": "1<br><b>T</b>his is my Father’s world, <br><b>A</b>nd to my list’ning ears, <br><b>A</b>ll nature sings and round me rings <br><b>T</b>he music of the spheres."
+    },
+    {
+      "label": "1C",
+      "num": 1,
+      "html": "<b>1</b><br><b>T</b>his is my Father’s world, <br><b>I</b> rest me in the thought <br><b>O</b>f rocks and trees, of skies and seas; <br><b>H</b>is hand the wonders wrought. "
+    },
+    {
+      "label": "2",
+      "num": 2,
+      "html": "2<br><b>T</b>his is my Father’s world, <br><b>T</b>he birds their carols raise; <br><b>T</b>he morning light, the lily white <br><b>D</b>eclare their Maker’s praise."
+    },
+    {
+      "label": "2C",
+      "num": 2,
+      "html": "<b>2</b><br><b>T</b>his is my Father’s world, <br><b>H</b>e shines in all that’s fair; <br><b>I</b>n the rustling grass I hear Him pass, <br><b>H</b>e speaks to me ev’rywhere. "
+    },
+    {
+      "label": "3",
+      "num": 3,
+      "html": "3<br><b>T</b>his is my Father’s world, <br><b>O</b> let me ne’er forget <br><b>T</b>hat though the wrong seems oft so strong, <br><b>G</b>od is the Ruler yet."
+    },
+    {
+      "label": "3C",
+      "num": 3,
+      "html": "<b>3</b><br><b>T</b>his is my Father’s world, <br><b>T</b>he battle is not done; <br><b>J</b>esus who died shall be satisfied, <br><b>A</b>nd earth and heaven be one. "
+    }
+  ]
+}

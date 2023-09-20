@@ -1,0 +1,27 @@
+{
+  "lang": "en",
+  "num": "125",
+  "title": "A Parting Hymn",
+  "verses": [
+    {
+      "label": "1",
+      "num": 1,
+      "html": "1<br><b>T</b>he Lord has brought us together, <br><b>F</b>or us to learn His true way; <br><b>W</b>ith the Spirit’s love and guidance, <br><b>A</b>ll of His Word we’ll obey; <br><b>T</b>he love of God’s worth rememb’ring, <br><b>E</b>ver His praises we’ll sing,"
+    },
+    {
+      "label": "1C",
+      "num": 1,
+      "html": "<b>1</b><br><b>T</b>hough we must part for the moment, <br><b>N</b>o sorrow our spirits mar; <br><b>W</b>e’ll strive to keep His commandments, <br><b>A</b>nd spread His glory afar. "
+    },
+    {
+      "label": "2",
+      "num": 2,
+      "html": "2<br><b>H</b>is truth is found in His Spirit, <br><b>F</b>orever it will abide; <br><b>O</b>ne faith to keep, with God leading, <br><b>W</b>e will for Him ever strive; <br><b>S</b>preading the gospel and seeking <br><b>T</b>o bring the lost unto Him, "
+    },
+    {
+      "label": "2C",
+      "num": 2,
+      "html": "<b>2</b><br><b>P</b>raying for others in Spirit; <b>T</b>ho’ parted we’re of one heart; <br><b>B</b>ear spiritual gifts for His glory; <br><b>I</b>n heaven we’ll never part. "
+    }
+  ]
+}

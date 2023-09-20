@@ -1,0 +1,38 @@
+{
+  "lang": "id",
+  "num": "75",
+  "oldnum": "75",
+  "title": "Kristus Lahir",
+  "verses": [
+    {
+      "label": "1",
+      "num": 1,
+      "html": "1<br><b>D</b>engar malak membritakan: <br>“<b>K</b>ristus lahir di kota Daud; <br><b>D</b>ialah Anak Tunggal Allah, <br><b>Y</b>esus, yang patut dipuji.” "
+    },
+    {
+      "label": "1C",
+      "num": 1,
+      "html": "<b>1</b><br>“<b>G</b>irang, girang, girang, girang, <br><b>R</b>aja surga telah lahir!” "
+    },
+    {
+      "label": "2",
+      "num": 2,
+      "html": "2<br><b>S</b>abda malak: “Jangan takut, <br><b>k</b>abar baik semua bangsa; <br><b>S</b>eorang Raja telah lahir, <br><b>t</b>erbaring dalam palungan.” "
+    },
+    {
+      "label": "2C",
+      "num": 2,
+      "html": "<b>2</b><br>“<b>G</b>irang, girang, girang, girang, <br><b>R</b>aja surga telah lahir!” "
+    },
+    {
+      "label": "3",
+      "num": 3,
+      "html": "3<br><b>L</b>askar surga memuji Dia: <br>“<b>K</b>emuliaan bagi Allah.” <br><b>K</b>ristus jadi Juru slamat, <br><b>a</b>gar umat dislamatkan. "
+    },
+    {
+      "label": "3C",
+      "num": 3,
+      "html": "<b>3</b><br>“<b>G</b>irang, girang, girang, girang, <br><b>R</b>aja surga telah lahir!” "
+    }
+  ]
+}

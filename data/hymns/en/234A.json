@@ -1,0 +1,27 @@
+{
+  "lang": "en",
+  "num": "234A",
+  "title": "Nearer, My God, to Thee",
+  "verses": [
+    {
+      "label": "1",
+      "num": 1,
+      "html": "1<br><b>N</b>earer, my God, to Thee, <br><b>N</b>earer to Thee! <br><b>E</b>’en though it be a cross <br><b>T</b>hat raiseth me, <br><b>S</b>till all my songs shall be, <br><b>N</b>earer, my God, to Thee. <br><b>N</b>earer, my God, to Thee, <br><b>N</b>earer to Thee!"
+    },
+    {
+      "label": "2",
+      "num": 2,
+      "html": "2<br><b>T</b>hough like the wanderer, <br><b>T</b>he sun gone down, <br><b>D</b>arkness be over me, <br><b>M</b>y rest a stone; <br><b>Y</b>et in my dreams I’d be <br><b>N</b>earer, my God, to Thee. <br><b>N</b>earer, my God, to Thee, <br><b>N</b>earer to Thee!"
+    },
+    {
+      "label": "3",
+      "num": 3,
+      "html": "3<br><b>T</b>here let the way appear, <br><b>S</b>teps unto heaven; <br><b>A</b>ll that Thou sendest me, <br><b>I</b>n mercy giv’n; <br><b>A</b>ngels to beckon me <br><b>N</b>earer, my God, to Thee. <br><b>N</b>earer, my God, to Thee, <br><b>N</b>earer to Thee!"
+    },
+    {
+      "label": "4",
+      "num": 4,
+      "html": "4<br><b>T</b>hen, with my waking thoughts <br><b>B</b>right with Thy praise, <br><b>O</b>ut of my stony griefs <br><b>B</b>ethel I’ll raise; <br><b>S</b>o by my woes to be <br><b>N</b>earer, my God, to Thee. <br><b>N</b>earer, my God, to Thee, <br><b>N</b>earer to Thee!"
+    }
+  ]
+}

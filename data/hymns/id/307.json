@@ -1,0 +1,48 @@
+{
+    "lang": "id",
+    "num": "307",
+    "oldnum": "307",
+    "title": "Pulanglah !",
+    "verses": [
+        {
+            "label": "1",
+            "num": 1,
+            "html": "1<br><b>D</b>ulu jauh dari Tuhan, <br><b>k</b>ini ku pulang;<br><b>L</b>ama tempuh jalan dosa, <br><b>T</b>uhan, ku pulang,"
+        },
+        {
+            "label": "1c",
+            "num": 1,
+            "html": "<br><b>1</b><br><b>P</b>ulanglah! Pulanglah! <br><b>J</b>angan berklana;<br><b>A</b>llah Bapa menyambutku, <br><b>k</b>ini ku pulang."
+        },
+        {
+            "label": "2",
+            "num": 2,
+            "html": "2<br><b>D</b>ulu hidup berkelana, <br><b>k</b>ini ku pulang;<br><b>H</b>ati penuh penyesalan, <br><b>T</b>uhan, ku pulang,"
+        },
+        {
+            "label":"2c",
+            "num": 2,
+            "html": "<br><b>2</b><br><b>P</b>ulanglah! Pulanglah! <br><b>J</b>angan berklana;<br><b>A</b>llah Bapa menyambutku, <br><b>k</b>ini ku pulang."
+        },
+        {
+            "label": "3",
+            "num": 3,
+            "html": "3<br><b>D</b>ulu hidup tidak benar, <br><b>k</b>ini ku pulang;<br><b>M</b>ohon Tuhan beri rahmat, <br><b>T</b>uhan, ku pulang,"
+        },
+        {
+            "label": "3c",
+            "num":3,
+            "html": "<br><b>3</b><br><b>P</b>ulanglah! Pulanglah! <br><b>J</b>angan berklana;<br><b>A</b>llah Bapa menyambutku, <br><b>k</b>ini ku pulang."
+        },
+        {
+            "label": "4",
+            "num": 4,
+            "html": "4<br><b>D</b>ulu jahat, tinggi hati, <br><b>k</b>ini ku pulang;<br><b>K</b>ini ku mau turut firman, <br><b>T</b>uhan, ku pulang,"
+        },
+        {
+            "label": "4c",
+            "num":4,
+            "html":"<br><b>4</b><br><b>P</b>ulanglah! Pulanglah! <br><b>J</b>angan berklana;<br><b>A</b>llah Bapa menyambutku, <br><b>k</b>ini ku pulang."
+        }
+    ]
+}

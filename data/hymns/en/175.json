@@ -1,0 +1,47 @@
+{
+  "lang": "en",
+  "num": "175",
+  "title": "It Came upon the Midnight Clear",
+  "verses": [
+    {
+      "label": "1",
+      "num": 1,
+      "html": "1<br><b>I</b>t came upon the midnight clear, <br><b>T</b>hat glorious song of old, <br><b>F</b>rom angels bending near the earth, <br><b>T</b>o touch their harps of gold:"
+    },
+    {
+      "label": "1C",
+      "num": 1,
+      "html": "“Peace on the earth, good will to men,” <br><b>F</b>rom heav’n’s all-gracious King. <br><b>T</b>he world in solemn stillness lay, <br><b>T</b>o hear the angels sing."
+    },
+    {
+      "label": "2",
+      "num": 2,
+      "html": "2<br><b>S</b>till thro’ the cloven skies they come, <br><b>W</b>ith peaceful wings unfurled, <br><b>A</b>nd still their heavenly music floats <br><b>O</b>’er all the weary world:"
+    },
+    {
+      "label": "2C",
+      "num": 2,
+      "html": "<b>2</b><br><b>A</b>bove its sad and lowly plains <br><b>T</b>hey bend on hovering wing, <br><b>A</b>nd ever o’er its Babel sounds <br><b>T</b>he blessed angels sing. "
+    },
+    {
+      "label": "3",
+      "num": 3,
+      "html": "3<br><b>A</b>nd ye, beneath life’s crushing load, <br><b>W</b>hose forms are bending low, <br><b>W</b>ho toil along the climbing way <br><b>W</b>ith painful steps and slow,"
+    },
+    {
+      "label": "3C",
+      "num": 3,
+      "html": "<b>3</b><br><b>L</b>ook now! for glad and golden hours <br><b>C</b>ome swiftly on the wing: <br><b>O</b> rest beside the weary road, <br><b>A</b>nd hear the angels sing! "
+    },
+    {
+      "label": "4",
+      "num": 4,
+      "html": "4<br><b>F</b>or lo! the days are hast’ning on, <br><b>B</b>y prophet-bards foretold, <br><b>W</b>hen with the ever-circling years <br><b>C</b>omes round the age of gold;"
+    },
+    {
+      "label": "4C",
+      "num": 4,
+      "html": "<b>4</b><br><b>W</b>hen peace shall over all the earth <br><b>I</b>ts ancient splendors fling, <br><b>A</b>nd the whole world give back the song <br><b>W</b>hich now the angels sing. "
+    }
+  ]
+}

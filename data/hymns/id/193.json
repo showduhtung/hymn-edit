@@ -1,0 +1,53 @@
+{
+    "lang": "id",
+    "num": "193",
+    "oldnum": "193",
+    "title": "Surga Yang Mulia",
+    "verses": [
+        {
+            "label": "1",
+            "num": 1,
+            "html": "1<br><b>K</b>u akan pergi ke tempat yang bahagia, <br><b>T</b>empat umat suci, negeri Allah;"
+        },
+		{
+			"label": "1C",
+			"num": 1,
+			"html": "<b>1</b><br><b>T</b>eman terkasih, maukah engkau pergi, <br><b>B</b>ersama kami ke surga yang mulia?"
+		},
+  		{
+			"label": "1C",
+			"num": 1,
+			"html": "<b>1</b><br><b>P</b>ergikah? Pergikah? Pergikah? Pergikah? <br><b>M</b>aukah kau pergi ke surga yang mulia? "
+		},
+        {
+            "label": "2",
+            "num": 2,
+            "html": "2<br><b>D</b>i sana tiada kuatir dan keluh kesah, <br><b>T</b>iada cemas, takut, dan duka cita;"
+        },
+		{
+			"label": "2C",
+			"num": 2,
+			"html": "<b>2</b><br><b>Y</b>ang berbeban brat, tetapkanlah hatimu, <br><b>B</b>ersama kami ke surga yang mulia!"
+		},
+		{
+			"label": "2C",
+			"num": 2,
+			"html": "<b>2</b><br><b>P</b>ergikah? Pergikah? Pergikah? Pergikah? <br><b>M</b>aukah kau pergi ke surga yang mulia? "
+		},
+        {
+            "label": "3",
+            "num": 3,
+            "html": "3<br><b>K</b>rajaan Surga disediakan Tuhan, <br><b>T</b>erbuat dari mas permata nan indah;"
+        },
+		{
+			"label": "3C",
+			"num": 3,
+			"html": "<b>3</b><br><b>H</b>anya umatNya yang 'kan tinggal disana, <br><b>M</b>arilah pergi ke surga yang mulia!"
+		},
+		{
+			"label": "3C",
+			"num": 3,
+			"html": "<b>3</b><br><b>P</b>ergikah? Pergikah? Pergikah? Pergikah? <br><b>M</b>aukah kau pergi ke surga yang mulia? "
+		}
+    ]
+}

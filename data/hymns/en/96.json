@@ -1,0 +1,37 @@
+{
+  "lang": "en",
+  "num": "96",
+  "title": "Amazing Grace",
+  "verses": [
+    {
+      "label": "1",
+      "num": 1,
+      "html": "1<br><b>A</b>mazing grace! How sweet the sound, <br><b>T</b>hat saved a wretch like me! <br><b>I</b> once was lost, but now am found, <br><b>W</b>as blind, but now I see. "
+    },
+    {
+      "label": "2",
+      "num": 2,
+      "html": "2<br>’Twas grace that taught my heart to fear, <br><b>A</b>nd grace my fears relieved; <br><b>H</b>ow precious did that grace appear <br><b>T</b>he hour I first believed! "
+    },
+    {
+      "label": "3",
+      "num": 3,
+      "html": "3<br><b>T</b>hro’ many dangers, toils, and snares, <br><b>I</b> have already come;\n’Tis grace hath bro’t me safe thus far, <br><b>A</b>nd grace will lead me home. "
+    },
+    {
+      "label": "4",
+      "num": 4,
+      "html": "4<br><b>T</b>he Lord has promised good to me, <br><b>H</b>is word my hope secures; <br><b>H</b>e will my Shield and Portion be, <br><b>A</b>s long as life endures. "
+    },
+    {
+      "label": "5",
+      "num": 5,
+      "html": "5<br><b>Y</b>ea, when this heart and flesh shall fail, <br><b>A</b>nd mortal life shall cease; <br><b>I</b> shall possess, within the vale, <br><b>A</b> life of joy and peace. "
+    },
+    {
+      "label": "6",
+      "num": 6,
+      "html": "6<br><b>W</b>hen we’ve been there ten thousand years, <br><b>B</b>right shining as the sun, <br><b>W</b>e’ve no less days to sing God’s praise <br><b>T</b>han when we first begun. "
+    }
+  ]
+}

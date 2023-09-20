@@ -1,0 +1,38 @@
+{
+    "lang": "id",
+    "num": "185",
+    "oldnum": "185",
+    "title": "Rindu Rumah di Surga",
+    "verses": [
+        {
+            "label": "1",
+            "num": 1,
+            "html": "1<br><b>K</b>u rindukan <br><b>t</b>empat yang Dia sediakan, <br><b>B</b>ertobat, mengaku dosa, <br><b>p</b>engharapanku; "
+        },
+		{
+			"label": "1C",
+			"num": 1,
+			"html": "<b>1</b><br><b>M</b>engapakah harus kudus? <br><b>R</b>enungkanlah. <br><b>K</b>arna surga tempat kudus <br><b>d</b>an bahagia! <br><b>K</b>u mau giat sampai masuk surga. "
+		},
+        {
+            "label": "2",
+            "num": 2,
+            "html": "2<br><b>K</b>u rindukan <br><b>Y</b>esus tolong ke sana, <br><b>I</b>man teguh, Dia berkenan, <br><b>p</b>engharapanku; "
+        },
+		{
+			"label": "2C",
+			"num": 2,
+			"html": "<b>2</b><br><b>M</b>engapa harus beriman? <br><b>R</b>enungkanlah. <br><b>K</b>arna surga tempat kekal, <br><b>t</b>ak terbatas! <br><b>K</b>u mau berjuang sampai masuk surga."
+		},
+        {
+            "label": "3",
+            "num": 3,
+            "html": "3<br><b>K</b>u rindukan <br><b>R</b>ohNya pimpin ke sana, <br><b>P</b>egang printah, Dia kasihi, <br><b>p</b>engharapanku; "
+        },
+		{
+			"label": "3C",
+			"num": 3,
+			"html": "<b>3</b><br><b>M</b>engapakah harus taat? <br><b>R</b>enungkanlah. <br><b>K</b>arna surga tempat mulia, <br><b>t</b>ak ternilai! <br><b>K</b>u mau lari sampai masuk surga. "
+		}
+    ]
+}

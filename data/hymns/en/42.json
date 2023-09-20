@@ -1,0 +1,52 @@
+{
+  "lang": "en",
+  "num": "42",
+  "title": "Blessed Be the Fountain",
+  "verses": [
+    {
+      "label": "1",
+      "num": 1,
+      "html": "1<br><b>B</b>lessed be the fountain of blood, <br><b>T</b>o a world of sinners revealed; <br><b>B</b>lessed be the dear Son of God; <br><b>O</b>nly by His stripes we are healed."
+    },
+    {
+      "label": "1C",
+      "num": 1,
+      "html": "<b>1</b><br><b>T</b>ho’ I’ve wandered far from His fold, <br><b>B</b>ringing to my heart pain and woe, <br><b>W</b>ash me in the blood of the Lamb, <br><b>A</b>nd I shall be whiter than snow. "
+    },
+    {
+      "label": "1C",
+      "num": 1,
+      "html": "<b>1</b><br><b>W</b>hiter than the snow, Whiter than the snow; <br><b>W</b>ash me in the blood of the Lamb, <br><b>A</b>nd I shall be whiter than snow."
+    },
+    {
+      "label": "2",
+      "num": 2,
+      "html": "2<br><b>T</b>horny was the crown that He wore, <br><b>A</b>nd the cross His body o’ercame; <br><b>G</b>rievous were the sorrows He bore, <br><b>B</b>ut He suffered thus not in vain."
+    },
+    {
+      "label": "2C",
+      "num": 2,
+      "html": "<b>2</b><br><b>M</b>ay I to that fountain be led, <br><b>M</b>ade to cleanse my sins here below; <br><b>W</b>ash me in the blood that He shed, <br><b>A</b>nd I shall be whiter than snow. "
+    },
+    {
+      "label": "2C",
+      "num": 2,
+      "html": "<b>2</b><br><b>W</b>hiter than the snow, Whiter than the snow; <br><b>W</b>ash me in the blood of the Lamb, <br><b>A</b>nd I shall be whiter than snow."
+    },
+    {
+      "label": "3",
+      "num": 3,
+      "html": "3<br><b>F</b>ather, I have wandered from Thee, <br><b>O</b>ften has my heart gone astray; <br><b>C</b>rimson do my sins seem to me- <br><b>W</b>ater cannot wash them away."
+    },
+    {
+      "label": "3C",
+      "num": 3,
+      "html": "<b>3</b><br><b>J</b>esus, to that fountain of Thine, <br><b>L</b>eaning on Thy promise, I go; <br><b>C</b>leanse me by Thy washing divine, <br><b>A</b>nd I shall be whiter than snow. "
+    },
+    {
+      "label": "3C",
+      "num": 3,
+      "html": "<b>3</b><br><b>W</b>hiter than the snow, Whiter than the snow; <br><b>W</b>ash me in the blood of the Lamb, <br><b>A</b>nd I shall be whiter than snow."
+    }
+  ]
+}

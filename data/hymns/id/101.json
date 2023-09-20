@@ -1,0 +1,48 @@
+{
+  "lang": "id",
+  "num": "101",
+  "oldnum": "101",
+  "title": "Hanya Cinta Yesus",
+  "verses": [
+    {
+      "label": "1",
+      "num": 1,
+      "html": "1<br><b>K</b>asihan orang berdosa, <br><b>d</b>urhaka amat bodoh! <br><b>H</b>ati sombong dan berkata: <br>“<b>K</b>u tak kancinta Yesus, "
+    },
+    {
+      "label": "1C",
+      "num": 1,
+      "html": "<b>1</b><br><b>H</b>anya cinta diriku, <br><b>k</b>u takkan cinta Yesus.” <br><b>H</b>ati sombong dan berkata: <br>“<b>K</b>u takkan cinta Yesus, "
+    },
+    {
+      "label": "2",
+      "num": 2,
+      "html": "2<br><b>S</b>ungguh heran, percaya Dia, <br><b>d</b>osaku diampuni! <br><b>T</b>ergerak hati berbisik: <br>“<b>K</b>u juga cinta Yesus, "
+    },
+    {
+      "label": "2C",
+      "num": 2,
+      "html": "<b>2</b><br><b>W</b>alau cinta diriku, <br><b>k</b>u juga cinta Yesus.” <br><b>T</b>ergerak hati berbisik: <br>“<b>K</b>u juga cinta Yesus, "
+    },
+    {
+      "label": "3",
+      "num": 3,
+      "html": "3<br><b>S</b>ungguh besar kasih Tuhan, <br><b>m</b>enghibur dan bantuku! <br><b>T</b>erharu hati berbisik: <br>“<b>K</b>u lebih cinta Yesus, "
+    },
+    {
+      "label": "3C",
+      "num": 3,
+      "html": "<b>3</b><br><b>K</b>urang cinta diriku, <br><b>k</b>u lebih cinta Yesus.” <br><b>T</b>erharu hati berbisik: <br>“<b>K</b>u lebih cinta Yesus, "
+    },
+    {
+      "label": "4",
+      "num": 4,
+      "html": "4<br><b>S</b>ungguh setia kasih Tuhan, <br><b>b</b>ri Roh Kudus pimpinku! <br><b>H</b>ati hancur dan berkata: <br>“<b>K</b>u hanya cinta Yesus, "
+    },
+    {
+      "label": "4C",
+      "num": 4,
+      "html": "<b>4</b><br><b>T</b>idak cinta diriku, <br><b>k</b>u hanya cinta Yesus.” <br><b>H</b>ati hancur dan berkata: <br>“<b>K</b>u hanya cinta Yesus, "
+    }
+  ]
+}

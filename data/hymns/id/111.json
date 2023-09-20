@@ -1,0 +1,38 @@
+{
+    "lang": "id",
+    "num": "111",
+    "oldnum": "111",
+    "title": "Ikut Juruselamat",
+    "verses": [
+        {
+            "label": "1",
+            "num": 1,
+            "html": "1<br><b>B</b>angun, semua hamba dosa! <br><b>B</b>erapa banyak pendritaanmu? <br><b>L</b>ihat, Kristus juru slamat, <br><b>t</b>lah menanggung dosa manusia. "
+        },
+		{
+			"label": "1C",
+			"num": 1,
+			"html": "<b>1</b><br><b>B</b>angun, bangun, semua hamba dosa! <br><b>B</b>angun, pikul salibmu sendiri, <br><b>m</b>elawan iblis ikut Tuhanku. "
+		},
+        {
+            "label": "2",
+            "num": 2,
+            "html": "2<br><b>B</b>angun, semua hamba dosa! <br><b>K</b>au tlah tersesat di jalan gelap. <br><b>L</b>ihat, Kristus Trang yang benar, <br><b>t</b>lah tunjukkan jalan ke surga. "
+        },
+		{
+			"label": "2C",
+			"num": 2,
+			"html": "<b>2</b><br><b>B</b>angun, bangun, semua hamba dosa! <br><b>B</b>angun, pikul salibmu sendiri, <br><b>m</b>elawan iblis ikut Tuhanku. "
+		},
+        {
+            "label": "3",
+            "num": 3,
+            "html": "3<br><b>B</b>angun, semua hamba dosa! <br><b>K</b>au tlah mengikuti jejak Kristus. <br><b>L</b>ihat, surga sudah datang, <br><b>m</b>ari kita bersukaria. "
+        },
+		{
+			"label": "3C",
+			"num": 3,
+			"html": "<b>3</b><br><b>B</b>angun, bangun, semua hamba dosa! <br><b>B</b>angun, pikul salibmu sendiri, <br><b>m</b>elawan iblis ikut Tuhanku. "
+		}
+    ]
+}

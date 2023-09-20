@@ -1,0 +1,38 @@
+{
+  "lang": "id",
+  "num": "19",
+  "oldnum": "19",
+  "title": "Hosana",
+  "verses": [
+    {
+      "label": "1",
+      "num": 1,
+      "html": "1<br><b>M</b>ari bersorak, <br><b>p</b>uji namaNya <br><b>S</b>emua umat Tuhan <br><b>d</b>an putri Sion <br><b>Y</b>esus Raja Damai <br><b>d</b>an Juru Slamat <br><b>N</b>aik kledai muda, <br><b>a</b>matlah mulia. "
+    },
+    {
+      "label": "1C",
+      "num": 1,
+      "html": "<b>1</b><br><b>M</b>a</b>ri bersorak, <br><b>p</b>uji namaNya <br><b>S</b>emua umat Tuhan <br><b>d</b>an putri Sion "
+    },
+    {
+      "label": "2",
+      "num": 2,
+      "html": "2<br><b>B</b>erkat berlimpah, <br><b>b</b>agi umatNya <br><b>H</b>osana, Hosana, <br><b>b</b>agi anak Daud. <br><b>N</b>egri bahagia <br><b>y</b>ang dijanjikan <br><b>K</b>ini telah tiba, <br><b>k</b>ekal tak ubah. "
+    },
+    {
+      "label": "2C",
+      "num": 2,
+      "html": "<b>2</b><br><b>B</b>erkat berlimpah, <br><b>b</b>agi umatNya <br><b>H</b>osana, Hosana, <br><b>b</b>agi anak Daud. "
+    },
+    {
+      "label": "3",
+      "num": 3,
+      "html": "3<br><b>M</b>ari menyambut, <br><b>R</b>aja yang Mulia <br><b>H</b>osana, Hosana, <br><b>b</b>agi anak Daud. <br><b>T</b>akhta kemuliaan <br><b>b</b>agi sang Raja <br><b>D</b>amai sejahtera, <br><b>b</b>agi umatNya."
+    },
+    {
+      "label": "3C",
+      "num": 3,
+      "html": "<b>3</b><br><b>M</b>ari menyambut, <br><b>R</b>aja yang Mulia <br><b>H</b>osana, Hosana, <br><b>b</b>agi anak Daud. "
+    }
+  ]
+}

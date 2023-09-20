@@ -1,0 +1,27 @@
+{
+  "lang": "en",
+  "num": "222",
+  "title": "Jesus, I Live to Thee",
+  "verses": [
+    {
+      "label": "1",
+      "num": 1,
+      "html": "1<br><b>J</b>esus, I live to Thee, <br><b>T</b>he loveliest and best; <br><b>M</b>y life in Thee, Thy life in me, <br><b>I</b>n Thy blest love I rest. "
+    },
+    {
+      "label": "2",
+      "num": 2,
+      "html": "2<br><b>J</b>esus, I die to Thee, <br><b>W</b>henever death shall come; <br><b>T</b>o die in Thee is life to me <br><b>I</b>n my eternal home. "
+    },
+    {
+      "label": "3",
+      "num": 3,
+      "html": "3<br><b>W</b>hether to live or die, <br><b>I</b> know not which is best; <br><b>T</b>o live in Thee is bliss to me, <br><b>T</b>o die is endless rest. "
+    },
+    {
+      "label": "4",
+      "num": 4,
+      "html": "4<br><b>L</b>iving or dying, Lord, <br><b>I</b> ask but to be Thine; <br><b>M</b>y life in Thee, Thy life in me, <br><b>M</b>akes heav’n forever mine. "
+    }
+  ]
+}

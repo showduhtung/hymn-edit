@@ -1,0 +1,37 @@
+{
+  "lang": "en",
+  "num": "217",
+  "title": "Come, Thou Fount of Every Blessing",
+  "verses": [
+    {
+      "label": "1",
+      "num": 1,
+      "html": "1<br><b>C</b>ome, Thou Fount of ev’ry blessing, <br><b>T</b>une my heart to sing Thy grace; <br><b>S</b>treams of mercy, never ceasing, <br><b>C</b>all for songs of loudest praise."
+    },
+    {
+      "label": "1C",
+      "num": 1,
+      "html": "<b>1</b><br><b>T</b>each me some melodious sonnet, <br><b>S</b>ung by flaming tongues above; <br><b>P</b>raise the mount— I’m fixed upon it— <br><b>M</b>ount of Thy redeeming love. "
+    },
+    {
+      "label": "2",
+      "num": 2,
+      "html": "2<br><b>H</b>ere I raise mine Ebenezer; <br><b>H</b>ither by Thy help I’m come; <br><b>A</b>nd I hope, by Thy good pleasure, <br><b>S</b>afely to arrive at home."
+    },
+    {
+      "label": "2C",
+      "num": 2,
+      "html": "<b>2</b><br><b>J</b>esus sought me when a stranger, <br><b>W</b>and’ring from the fold of God; <br><b>H</b>e, to rescue me from danger, <br><b>B</b>ought me with His precious blood. "
+    },
+    {
+      "label": "3",
+      "num": 3,
+      "html": "3<br><b>O</b> to grace how great a debtor, <br><b>D</b>aily I’m constrained to be! <br><b>L</b>et Thy goodness, as a fetter, <br><b>B</b>ind my wand’ring heart to Thee;"
+    },
+    {
+      "label": "3C",
+      "num": 3,
+      "html": "<b>3</b><br><b>P</b>rone to wander, Lord, I feel it, <br><b>P</b>rone to leave the God I love; <br><b>H</b>ere’s my heart, O take and seal it— <br><b>S</b>eal it for Thy courts above. "
+    }
+  ]
+}

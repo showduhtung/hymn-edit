@@ -1,0 +1,37 @@
+{
+  "lang": "en",
+  "num": "489",
+  "title": "In My Heart There Rings a Melody",
+  "verses": [
+    {
+      "label": "1",
+      "num": 1,
+      "html": "1<br><b>I</b> have a song that Jesus gave me, <br><b>I</b>t was sent from heav’n above; <br><b>T</b>here never was a sweeter melody,’Tis a melody of love. "
+    },
+    {
+      "label": "1C",
+      "num": 1,
+      "html": "<b>1</b><br><b>I</b>n my heart there rings a melody, <br><b>T</b>here rings a melody with heaven’s harmony; <br><b>I</b>n my heart there rings a melody; <br><b>T</b>here rings a melody of love."
+    },
+    {
+      "label": "2",
+      "num": 2,
+      "html": "2<br><b>I</b> love the Christ who died on Calv’ry, <br><b>F</b>or He washed my sins away; <br><b>H</b>e put within my heart a melody, <br><b>A</b>nd I know it’s there to stay. "
+    },
+    {
+      "label": "2C",
+      "num": 2,
+      "html": "<b>2</b><br><b>I</b>n my heart there rings a melody, <br><b>T</b>here rings a melody with heaven’s harmony; <br><b>I</b>n my heart there rings a melody; <br><b>T</b>here rings a melody of love."
+    },
+    {
+      "label": "3",
+      "num": 3,
+      "html": "3<br>’Twill be my endless theme in glory, <br><b>W</b>ith the angels I will sing;’Twill be a song with glorious harmony, <br><b>W</b>hen the courts of heaven ring. "
+    },
+    {
+      "label": "3C",
+      "num": 3,
+      "html": "<b>3</b><br><b>I</b>n my heart there rings a melody, <br><b>T</b>here rings a melody with heaven’s harmony; <br><b>I</b>n my heart there rings a melody; <br><b>T</b>here rings a melody of love."
+    }
+  ]
+}

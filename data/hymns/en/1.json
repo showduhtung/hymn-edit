@@ -1,0 +1,22 @@
+{
+  "lang": "en",
+  "num": "1",
+  "title": "Holy, Holy, Holy",
+  "verses": [
+    {
+      "label": "1",
+      "num": 1,
+      "html": "1<br><b>H</b>oly, holy, holy! Lord God Almighty! <br><b>E</b>arly in the morning <br><b>o</b>ur song shall rise to Thee; <br><b>H</b>oly, holy, holy, <br><b>m</b>erciful and mighty! <br><b>G</b>od over all who rules eternity. "
+    },
+    {
+      "label": "2",
+      "num": 2,
+      "html": "2<br><b>H</b>oly, holy, holy! All the saints adore Thee, <br><b>C</b>asting down their golden crowns <br><b>a</b>round the glassy sea; <br><b>C</b>herubim and seraphim <br><b>f</b>alling down before Thee, <br><b>W</b>ho wert, and art, and evermore shalt be. "
+    },
+    {
+      "label": "3",
+      "num": 3,
+      "html": "3<br><b>H</b>oly, holy, holy! Though the darkness hide Thee, <br><b>T</b>hough the eye of sinful man <br><b>T</b>hy glory may not see; <br><b>O</b>nly Thou art holy; <br><b>t</b>here is none beside Thee, <br><b>P</b>erfect in power, in love, and purity. "
+    }
+  ]
+}

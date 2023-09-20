@@ -1,0 +1,17 @@
+{
+  "lang": "en",
+  "num": "117",
+  "title": "Hymn of Offering",
+  "verses": [
+    {
+      "label": "1",
+      "num": 1,
+      "html": "1<br><b>H</b>allelujah, Amen! <br><b>G</b>ifts we bring to Thee alone; <br><b>L</b>ord, we adore Thee, Kneeling now, <br><b>h</b>ere before Thy throne; <br><b>O</b>h, wondrous Saviour, Who will reign forever! "
+    },
+    {
+      "label": "2",
+      "num": 2,
+      "html": "2<br><b>H</b>allelujah, Amen! <br><b>T</b>o the Holy Lord we sing! <br><b>A</b>ll comes from Thee, O Loving Father, <br><b>l</b>et praises ring! <br><b>O</b>h, wondrous Saviour, Who will reign forever! "
+    }
+  ]
+}

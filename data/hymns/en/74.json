@@ -1,0 +1,37 @@
+{
+  "lang": "en",
+  "num": "74",
+  "title": "Hark! the Herald Angels Sing",
+  "verses": [
+    {
+      "label": "1",
+      "num": 1,
+      "html": "1<br><b>H</b>ark! the herald angels sing, “Glory to the newborn King; <br><b>P</b>eace on earth, and mercy mild; <br><b>G</b>od and sinners reconciled.”"
+    },
+    {
+      "label": "1C",
+      "num": 1,
+      "html": "<b>1</b><br><b>J</b>oyful, all ye nations rise, <br><b>J</b>oin the triumph of the skies; <br><b>W</b>ith th’angelic host proclaim, “Christ is born in Bethlehem!” <br><b>H</b>ark! the herald angels sing, “Glory to the newborn King!”"
+    },
+    {
+      "label": "2",
+      "num": 2,
+      "html": "2<br><b>C</b>hrist, by highest heav’n adored, <br><b>C</b>hrist, the everlasting Lord: <br><b>L</b>ate in time, behold Him come, <br><b>O</b>ffspring of a virgin’s womb."
+    },
+    {
+      "label": "2C",
+      "num": 2,
+      "html": "<b>2</b><br><b>V</b>eiled in flesh the Godhead see, <br><b>H</b>ail th’incarnate Deity! <br><b>P</b>leased as man with men to dwell, <br><b>J</b>esus our Immanuel. <br><b>H</b>ark! the herald angels sing, “Glory to the newborn King!”"
+    },
+    {
+      "label": "3",
+      "num": 3,
+      "html": "3<br><b>H</b>ail the heav’n-born Prince of Peace! <br><b>H</b>ail the Sun of Righteousness! <br><b>L</b>ight and life to all He brings, <br><b>R</b>is’n with healing in His wings."
+    },
+    {
+      "label": "3C",
+      "num": 3,
+      "html": "<b>3</b><br><b>M</b>ild He lays His glory by, <br><b>B</b>orn that man no more may die, <br><b>B</b>orn to raise the sons of earth, <br><b>B</b>orn to give them second birth.<br><b>H</b>ark! the herald angels sing, “Glory to the newborn King!”"
+    }
+  ]
+}

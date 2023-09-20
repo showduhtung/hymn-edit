@@ -1,0 +1,27 @@
+{
+  "lang": "en",
+  "num": "80",
+  "title": "The Strife Is O'er",
+  "verses": [
+    {
+      "label": "1",
+      "num": 1,
+      "html": "1<br><b>A</b>lleluia! Alleluia! Alleluia! <br><b>T</b>he strife is o’er the battle done; <br><b>T</b>he victory of life is won; <br><b>T</b>he song of triumph has begun: <br><b>A</b>lleluia! "
+    },
+    {
+      "label": "2",
+      "num": 2,
+      "html": "2<br><b>T</b>he powers of death have done their worst, <br><b>B</b>ut Christ their legions hath dispersed; <br><b>L</b>et shouts of holy joy outburst: <br><b>A</b>lleluia! "
+    },
+    {
+      "label": "3",
+      "num": 3,
+      "html": "3<br><b>T</b>he three sad days have quickly sped, <br><b>H</b>e rises glorious from the dead; <br><b>A</b>ll glory to our risen Head: <br><b>A</b>lleluia! "
+    },
+    {
+      "label": "4",
+      "num": 4,
+      "html": "4<br><b>L</b>ord, by the stripes which wounded Thee, <br><b>F</b>rom death’s dread sting Thy servants free, <br><b>T</b>hat we may live and sing to Thee: <br><b>A</b>lleluia!\n   "
+    }
+  ]
+}

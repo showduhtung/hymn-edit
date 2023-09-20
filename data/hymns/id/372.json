@@ -1,0 +1,38 @@
+{
+    "lang": "id",
+    "num": "372",
+    "oldnum": "472",
+    "title": "Dengarlah Doa Kami, Ya Tuhan!",
+    "verses": [
+        {
+            "label": "1",
+            "num": 1,
+            "html": "1<br><b>D</b>engar doa kami, ya Tuhan, <br><b>j</b>uga pengakuan kami; <br><b>K</b>au janjikan hujan berkat, <br><b>b</b>rilah kami, ya Tuhan! "
+        },
+		{
+			"label": "1C",
+			"num": 1,
+			"html": "<b>1</b><br><b>B</b>ri hujan berkat <br><b>y</b>ang menyegarkan; <br><b>B</b>rilah hujan berkat, <br><b>B</b>rilah, ya Tuhan! "
+		},
+        {
+            "label": "2",
+            "num": 2,
+            "html": "2<br><b>K</b>ami memanggilMu, Tuhan, <br><b>k</b>arna tahu kasihMu; <br><b>T</b>urunkanlah hujan berkat, <br><b>b</b>rilah kami, ya Tuhan! "
+        },
+		{
+			"label": "2C",
+			"num": 2,
+			"html": "<b>2</b><br><b>B</b>ri hujan berkat <br><b>y</b>ang menyegarkan; <br><b>B</b>rilah hujan berkat, <br><b>B</b>rilah, ya Tuhan! "
+		},
+        {
+            "label": "3",
+            "num": 3,
+            "html": "3<br><b>S</b>bab FirmanMu takkan gagal, <br><b>g</b>enapilah janjiMu; <br><b>A</b>gar iman kami teguh, <br><b>b</b>ri kami hujan berkat! "
+        },
+		{
+			"label": "3C",
+			"num": 3,
+			"html": "<b>3</b><br><b>B</b>ri hujan berkat <br><b>y</b>ang menyegarkan; <br><b>B</b>rilah hujan berkat, <br><b>B</b>rilah, ya Tuhan! "
+		}
+    ]
+}

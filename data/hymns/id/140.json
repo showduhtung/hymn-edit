@@ -1,0 +1,38 @@
+{
+    "lang": "id",
+    "num": "140",
+    "oldnum": "140",
+    "title": "Almasih Tahu Dukamu",
+    "verses": [
+        {
+            "label": "1",
+            "num": 1,
+            "html": "1<br><b>A</b>lmasih tahu dukamu, <br><b>l</b>ihat air matamu, <br><b>D</b>ia berkata, “Jangan sedih, <br><b>A</b>ku besertamu.” "
+        },
+		{
+			"label": "1C",
+			"num": 1,
+			"html": "<b>1</b><br><b>H</b>idup dunia tak menentu, <br><b>b</b>ahya kadang tiba; <br><b>A</b>lmasih tahu dukamu, <br><b>D</b>ia pasti bantumu. "
+		},
+        {
+            "label": "2",
+            "num": 2,
+            "html": "2<br><b>A</b>lmasih tahu dukamu, <br><b>t</b>au kesusahanmu, <br><b>B</b>ila kau sandar padaNya, <br><b>b</b>eban brat tiadalah. "
+        },
+		{
+			"label": "2C",
+			"num": 2,
+			"html": "<b>2</b><br><b>H</b>idup dunia tak menentu, <br><b>b</b>ahya kadang tiba; <br><b>A</b>lmasih tahu dukamu, <br><b>D</b>ia pasti bantumu. "
+		},
+        {
+            "label": "3",
+            "num": 3,
+            "html": "3<br><b>A</b>lmasih tahu dukamu, <br><b>t</b>au kebutuhanmu, <br><b>D</b>ia 'kan cukupi hidupmu, <br><b>s</b>lalu menjagamu. "
+        },
+		{
+			"label": "3C",
+			"num": 3,
+			"html": "<b>3</b><br><b>H</b>idup dunia tak menentu, <br><b>b</b>ahya kadang tiba; <br><b>A</b>lmasih tahu dukamu, <br><b>D</b>ia pasti bantumu. "
+		}
+    ]
+}

@@ -1,0 +1,17 @@
+{
+  "lang": "en",
+  "num": "525",
+  "title": "The Lord's Prayer",
+  "verses": [
+    {
+      "label": "1",
+      "num": 1,
+      "html": "1<br><b>O</b>ur Father, which art in heaven, <br><b>H</b>allowed be Thy name. <br><b>T</b>hy kingdom come, <br><b>T</b>hy will be done on earth as it is in heaven.<br><b>G</b>ive us this day our daily bread, and <br><b>f</b>orgive us our debts as we forgive our debtors."
+    },
+    {
+      "label": "1C",
+      "num": 1,
+      "html": "<b>1</b><br><b>A</b>nd lead us not into temptation, <br><b>B</b>ut deliver us from evil, <br><b>F</b>or Thine is the Kingdom <br><b>a</b>nd the Power and the Glory, <br><b>F</b>orever. Amen. "
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+    "lang": "id",
+    "num": "377",
+    "oldnum": "377",
+    "title": "Tuhan Kau Mengingatku",
+    "verses": [
+        {
+            "label": "1",
+            "num": 1,
+            "html": "1<br><b>K</b>ala ku temui cobaan, <br><b>k</b>ala jalan hidup sukar, <br><b>S</b>atu hal yang paling manis, <br><b>T</b>uhan, Kau ingatku! "
+        },
+		{
+			"label": "1C",
+			"num": 1,
+			"html": "<b>1</b><br><b>T</b>uhan, Kau ingatku, <br><b>T</b>uhan, Kau ingatku, <br><b>K</b>u tak takut sbab Kau dekat, <br><b>T</b>uhan, Kau ingatku. "
+		},
+        {
+            "label": "2",
+            "num": 2,
+            "html": "2<br><b>H</b>idup dunia penuh kuatir, <br><b>b</b>ayangi jiwa ragaku; <br><b>W</b>alau cemas di hatiku, <br><b>T</b>uhan, Kau ingatku! "
+        },
+		{
+			"label": "2C",
+			"num": 2,
+			"html": "<b>2</b><br><b>T</b>uhan, Kau ingatku, <br><b>T</b>uhan, Kau ingatku, <br><b>K</b>u tak takut sbab Kau dekat, <br><b>T</b>uhan, Kau ingatku. "
+		},
+        {
+            "label": "3",
+            "num": 3,
+            "html": "3<br><b>S</b>aat senang atau susah, <br><b>s</b>aat suka maupun duka, <br><b>C</b>ukuplah bila kutahu, <br><b>T</b>uhan, Kau ingatku! "
+        },
+		{
+			"label": "3C",
+			"num": 3,
+			"html": "<b>3</b><br><b>T</b>uhan, Kau ingatku, <br><b>T</b>uhan, Kau ingatku, <br><b>K</b>u tak takut sbab Kau dekat, <br><b>T</b>uhan, Kau ingatku. "
+		}
+    ]
+}

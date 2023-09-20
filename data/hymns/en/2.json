@@ -1,0 +1,27 @@
+{
+  "lang": "en",
+  "num": "2",
+  "title": "Hallelujah, Praise the Father",
+  "verses": [
+    {
+      "label": "1",
+      "num": 1,
+      "html": "1<br><b>H</b>allelujah, Praise the Father! <br><b>A</b>men, Amen, Hallelujah! <br><b>L</b>ift your voice, praise the merciful Father, <br><b>O</b> sing: “Hallelujah!” "
+    },
+    {
+      "label": "2",
+      "num": 2,
+      "html": "2<br><b>H</b>allelujah, Praise to Jesus! <br><b>A</b>men, Amen, Hallelujah! <br><b>L</b>ift your voice, praise our Saviour Jesus, <br><b>O</b> sing: “Hallelujah!” "
+    },
+    {
+      "label": "3",
+      "num": 3,
+      "html": "3<br><b>H</b>allelujah, Praise the Spirit! <br><b>A</b>men, Amen, Hallelujah! <br><b>L</b>ift your voice, praise the Holy Spirit, <br><b>O</b> sing: “Hallelujah!” "
+    },
+    {
+      "label": "4",
+      "num": 4,
+      "html": "4<br><b>G</b>lory, glory, Hallelujah! <br><b>G</b>lory, glory, Hallelujah! <br><b>L</b>ift your voice, and sing His praises,\n“Glory, endless glory!” "
+    }
+  ]
+}

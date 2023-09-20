@@ -1,0 +1,38 @@
+{
+    "lang": "id",
+    "num": "394",
+    "oldnum": "394",
+    "title": "Terima Kasih Pada Tuhan",
+    "verses": [
+        {
+            "label": "1",
+            "num": 1,
+            "html": "1<br><b>T</b>rima kasih, O Tuhan ku, <br><b>a</b>tas Sang Penebusku; <br><b>A</b>tas berkat yang berlimpah, <br><b>a</b>tas penyertaanMu! "
+        },
+		{
+			"label": "1C",
+			"num": 1,
+			"html": "<b>1</b><br><b>T</b>rima kasih atas masa <br><b>y</b>ang indah maupun susah! <br><b>T</b>uhan hapus air mataku, <br><b>b</b>ri damai di jiwaku! "
+		},
+        {
+            "label": "2",
+            "num": 2,
+            "html": "2<br><b>T</b>rima kasih, O Tuhan ku, <br><b>t</b>uk semua kehendakMu! <br><b>A</b>tas badai yang ku rasa, <br><b>d</b>an semua yang tersedia! "
+        },
+		{
+			"label": "2C",
+			"num": 2,
+			"html": "<b>2</b><br><b>A</b>tas semua penghiburan <br><b>s</b>aat ku putus asa! <br><b>A</b>tas nugrah tak ternilai, <br><b>d</b>an kasih yang terbesar! "
+		},
+        {
+            "label": "3",
+            "num": 3,
+            "html": "3<br><b>T</b>rima kasih atas bunga <br><b>w</b>alaupun penuh duri! <br><b>A</b>tas rumah yang pnuh kasih <br><b>d</b>an pengharapan kekal! "
+        },
+		{
+			"label": "3C",
+			"num": 3,
+			"html": "<b>3</b><br><b>A</b>tas suka maupun duka <br><b>d</b>an kedamaian surga! <br><b>H</b>ari esok pnuh harapan, <br><b>t</b>rima kasih slamanya! "
+		}
+    ]
+}

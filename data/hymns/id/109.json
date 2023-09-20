@@ -1,0 +1,48 @@
+{
+    "lang": "id",
+    "num": "109",
+    "oldnum": "109",
+    "title": "Turut Jejak Tuhan",
+    "verses": [
+        {
+            "label": "1",
+            "num": 1,
+            "html": "1<br><b>K</b>u dengar Tuhan panggilku, <br><b>k</b>u dengar Tuhan panggilku, <br><b>k</b>u dengar Tuhan panggilku : <br>“<b>P</b>ikul salib, salib ikutKu”. "
+        },
+		{
+			"label": "1C",
+			"num": 1,
+			"html": "<b>1</b><br><b>K</b>u mau lalui Getsemani, <br><b>k</b>u mau lalui Getsemani, <br><b>K</b>u mau lalui Getsemani, <br><b>k</b>u mau ikut, ikut denganNya. "
+		},
+        {
+            "label": "2",
+            "num": 2,
+            "html": "2<br><b>K</b>u mau disidang denganNya, <br><b>k</b>u mau disidang denganNya, <br><b>k</b>u mau disidang denganNya, <br><b>k</b>u mau dengan Tuhan disidang. "
+        },
+		{
+			"label": "2C",
+			"num": 2,
+			"html": "<b>2</b><br><b>K</b>u mau disalib denganNya, <br><b>k</b>u mau disalib denganNya, <br><b>K</b>u mau disalib denganNya, <br><b>k</b>u mau ikut, ikut denganNya. "
+		},
+        {
+            "label": "3",
+            "num": 3,
+            "html": "3<br><b>K</b>u mau dikubur denganNya, <br><b>k</b>u mau dikubur denganNya, <br><b>k</b>u mau dikubur denganNya, <br><b>k</b>u mau dengan Tuhan dikubur. "
+        },
+		{
+			"label": "3C",
+			"num": 3,
+			"html": "<b>3</b><br><br><b>K</b>u mau bangkit dengan Tuhan, <br><b>k</b>u mau bangkit dengan Tuhan, <br><b>K</b>u mau bangkit dengan Tuhan, <br><b>k</b>u mau bangkit bangkit denganNya. "
+		},
+        {
+            "label": "4",
+            "num": 4,
+            "html": "4<br><b>K</b>u mau diangkat denganNya, <br><b>k</b>u mau diangkat denganNya, <br><b>k</b>u mau diangkat denganNya, <br><b>k</b>u mau dengan Tuhan ke surga. "
+        },
+		{
+			"label": "4C",
+			"num": 4,
+			"html": "<b>4</b><br><b>T</b>uhan briku mulia kekal, <br><b>T</b>uhan briku mulia kekal, <br><b>T</b>uhan briku mulia kekal, <br><b>T</b>uhan briku mulia yang kekal. "
+		}
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "lang": "id",
+    "num": "125",
+    "oldnum": "125",
+    "title": "Kidung Perpisahan",
+    "verses": [
+        {
+            "label": "1",
+            "num": 1,
+            "html": "1<br><b>T</b>uhan bri masa terindah, <br><b>b</b>erkumpul blajar firman, <br><b>S</b>atu hati saling kasih, <br><b>t</b>uruti kehendakNya, <br><b>D</b>alam kasihNya bersatu, <br><b>m</b>embangun tubuh Tuhan; "
+        },
+		{
+			"label": "1C",
+			"num": 1,
+			"html": "<b>1</b><br><b>W</b>alaupun kini berpisah, <br><b>j</b>angan bersedih hati; <br><b>W</b>alaupun jauh terpisah, <br><b>h</b>ati tetap bersatu. "
+		},
+        {
+            "label": "2",
+            "num": 2,
+            "html": "2<br><b>R</b>oh Kudus akan meminpin, <br><b>k</b>e dalam kebenaran, <br><b>S</b>atu iman sandar Tuhan, <br><b>m</b>enjadi laskar setia, <br><b>B</b>erjuang britakan Injil, <br><b>m</b>enangkan banyak jiwa; "
+        },
+		{
+			"label": "2C",
+			"num": 2,
+			"html": "<b>2</b><br><b>M</b>arilah saling doakan, <br><b>b</b>ersekutu dalam roh; <br><b>B</b>erbuah baik muliakan Dia, <br><b>s</b>ampai kumpul di surga. "
+		}
+    ]
+}

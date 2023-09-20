@@ -1,0 +1,38 @@
+{
+    "lang": "id",
+    "num": "151",
+    "oldnum": "151",
+    "title": "Tuhan Menjagamu",
+    "verses": [
+        {
+            "label": "1",
+            "num": 1,
+            "html": "1<br><b>J</b>angan takut sgala bahya, <br><b>T</b>uhan menjagamu; <br><b>B</b>ernaung di bawah sayapNya, <br><b>T</b>uhan menjagamu. "
+        },
+		{
+			"label": "1C",
+			"num": 1,
+			"html": "<b>1</b><br><b>T</b>uhan menjagamu, <br><b>d</b>i manapun menjagamu; <br><b>T</b>uhan menjagamu, <br><b>p</b>asti menjagamu;"
+		},
+        {
+            "label": "2",
+            "num": 2,
+            "html": "2<br><b>B</b>ila lelah putus asa, <br><b>T</b>uhan menjagamu; <br><b>B</b>ila bahaya menimpa, <br><b>T</b>uhan menjagamu. "
+        },
+				{
+			"label": "2C",
+			"num": 2,
+			"html": "<b>2</b><br><b>T</b>uhan menjagamu, <br><b>d</b>i manapun menjagamu; <br><b>T</b>uhan menjagamu, <br><b>p</b>asti menjagamu;"
+		},
+        {
+            "label": "3",
+            "num": 3,
+            "html": "3<br><b>J</b>angan takut sgala bahya, <br><b>T</b>uhan menjagamu; <br><b>K</b>au diuji, Dia bri jalan, <br><b>T</b>uhan menjagamu. "
+        },
+		{
+			"label": "3C",
+			"num": 3,
+			"html": "<b>3</b><br><b>T</b>uhan menjagamu, <br><b>d</b>i manapun menjagamu; <br><b>T</b>uhan menjagamu, <br><b>p</b>asti menjagamu;"
+		}
+    ]
+}

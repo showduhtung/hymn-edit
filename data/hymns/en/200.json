@@ -1,0 +1,47 @@
+{
+  "lang": "en",
+  "num": "200",
+  "title": "One Sweetly Solemn Thought",
+  "verses": [
+    {
+      "label": "1",
+      "num": 1,
+      "html": "1<br><b>O</b>ne sweetly solemn thought <br><b>C</b>omes to me o’er and o’er; <br><b>I</b>’m nearer home today, today, <br><b>T</b>han I have been before."
+    },
+    {
+      "label": "1C",
+      "num": 1,
+      "html": "<b>1</b><br><b>N</b>earer my home, <br><b>N</b>earer my home, <br><b>N</b>earer my home today, today, <br><b>T</b>han I have been before."
+    },
+    {
+      "label": "2",
+      "num": 2,
+      "html": "2<br><b>N</b>earer my Father’s house, <br><b>W</b>here many mansions be; <br><b>N</b>earer the great white throne today, <br><b>N</b>earer the crystal sea."
+    },
+    {
+      "label": "2C",
+      "num": 2,
+      "html": "<b>2</b><br><b>N</b>earer my home, <br><b>N</b>earer my home, <br><b>N</b>earer my home today, today, <br><b>T</b>han I have been before."
+    },
+    {
+      "label": "3",
+      "num": 3,
+      "html": "3<br><b>N</b>earer the bound of life, <br><b>W</b>here burdens are laid down; <br><b>N</b>earer to leave the cross today, <br><b>A</b>nd nearer to the crown."
+    },
+    {
+      "label": "3C",
+      "num": 3,
+      "html": "<b>3</b><br><b>N</b>earer my home, <br><b>N</b>earer my home, <br><b>N</b>earer my home today, today, <br><b>T</b>han I have been before."
+    },
+    {
+      "label": "4",
+      "num": 4,
+      "html": "4<br><b>B</b>e near me when my feet <br><b>A</b>re slipping o’er the brink; <br><b>F</b>or I am nearer home today, <br><b>P</b>erhaps, than now I think."
+    },
+    {
+      "label": "4C",
+      "num": 4,
+      "html": "<b>4</b><br><b>N</b>earer my home, <br><b>N</b>earer my home, <br><b>N</b>earer my home today, today, <br><b>T</b>han I have been before."
+    }
+  ]
+}
