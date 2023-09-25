@@ -1,5 +1,5 @@
-import { DragEvent } from "react";
-import { List, ListProps } from "@mui/joy";
+import type { DragEvent } from "react";
+import { List, type ListProps } from "@mui/joy";
 import { useToggle } from "@uidotdev/usehooks";
 import { withPreventDefaults } from "./utilities";
 

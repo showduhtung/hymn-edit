@@ -1,13 +1,14 @@
 import { useState } from "react";
 import { Box, Typography, Stack, Button } from "@mui/joy";
-import { useLocalStorage } from "@uidotdev/usehooks";
-import { FiDownload } from "react-icons/fi";
+import { useLocalStorage, useToggle } from "@uidotdev/usehooks";
+import { FiDownload, FiPlus } from "react-icons/fi";
 
 import { ListConfirmationDialog } from "./ListConfirmationDialog";
 import { downloadAsZip, readFileAsync } from "./utilities";
 import type { HymnType, LocalHymnsState } from "../../types";
 import { HymnListButton } from "./HymnListButton";
 import { DroppableList } from "./DroppableList";
+import { HymnListModal } from "./HymnListModal";
 
 const defaultState = {
   hymns: [] as HymnType[],
@@ -18,6 +19,7 @@ export const HymnList = () => {
   const [filesToBeConfirmed, setFilesToBeConfirmed] = useState<HymnType[]>([]);
   const [localState = defaultState, saveToLocalStorage] =
     useLocalStorage<LocalHymnsState>("editing-hymns");
+  const [isHymnListModalOpen, toggleHymnListModal] = useToggle(false);
 
   const { selectedHymnIdx, hymns } = localState;
   const selectedHymn = hymns.find((_, idx) => idx === selectedHymnIdx);
@@ -46,14 +48,18 @@ export const HymnList = () => {
     return () => setFilesToBeConfirmed([]);
   }
 
-  function handleConfirmFiles(selectedHymns: HymnType[]) {
+  function handleConfirmDraggedFiles(selectedHymns: HymnType[]) {
     setFilesToBeConfirmed([]);
     saveToLocalStorage({ hymns: selectedHymns, selectedHymnIdx: 0 });
   }
 
+  function handleImportedHymns(importedHymns: HymnType[]) {
+    toggleHymnListModal();
+    saveToLocalStorage({ hymns: importedHymns, selectedHymnIdx: 0 });
+  }
+
   function handleSelectHymn(hymnIdx: number) {
     return () => {
-      console.log("is this also running?");
       saveToLocalStorage({ ...localState, selectedHymnIdx: hymnIdx });
     };
   }
@@ -98,20 +104,29 @@ export const HymnList = () => {
           <Typography fontSize={24} sx={{ textDecoration: "underline" }}>
             Review Hymns
           </Typography>
-          <Button
-            variant="soft"
-            startDecorator={<FiDownload size="12" />}
-            disabled={!hymns.find((hymn) => hymn.status === "completed")}
-            onClick={handleDownloadHymn()}
-          >
-            Download
-          </Button>
+          <Box display="flex" gap="8px">
+            <Button
+              variant="soft"
+              startDecorator={<FiPlus size="12" />}
+              onClick={() => toggleHymnListModal()}
+            >
+              Import
+            </Button>
+            <Button
+              variant="soft"
+              startDecorator={<FiDownload size="12" />}
+              disabled={!hymns.find((hymn) => hymn.status === "completed")}
+              onClick={handleDownloadHymn()}
+            >
+              Download
+            </Button>
+          </Box>
         </Box>
 
         <Box>
           <Box px="12px">
             <Typography fontSize={12}>
-              Please drag JSON file(s) into this list
+              Please drag or import JSON file(s) into this list
             </Typography>
           </Box>
 
@@ -136,15 +151,22 @@ export const HymnList = () => {
         </Box>
       </Stack>
 
-      {/* need to use the ternary to force mount/unmount */}
+      {/* need to use ternary to force mount/unmount */}
       {filesToBeConfirmed.length > 0 && (
         <ListConfirmationDialog
           open
           data={combinedFiles}
           onClose={handleCloseDialog}
-          onConfirm={handleConfirmFiles}
+          onConfirm={handleConfirmDraggedFiles}
         />
       )}
+
+      <HymnListModal
+        onClose={() => toggleHymnListModal()}
+        open={isHymnListModalOpen}
+        onSubmit={handleImportedHymns}
+        initialHymns={hymns}
+      />
     </>
   );
 };

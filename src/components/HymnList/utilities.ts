@@ -1,6 +1,6 @@
-import { DragEvent } from "react";
+import type { DragEvent } from "react";
 import JSZip from "jszip";
-import { HymnType, VerseType } from "../../types";
+import type { HymnType, VerseType } from "../../types";
 
 export function withPreventDefaults(
   fn?: (e: DragEvent<HTMLUListElement>) => void

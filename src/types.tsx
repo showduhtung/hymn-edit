@@ -1,7 +1,19 @@
-export type HymnType = {
+type HymnMetadata = {
   lang: string;
   num: string;
   title: string;
+};
+
+type VerseMetadata = {
+  label: string;
+  num: number;
+};
+
+export type HymnFileType = HymnMetadata & {
+  verses: (VerseMetadata & { html: string })[];
+};
+
+export type HymnType = HymnMetadata & {
   verses: VerseType[];
   status: HymnStatus;
 };

@@ -1,4 +1,4 @@
-import { ChangeEvent, useState } from "react";
+import { type ChangeEvent, useState } from "react";
 import { Paper } from "@mui/material";
 import {
   Box,
@@ -11,7 +11,7 @@ import {
 } from "@mui/joy";
 import { FiCheck, FiRefreshCw, FiRotateCcw, FiSave } from "react-icons/fi";
 import { autofocusLastCharacter, joinByBreakLine } from "../utilities";
-import { HymnStatus } from "../../../types";
+import { type HymnStatus } from "../../../types";
 import { IconLegend } from "./IconLegend";
 import { Div } from "./Div";
 

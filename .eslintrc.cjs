@@ -22,5 +22,11 @@ module.exports = {
         caughtErrorsIgnorePattern: "^_",
       },
     ],
+    "@typescript-eslint/consistent-type-imports": [
+      "warn",
+      { prefer: "type-imports", fixStyle: "inline-type-imports" },
+    ],
+    "no-duplicate-imports": "error",
+    "no-console": "error",
   },
 };

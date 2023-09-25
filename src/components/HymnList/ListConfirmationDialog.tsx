@@ -11,8 +11,9 @@ import {
   DialogActions,
   DialogContent,
   DialogTitle,
+  type ModalProps,
 } from "@mui/joy";
-import { HymnType } from "../../types";
+import type { HymnType } from "../../types";
 
 type HymnList = HymnType & { checked: boolean };
 type ListConfirmationDialogProps = {
@@ -20,13 +21,14 @@ type ListConfirmationDialogProps = {
   data: HymnType[];
   onClose: (arg: boolean) => () => void;
   onConfirm: (arg: HymnType[]) => void;
-};
+} & Omit<ModalProps, "children">;
 
 export const ListConfirmationDialog = ({
   open,
   data,
   onClose,
   onConfirm,
+  ...props
 }: ListConfirmationDialogProps) => {
   const [list, setList] = useState<HymnList[]>(
     data.map((item) => ({ ...item, checked: true }))
@@ -57,7 +59,7 @@ export const ListConfirmationDialog = ({
   }
 
   return (
-    <Modal open={open} onClose={onClose(false)}>
+    <Modal open={open} onClose={onClose(false)} {...props}>
       <ModalDialog>
         <DialogTitle>Please select all files intended for review.</DialogTitle>
 
