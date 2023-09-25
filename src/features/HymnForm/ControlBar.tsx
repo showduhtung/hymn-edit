@@ -22,6 +22,33 @@ export const ControlBar = ({
     return () => onChange(idx);
   }
 
+  function renderButton(add: number) {
+    return (item: EditingVerseType, idx: number) => {
+      const [_, ...content] = splitByBreakLine(item.updatedHtml);
+      const [__, ...originalContent] = splitByBreakLine(item.html);
+
+      const numberOfChanges = content.reduce((acc, curr, idx) => {
+        if (curr !== originalContent[idx]) return acc + 1;
+        return acc;
+      }, 0);
+
+      return (
+        <Button
+          key={idx}
+          variant={idx + add === value ? "solid" : "soft"}
+          onClick={handleChange(idx + add)}
+          color="primary"
+          sx={(theme) => ({
+            backgroundColor: numberOfChanges > 0 ? saved : "",
+            color: value === idx ? "white" : theme.palette.primary[500],
+          })}
+        >
+          {item.label}
+        </Button>
+      );
+    };
+  }
+
   return (
     <Box display="flex" justifyContent="space-between">
       <Typography fontSize="24px">{title}</Typography>
@@ -31,50 +58,18 @@ export const ControlBar = ({
           sx={{ borderRadius: "md", display: "flex", gap: 2, p: 0.5 }}
         >
           <ButtonGroup variant="plain" spacing={0.5}>
-            {verses
-              .filter((_, idx) => idx < 11)
-              .map((item, idx) => {
-                const [_, ...content] = splitByBreakLine(item.updatedHtml);
-                const [__, ...originalContent] = splitByBreakLine(item.html);
-
-                const numberOfChanges = content.reduce((acc, curr, idx) => {
-                  if (curr !== originalContent[idx]) return acc + 1;
-                  return acc;
-                }, 0);
-
-                return (
-                  <Button
-                    key={idx}
-                    variant={idx === value ? "solid" : "soft"}
-                    onClick={handleChange(idx)}
-                    color="primary"
-                    sx={(theme) => ({
-                      backgroundColor: numberOfChanges > 0 ? saved : "",
-                      color:
-                        value === idx ? "white" : theme.palette.primary[500],
-                    })}
-                  >
-                    {item.label}
-                  </Button>
-                );
-              })}
+            {verses.filter((_, idx) => idx < 11).map(renderButton(0))}
           </ButtonGroup>
         </Sheet>
-        {secondRow.length ? (
-          <ButtonGroup variant="outlined">
-            {secondRow.map((item, idx) => (
-              <Button
-                key={idx}
-                variant={idx + 10 === value ? "solid" : "outlined"}
-                onClick={handleChange(idx + 10)}
-                color="primary"
-              >
-                {item.label}
-              </Button>
-            ))}
-          </ButtonGroup>
-        ) : (
-          <></>
+        {Boolean(secondRow.length) && (
+          <Sheet
+            variant="outlined"
+            sx={{ borderRadius: "md", display: "flex", gap: 2, p: 0.5 }}
+          >
+            <ButtonGroup variant="plain" spacing={0.5}>
+              {secondRow.map(renderButton(10))}
+            </ButtonGroup>
+          </Sheet>
         )}
       </Stack>
     </Box>
