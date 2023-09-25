@@ -187,7 +187,7 @@ export const IndividualVerseForm = ({
           onClick={handleResetLineText(-1)}
           endDecorator={<FiRotateCcw size="14" />}
         >
-          Undo all changes
+          Undo verse changes
         </Button>
       </Box>
     </>
