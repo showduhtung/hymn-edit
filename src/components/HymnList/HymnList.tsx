@@ -54,7 +54,7 @@ export const HymnList = () => {
   }
 
   function handleImportedHymns(importedHymns: HymnType[]) {
-    toggleHymnListModal();
+    toggleHymnListModal(false);
     saveToLocalStorage({ hymns: importedHymns, selectedHymnIdx: 0 });
   }
 

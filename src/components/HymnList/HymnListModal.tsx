@@ -25,6 +25,7 @@ type HymnListModalProps = Omit<ModalProps, "children" | "onSubmit"> & {
 export const HymnListModal = ({
   initialHymns,
   onSubmit,
+  onClose,
   ...props
 }: HymnListModalProps) => {
   const [selectedIdxs, setSelectedIdxs] = useState<number[]>([]);
@@ -78,17 +79,46 @@ export const HymnListModal = ({
     });
 
     onSubmit(selectedHymns);
+    resetState();
   }
 
-  const filteredHymns = hymnFiles.filter(({ num, title }) => {
-    if (!input) return true;
+  function handleClose(
+    event = {},
+    reason: "backdropClick" | "escapeKeyDown" | "closeClick"
+  ) {
+    if (reason !== "closeClick") return;
+    onClose?.(event, reason);
+    resetState();
+  }
+
+  function resetState() {
+    setSelectedIdxs([]);
+    setInput("");
+  }
+
+  const isSubmitDisabled = (() => {
+    if (!selectedIdxs.length) return true;
+
+    const isSameAsInitial = selectedIdxs.every((idx) =>
+      Boolean(initialHymns.find((hymn) => hymn.num === hymnFiles[idx].num))
+    );
+    return isSameAsInitial && selectedIdxs.length === initialHymns.length;
+  })();
+
+  const shouldHide = (
+    { num, title }: { num: string; title: string },
+    idx: number
+  ) => {
     const fullTitle = `${num}. ${title}`.toLowerCase();
-    return fullTitle.includes(input.toLowerCase());
-  });
+
+    const isAlreadySelected = selectedIdxs.includes(idx);
+    const isNotPartOfFilter = input && !fullTitle.includes(input.toLowerCase());
+    return isAlreadySelected || isNotPartOfFilter;
+  };
 
   return (
-    <Modal {...props}>
-      <ModalDialog style={{ pointerEvents: "auto" }}>
+    <Modal {...props} onClose={handleClose}>
+      <ModalDialog minWidth="500px">
         <ModalClose />
         <DialogTitle>Very Long List of Hymns</DialogTitle>
         <DialogContent sx={{ paddingRight: "24px" }}>
@@ -99,7 +129,7 @@ export const HymnListModal = ({
             />
             <Button
               variant="soft"
-              disabled={!selectedIdxs.length}
+              disabled={isSubmitDisabled}
               onClick={handleSubmit}
             >
               Submit
@@ -108,10 +138,10 @@ export const HymnListModal = ({
           <Box height="8px" />
           <List>
             {selectedIdxs.map((idx) => {
-              const hymn = hymnFiles[idx];
+              const { title, num } = hymnFiles[idx];
               return (
                 <ListItemButton
-                  key={hymn.title}
+                  key={title}
                   sx={{
                     borderRadius: 3,
                     mb: "4px",
@@ -121,19 +151,19 @@ export const HymnListModal = ({
                   onClick={handleClick(idx)}
                 >
                   <Checkbox checked />
-                  {hymn.num + ". " + hymn.title}
+                  {num + ". " + title}
                 </ListItemButton>
               );
             })}
           </List>
           <Divider />
           <List>
-            {filteredHymns.map((hymn, idx) => {
-              if (selectedIdxs.includes(idx))
-                return <Fragment key={hymn.title + idx}></Fragment>;
-              return (
+            {hymnFiles.map(({ num, title }: HymnFileType, idx: number) => {
+              return shouldHide({ num, title }, idx) ? (
+                <Fragment key={title + idx}></Fragment>
+              ) : (
                 <ListItemButton
-                  key={hymn.title + idx}
+                  key={title + idx}
                   sx={{
                     borderRadius: 3,
                     mb: "4px",
@@ -143,7 +173,7 @@ export const HymnListModal = ({
                   onClick={handleClick(idx)}
                 >
                   <Checkbox />
-                  {hymn.num + ". " + hymn.title}
+                  {num + ". " + title}
                 </ListItemButton>
               );
             })}
