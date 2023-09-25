@@ -15,6 +15,8 @@ const defaultState = {
   selectedHymnIdx: -1,
 };
 
+// TODO when importing new hymns, selceted index are not all correct and can display an empty screen
+
 export const HymnList = () => {
   const [filesToBeConfirmed, setFilesToBeConfirmed] = useState<HymnType[]>([]);
   const [localState = defaultState, saveToLocalStorage] =
@@ -99,7 +101,12 @@ export const HymnList = () => {
 
   return (
     <>
-      <Stack padding="24px" spacing="24px">
+      <Stack
+        padding="24px"
+        spacing="24px"
+        maxHeight="100dvh"
+        sx={{ overflow: "scroll" }}
+      >
         <Box
           px="12px"
           display="flex"

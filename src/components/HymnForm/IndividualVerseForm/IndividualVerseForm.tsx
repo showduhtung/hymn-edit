@@ -56,6 +56,7 @@ export const IndividualVerseForm = ({
 
   function handleResetLineText(idx: number) {
     return () => {
+      if (idx === -1) return setVerse(originalVerse);
       const updatedVerse = [...verse];
       updatedVerse.splice(idx, 1, originalVerse[idx]);
       setVerse(updatedVerse);
@@ -87,6 +88,10 @@ export const IndividualVerseForm = ({
 
   const canSave = verse.some((line, idx) => line !== savedVerse[idx]);
   const canComplete = verse.every((line, idx) => line === savedVerse[idx]);
+  const areAllOriginal = verse.every(
+    (line, idx) => line === originalVerse[idx]
+  );
+  const isCompleted = status === "completed";
 
   const { danger } = theme.palette;
   return (
@@ -171,21 +176,38 @@ export const IndividualVerseForm = ({
 
       <Box display="flex" gap="8px">
         <Button
-          variant="solid"
+          variant="soft"
           onClick={handleSave()}
           disabled={!canSave}
           endDecorator={<FiSave size="14" />}
         >
           Save changes
         </Button>
-
+        <Button
+          variant="soft"
+          disabled={areAllOriginal}
+          onClick={handleResetLineText(-1)}
+          endDecorator={<FiRefreshCw size="14" />}
+        >
+          Reset all lines
+        </Button>
         <Button
           variant="solid"
           onClick={onCompleted}
-          disabled={status === "completed" || !canComplete}
-          endDecorator={<FiCheck size="14" />}
+          disabled={status === "not-started" || !canComplete}
+          endDecorator={
+            status === "completed" ? "\u{1F6A7}" : <FiCheck size="14" />
+          }
+          sx={() => {
+            if (!isCompleted) return {};
+            return {
+              backgroundColor: unsaved,
+              color: "black",
+              ":hover": { backgroundColor: "#EFEADA" },
+            };
+          }}
         >
-          Mark complete
+          Mark {status === "completed" ? "in progress" : "complete"}
         </Button>
       </Box>
     </>

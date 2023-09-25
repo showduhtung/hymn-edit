@@ -11,6 +11,8 @@ const defaultState = {
   selectedHymnIdx: -1,
 };
 
+// TODO: sync control bar and form state to showcase status state
+
 export const HymnForm = (props: StackProps) => {
   const [selectedVerseIdx, setSelectedVerseIdx] = useState<number>(0);
   const [localState = defaultState, saveToLocalStorage] =
@@ -24,7 +26,11 @@ export const HymnForm = (props: StackProps) => {
 
     const hymns = localState.hymns.map((hymn) => {
       if (hymn.title !== selectedHymn.title) return hymn;
-      return { ...hymn, status: "completed" as const };
+      const status =
+        hymn.status === "completed"
+          ? ("in-progress" as const)
+          : ("completed" as const);
+      return { ...hymn, status };
     });
 
     saveToLocalStorage({ ...localState, hymns });
