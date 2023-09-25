@@ -34,14 +34,17 @@ export const ControlBar = ({
 
       return (
         <Button
-          key={idx}
+          key={item.label + idx}
           variant={idx + add === value ? "solid" : "soft"}
           onClick={handleChange(idx + add)}
           color="primary"
-          sx={(theme) => ({
-            backgroundColor: numberOfChanges > 0 ? saved : "",
-            color: value === idx ? "white" : theme.palette.primary[500],
-          })}
+          sx={(theme) => {
+            const isWhite = value === idx && numberOfChanges === 0;
+            return {
+              backgroundColor: numberOfChanges > 0 ? saved : "",
+              color: isWhite ? "white" : theme.palette.primary[500],
+            };
+          }}
         >
           {item.label}
         </Button>

@@ -47,8 +47,9 @@ export const HymnForm = (props: StackProps) => {
 
       const verses = selectedHymn.verses.map((verse, currIdx) => {
         if (currIdx !== verseIdx) return verse;
+        const [idx] = splitByBreakLine(verse.html);
         const updatedHtml =
-          `<b>${String(currIdx + 1)}</b><br>` + joinByBreakLine(updatedContent);
+          `<b>${String(idx)}</b><br>` + joinByBreakLine(updatedContent);
 
         return { ...verse, updatedHtml };
       });
@@ -61,7 +62,6 @@ export const HymnForm = (props: StackProps) => {
           const splitUpdated = splitByBreakLine(verses[idx].updatedHtml);
           return splitOriginal.every((line, idx) => line === splitUpdated[idx]);
         });
-
         return {
           ...hymn,
           verses,
