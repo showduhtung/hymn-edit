@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   Box,
   Button,
@@ -89,10 +89,19 @@ export const HymnForm = (props: StackProps) => {
     saveToLocalStorage({ ...localState, hymns });
   }
 
+  useEffect(() => {
+    setSelectedVerseIdx(0);
+  }, [selectedHymnIdx]);
+
   const { status } = selectedHymn || { status: "not-started" };
 
   return (
-    <Stack spacing="24px" {...props}>
+    <Stack
+      spacing="24px"
+      maxHeight="100dvh"
+      sx={{ overflow: "scroll" }}
+      {...props}
+    >
       <ControlBar
         value={selectedVerseIdx}
         onChange={setSelectedVerseIdx}
@@ -145,6 +154,7 @@ const FormControlBar = ({
           variant="soft"
           endDecorator={<FiRefreshCw size="14" />}
           onClick={() => toggle(true)}
+          disabled={status === "not-started"}
         >
           Reset all verses
         </Button>

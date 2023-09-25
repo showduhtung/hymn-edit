@@ -1,7 +1,6 @@
 import type { DragEvent } from "react";
 import { List, type ListProps } from "@mui/joy";
 import { useToggle } from "@uidotdev/usehooks";
-import { withPreventDefaults } from "./utilities";
 
 type DroppableListProps = {
   onDroppedFiles: (files: FileList) => Promise<void>;
@@ -47,3 +46,12 @@ const draggedStyle = {
   backgroundColor: "rgba(0,0,0,0.1)",
   borderStyle: "dashed",
 };
+
+function withPreventDefaults(fn?: (e: DragEvent<HTMLUListElement>) => void) {
+  // stops the UI from opening files into the browser window
+  return (e: DragEvent<HTMLUListElement>) => {
+    e.preventDefault();
+    e.stopPropagation();
+    fn?.(e);
+  };
+}

@@ -12,6 +12,7 @@ export function joinByBreakLine(html: string[]) {
 }
 
 export function autofocusLastCharacter(e: ChangeEvent<HTMLTextAreaElement>) {
+  // [UX] on focus isn't allowing for double click to highlight
   const val = e.target.value;
   e.target.value = "";
   e.target.value = val;

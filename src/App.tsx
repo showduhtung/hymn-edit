@@ -6,7 +6,7 @@ import "@fontsource/inter";
 
 import { Paper } from "@mui/material";
 import { Box, styled, Container } from "@mui/joy";
-import { HymnForm, HymnList } from "./components";
+import { HymnForm, HymnList } from "./features";
 
 const StyledContainer = styled(Container)(({ theme }) => ({
   padding: "24px",

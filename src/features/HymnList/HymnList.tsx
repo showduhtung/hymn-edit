@@ -7,7 +7,7 @@ import { ListConfirmationDialog } from "./ListConfirmationDialog";
 import { downloadAsZip, readFileAsync } from "./utilities";
 import type { EditingHymnType, LocalHymnsState } from "../../types";
 import { HymnListButton } from "./HymnListButton";
-import { DroppableList } from "./DroppableList";
+import { DroppableList } from "../../components";
 import { HymnListModal } from "./HymnListModal";
 
 const defaultState = {

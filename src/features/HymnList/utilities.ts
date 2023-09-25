@@ -1,17 +1,5 @@
-import type { DragEvent } from "react";
 import JSZip from "jszip";
 import type { EditingHymnType, EditingVerseType } from "../../types";
-
-export function withPreventDefaults(
-  fn?: (e: DragEvent<HTMLUListElement>) => void
-) {
-  // stops the UI from opening files into the browser window
-  return (e: DragEvent<HTMLUListElement>) => {
-    e.preventDefault();
-    e.stopPropagation();
-    fn?.(e);
-  };
-}
 
 export function readFileAsync(file: File): Promise<EditingHymnType> {
   return new Promise((resolve, reject) => {
@@ -38,7 +26,7 @@ type DownloadHymnType = {
 };
 type OriginalVerseType = Omit<EditingVerseType, "updatedHtml">;
 
-export function downloadAsZip(datas: DownloadHymnType[]) {
+export async function downloadAsZip(datas: DownloadHymnType[]) {
   const zip = new JSZip();
 
   // Add JSON data to zip
@@ -48,14 +36,14 @@ export function downloadAsZip(datas: DownloadHymnType[]) {
   });
 
   // Generate zip and initiate download
-  zip.generateAsync({ type: "blob" }).then((blob) => {
-    const href = URL.createObjectURL(blob);
-    const link = document.createElement("a");
-    link.href = href;
-    link.download = "download.zip"; // Change to your desired zip filename
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    URL.revokeObjectURL(href);
-  });
+  const blob = await zip.generateAsync({ type: "blob" });
+
+  const href = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+  link.href = href;
+  link.download = "download.zip"; // Change to your desired zip filename
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  URL.revokeObjectURL(href);
 }

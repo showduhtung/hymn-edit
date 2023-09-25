@@ -10,7 +10,7 @@ import { FiCheck, FiDownload, FiTrash } from "react-icons/fi";
 import { useHover, useToggle } from "@uidotdev/usehooks";
 
 import type { EditingHymnType } from "../../types";
-import { DeleteWarningDialog } from "./DeleteWarningDialog";
+import { SimpleDialog } from "../../components";
 
 type HymnListButtonProps = {
   data: EditingHymnType;
@@ -38,11 +38,14 @@ export const HymnListButton = ({
 
   return (
     <>
-      <DeleteWarningDialog
+      <SimpleDialog
         open={isDeleting}
         onClose={() => toggleDeleting()}
         onConfirm={onDelete}
-      />
+        type="warning"
+      >
+        Are you sure you want to delete this hymn?
+      </SimpleDialog>
       <ListItemButton
         ref={ref}
         sx={{
