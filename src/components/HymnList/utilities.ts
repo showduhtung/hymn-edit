@@ -1,6 +1,6 @@
 import type { DragEvent } from "react";
 import JSZip from "jszip";
-import type { HymnType, VerseType } from "../../types";
+import type { EditingHymnType, EditingVerseType } from "../../types";
 
 export function withPreventDefaults(
   fn?: (e: DragEvent<HTMLUListElement>) => void
@@ -13,7 +13,7 @@ export function withPreventDefaults(
   };
 }
 
-export function readFileAsync(file: File): Promise<HymnType> {
+export function readFileAsync(file: File): Promise<EditingHymnType> {
   return new Promise((resolve, reject) => {
     const reader = new FileReader();
     reader.onload = (event) => {
@@ -36,7 +36,7 @@ type DownloadHymnType = {
   title: string;
   verses: OriginalVerseType[];
 };
-type OriginalVerseType = Omit<VerseType, "updatedHtml">;
+type OriginalVerseType = Omit<EditingVerseType, "updatedHtml">;
 
 export function downloadAsZip(datas: DownloadHymnType[]) {
   const zip = new JSZip();

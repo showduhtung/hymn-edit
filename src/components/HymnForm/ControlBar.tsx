@@ -1,8 +1,8 @@
 import { Box, Button, ButtonGroup, Typography, Stack } from "@mui/joy";
-import type { VerseType } from "../../types";
+import type { EditingVerseType } from "../../types";
 
 type ControlBarProps = {
-  verses: VerseType[];
+  verses: EditingVerseType[];
   value: number;
   onChange: (idx: number) => void;
   title: string;

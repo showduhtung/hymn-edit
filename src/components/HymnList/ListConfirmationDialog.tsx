@@ -13,14 +13,14 @@ import {
   DialogTitle,
   type ModalProps,
 } from "@mui/joy";
-import type { HymnType } from "../../types";
+import type { EditingHymnType } from "../../types";
 
-type HymnList = HymnType & { checked: boolean };
+type HymnList = EditingHymnType & { checked: boolean };
 type ListConfirmationDialogProps = {
   open: boolean;
-  data: HymnType[];
+  data: EditingHymnType[];
   onClose: (arg: boolean) => () => void;
-  onConfirm: (arg: HymnType[]) => void;
+  onConfirm: (arg: EditingHymnType[]) => void;
 } & Omit<ModalProps, "children">;
 
 export const ListConfirmationDialog = ({

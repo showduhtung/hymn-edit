@@ -15,11 +15,11 @@ import {
 } from "@mui/joy";
 import { Fragment, useEffect, useState } from "react";
 import { hymnFileNames } from "../../constants";
-import type { HymnFileType, HymnType } from "../../types";
+import type { HymnFileType, EditingHymnType } from "../../types";
 
 type HymnListModalProps = Omit<ModalProps, "children" | "onSubmit"> & {
-  onSubmit: (hymnFiles: HymnType[]) => void;
-  initialHymns: HymnType[];
+  onSubmit: (hymnFiles: EditingHymnType[]) => void;
+  initialHymns: EditingHymnType[];
 };
 
 export const HymnListModal = ({

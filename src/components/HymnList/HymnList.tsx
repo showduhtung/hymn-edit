@@ -5,20 +5,22 @@ import { FiDownload, FiPlus } from "react-icons/fi";
 
 import { ListConfirmationDialog } from "./ListConfirmationDialog";
 import { downloadAsZip, readFileAsync } from "./utilities";
-import type { HymnType, LocalHymnsState } from "../../types";
+import type { EditingHymnType, LocalHymnsState } from "../../types";
 import { HymnListButton } from "./HymnListButton";
 import { DroppableList } from "./DroppableList";
 import { HymnListModal } from "./HymnListModal";
 
 const defaultState = {
-  hymns: [] as HymnType[],
+  hymns: [] as EditingHymnType[],
   selectedHymnIdx: -1,
 };
 
 // TODO when importing new hymns, selceted index are not all correct and can display an empty screen
 
 export const HymnList = () => {
-  const [filesToBeConfirmed, setFilesToBeConfirmed] = useState<HymnType[]>([]);
+  const [filesToBeConfirmed, setFilesToBeConfirmed] = useState<
+    EditingHymnType[]
+  >([]);
   const [localState = defaultState, saveToLocalStorage] =
     useLocalStorage<LocalHymnsState>("editing-hymns");
   const [isHymnListModalOpen, toggleHymnListModal] = useToggle(false);
@@ -27,7 +29,7 @@ export const HymnList = () => {
   const selectedHymn = hymns.find((_, idx) => idx === selectedHymnIdx);
 
   async function handleFiles(files: FileList) {
-    const possibleFiles: HymnType[] = await Promise.all(
+    const possibleFiles: EditingHymnType[] = await Promise.all(
       Array.from(files)
         .filter((file) => file.type === "application/json")
         .map(readFileAsync)
@@ -50,12 +52,12 @@ export const HymnList = () => {
     return () => setFilesToBeConfirmed([]);
   }
 
-  function handleConfirmDraggedFiles(selectedHymns: HymnType[]) {
+  function handleConfirmDraggedFiles(selectedHymns: EditingHymnType[]) {
     setFilesToBeConfirmed([]);
     saveToLocalStorage({ hymns: selectedHymns, selectedHymnIdx: 0 });
   }
 
-  function handleImportedHymns(importedHymns: HymnType[]) {
+  function handleImportedHymns(importedHymns: EditingHymnType[]) {
     toggleHymnListModal(false);
     saveToLocalStorage({ hymns: importedHymns, selectedHymnIdx: 0 });
   }
@@ -94,10 +96,13 @@ export const HymnList = () => {
     };
   }
 
-  const combinedFiles = filesToBeConfirmed.reduce((acc: HymnType[], curr) => {
-    const doesHymnExist = hymns.find((hymn) => hymn.num === curr.num);
-    return doesHymnExist ? acc : [...acc, curr];
-  }, hymns);
+  const combinedFiles = filesToBeConfirmed.reduce(
+    (acc: EditingHymnType[], curr) => {
+      const doesHymnExist = hymns.find((hymn) => hymn.num === curr.num);
+      return doesHymnExist ? acc : [...acc, curr];
+    },
+    hymns
+  );
 
   return (
     <>

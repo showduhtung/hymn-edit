@@ -9,11 +9,11 @@ import {
 import { FiCheck, FiDownload, FiTrash } from "react-icons/fi";
 import { useHover, useToggle } from "@uidotdev/usehooks";
 
-import type { HymnType } from "../../types";
+import type { EditingHymnType } from "../../types";
 import { DeleteWarningDialog } from "./DeleteWarningDialog";
 
 type HymnListButtonProps = {
-  data: HymnType;
+  data: EditingHymnType;
   onDelete: () => void;
   onDownload: () => void;
 } & ListItemButtonProps;

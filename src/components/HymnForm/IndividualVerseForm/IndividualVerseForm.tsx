@@ -1,4 +1,4 @@
-import { type ChangeEvent, useState } from "react";
+import { type ChangeEvent, useState, useEffect } from "react";
 import { Paper } from "@mui/material";
 import {
   Box,
@@ -9,9 +9,8 @@ import {
   Button,
   useTheme,
 } from "@mui/joy";
-import { FiCheck, FiRefreshCw, FiRotateCcw, FiSave } from "react-icons/fi";
+import { FiRefreshCw, FiRotateCcw, FiSave } from "react-icons/fi";
 import { autofocusLastCharacter, joinByBreakLine } from "../utilities";
-import { type HymnStatus } from "../../../types";
 import { IconLegend } from "./IconLegend";
 import { Div } from "./Div";
 
@@ -19,8 +18,6 @@ type IndividualVerseFormProps = {
   savedVerse: string[];
   originalVerse: string[];
   onSave: (val: string[]) => void;
-  onCompleted: () => void;
-  status: HymnStatus;
 };
 
 const initial = "#F7FDFF";
@@ -30,9 +27,7 @@ const saved = "#E8FFEA";
 export const IndividualVerseForm = ({
   savedVerse,
   originalVerse,
-  onCompleted,
   onSave,
-  status,
 }: IndividualVerseFormProps) => {
   const theme = useTheme();
   const [verse, setVerse] = useState<string[]>(savedVerse); // current state of the content
@@ -80,6 +75,11 @@ export const IndividualVerseForm = ({
     };
   }
 
+  useEffect(() => {
+    setVerse(savedVerse);
+    // individual item in map doesn't update, so useEffect required to update internal state when savedVerse is changed
+  }, [savedVerse]);
+
   const textBackgroundColor = (line: string, idx: number) => {
     if (line !== originalVerse[idx] && line === savedVerse[idx]) return saved;
     if (line !== savedVerse[idx]) return unsaved;
@@ -87,11 +87,9 @@ export const IndividualVerseForm = ({
   };
 
   const canSave = verse.some((line, idx) => line !== savedVerse[idx]);
-  const canComplete = verse.every((line, idx) => line === savedVerse[idx]);
   const areAllOriginal = verse.every(
     (line, idx) => line === originalVerse[idx]
   );
-  const isCompleted = status === "completed";
 
   const { danger } = theme.palette;
   return (
@@ -187,27 +185,9 @@ export const IndividualVerseForm = ({
           variant="soft"
           disabled={areAllOriginal}
           onClick={handleResetLineText(-1)}
-          endDecorator={<FiRefreshCw size="14" />}
+          endDecorator={<FiRotateCcw size="14" />}
         >
-          Reset all lines
-        </Button>
-        <Button
-          variant="solid"
-          onClick={onCompleted}
-          disabled={status === "not-started" || !canComplete}
-          endDecorator={
-            status === "completed" ? "\u{1F6A7}" : <FiCheck size="14" />
-          }
-          sx={() => {
-            if (!isCompleted) return {};
-            return {
-              backgroundColor: unsaved,
-              color: "black",
-              ":hover": { backgroundColor: "#EFEADA" },
-            };
-          }}
-        >
-          Mark {status === "completed" ? "in progress" : "complete"}
+          Undo all changes
         </Button>
       </Box>
     </>
