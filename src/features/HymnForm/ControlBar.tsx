@@ -1,14 +1,6 @@
-import {
-  Box,
-  Button,
-  ButtonGroup,
-  Typography,
-  Stack,
-  Badge,
-  Sheet,
-} from "@mui/joy";
+import { Box, Button, ButtonGroup, Typography, Stack, Sheet } from "@mui/joy";
 import type { EditingVerseType } from "../../types";
-import { initial, saved, unsaved } from "../../constants/colors";
+import { saved } from "../../constants/colors";
 import { splitByBreakLine } from "./utilities";
 
 type ControlBarProps = {
@@ -51,20 +43,19 @@ export const ControlBar = ({
                 }, 0);
 
                 return (
-                  <Badge
-                    variant="soft"
-                    invisible={numberOfChanges === 0}
-                    color="success"
+                  <Button
+                    key={idx}
+                    variant={idx === value ? "solid" : "soft"}
+                    onClick={handleChange(idx)}
+                    color="primary"
+                    sx={(theme) => ({
+                      backgroundColor: numberOfChanges > 0 ? saved : "",
+                      color:
+                        value === idx ? "white" : theme.palette.primary[500],
+                    })}
                   >
-                    <Button
-                      key={idx}
-                      variant={idx === value ? "solid" : "soft"}
-                      onClick={handleChange(idx)}
-                      color="primary"
-                    >
-                      {item.label}
-                    </Button>
-                  </Badge>
+                    {item.label}
+                  </Button>
                 );
               })}
           </ButtonGroup>

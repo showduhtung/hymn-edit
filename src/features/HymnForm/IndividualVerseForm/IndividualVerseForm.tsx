@@ -13,16 +13,13 @@ import { FiRefreshCw, FiRotateCcw, FiSave } from "react-icons/fi";
 import { autofocusLastCharacter, joinByBreakLine } from "../utilities";
 import { IconLegend } from "./IconLegend";
 import { Div } from "./Div";
+import { initial, saved, unsaved } from "../../../constants/colors";
 
 type IndividualVerseFormProps = {
   savedVerse: string[];
   originalVerse: string[];
   onSave: (val: string[]) => void;
 };
-
-const initial = "#F7FDFF";
-const unsaved = "#FFFBEA";
-const saved = "#E8FFEA";
 
 export const IndividualVerseForm = ({
   savedVerse,
