@@ -15,7 +15,7 @@ import {
 } from "@mui/joy";
 import { Fragment, useEffect, useState } from "react";
 import { hymnFileNames } from "../../constants";
-import { HymnFileType, HymnType } from "../../types";
+import type { HymnFileType, HymnType } from "../../types";
 
 type HymnListModalProps = Omit<ModalProps, "children" | "onSubmit"> & {
   onSubmit: (hymnFiles: HymnType[]) => void;

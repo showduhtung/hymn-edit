@@ -13,7 +13,7 @@ import {
   DialogTitle,
   type ModalProps,
 } from "@mui/joy";
-import { HymnType } from "../../types";
+import type { HymnType } from "../../types";
 
 type HymnList = HymnType & { checked: boolean };
 type ListConfirmationDialogProps = {

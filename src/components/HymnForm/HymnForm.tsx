@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { Box, Stack, StackProps } from "@mui/joy";
+import { Box, Stack, type StackProps } from "@mui/joy";
 import { useLocalStorage } from "@uidotdev/usehooks";
 
-import { HymnType, LocalHymnsState } from "../../types";
+import type { HymnType, LocalHymnsState } from "../../types";
 import { IndividualVerseForm, ControlBar } from ".";
 import { joinByBreakLine, splitByBreakLine } from "./utilities";
 

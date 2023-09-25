@@ -1,8 +1,8 @@
 declare module "@uidotdev/usehooks" {
-  import React from "react";
+  import type { Dispatch, SetStateAction } from "react";
 
   export function useLocalStorage<T>(
     key: string,
     initialValue?: T
-  ): [T, React.Dispatch<React.SetStateAction<T>>];
+  ): [T, Dispatch<SetStateAction<T>>];
 }
