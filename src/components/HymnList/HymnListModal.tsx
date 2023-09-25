@@ -11,15 +11,24 @@ import {
   ListItemButton,
   Divider,
   Button,
+  Checkbox,
 } from "@mui/joy";
 import { Fragment, useEffect, useState } from "react";
 import { hymnFileNames } from "../../constants";
-import { HymnFileType } from "../../types";
-import { FiCheck } from "react-icons/fi";
+import { HymnFileType, HymnType } from "../../types";
 
-export const HymnListModal = (props: Omit<ModalProps, "children">) => {
-  const [selectedFiles, setSelectedFiles] = useState<number[]>([]);
-  const [hymns, setHymns] = useState<HymnFileType[]>([]);
+type HymnListModalProps = Omit<ModalProps, "children" | "onSubmit"> & {
+  onSubmit: (hymnFiles: HymnType[]) => void;
+  initialHymns: HymnType[];
+};
+
+export const HymnListModal = ({
+  initialHymns,
+  onSubmit,
+  ...props
+}: HymnListModalProps) => {
+  const [selectedIdxs, setSelectedIdxs] = useState<number[]>([]);
+  const [hymnFiles, setHymnFiles] = useState<HymnFileType[]>([]);
   const [input, setInput] = useState<string>("");
 
   useEffect(() => {
@@ -30,46 +39,55 @@ export const HymnListModal = (props: Omit<ModalProps, "children">) => {
       const data = (await Promise.all(
         responses.map((response) => response.json())
       )) as HymnFileType[];
-      setHymns(data);
+      setHymnFiles(data);
+      setSelectedIdxs(
+        initialHymns.map((hymn) =>
+          data.findIndex((item) => item.num === hymn.num)
+        )
+      );
     }
     getHymns();
-  }, []);
+  }, [initialHymns]);
 
   function handleClick(idx: number) {
     return () => {
-      const newState = selectedFiles.includes(idx)
-        ? selectedFiles.filter((i) => i !== idx)
-        : [...selectedFiles, idx];
-      setSelectedFiles(newState.sort((a, b) => a - b));
+      const newState = selectedIdxs.includes(idx)
+        ? selectedIdxs.filter((i) => i !== idx)
+        : [...selectedIdxs, idx];
+      setSelectedIdxs(newState.sort((a, b) => a - b));
     };
   }
 
-  function handleSubmit() {}
-  const filteredHymns = hymns.filter(({ num, title }) => {
+  function handleSubmit() {
+    const selectedHymns = selectedIdxs.map((idx) => {
+      const selectedHymn = hymnFiles[idx];
+      const initialHymn = initialHymns.find(
+        (hymn) => hymn.num === selectedHymn.num
+      );
+
+      const moldedSelectedHymn = {
+        ...selectedHymn,
+        verses: selectedHymn.verses.map((verse) => ({
+          ...verse,
+          updatedHtml: verse.html,
+        })),
+        status: "not-started" as const,
+      };
+
+      return initialHymn || moldedSelectedHymn;
+    });
+
+    onSubmit(selectedHymns);
+  }
+
+  const filteredHymns = hymnFiles.filter(({ num, title }) => {
     if (!input) return true;
-    const filter = input.toLowerCase().replaceAll(".", "");
-
-    // Check if the filter matches a pattern like "1A", "2B", ..., "525A", "525B"
-    const numPattern = /^[1-9][0-9]*[ABab]$/;
-    if (numPattern.test(filter)) {
-      // Extract the number and letter from the filter
-      const number = parseInt(filter);
-      const letter = filter.slice(-1).toUpperCase();
-
-      // Check if the hymn's num matches the number and letter
-      return num === `${number}${letter}`;
-    }
-
-    // If it doesn't match the number-letter pattern, filter by input
-    return title.toLowerCase().includes(filter);
+    const fullTitle = `${num}. ${title}`.toLowerCase();
+    return fullTitle.includes(input.toLowerCase());
   });
 
   return (
-    <Modal
-      {...props}
-      hideBackdrop
-      style={{ pointerEvents: "none" }} // Enable pointer events for the modal content
-    >
+    <Modal {...props}>
       <ModalDialog style={{ pointerEvents: "auto" }}>
         <ModalClose />
         <DialogTitle>Very Long List of Hymns</DialogTitle>
@@ -81,7 +99,7 @@ export const HymnListModal = (props: Omit<ModalProps, "children">) => {
             />
             <Button
               variant="soft"
-              disabled={!selectedFiles.length}
+              disabled={!selectedIdxs.length}
               onClick={handleSubmit}
             >
               Submit
@@ -89,8 +107,8 @@ export const HymnListModal = (props: Omit<ModalProps, "children">) => {
           </Box>
           <Box height="8px" />
           <List>
-            {selectedFiles.map((idx) => {
-              const hymn = hymns[idx];
+            {selectedIdxs.map((idx) => {
+              const hymn = hymnFiles[idx];
               return (
                 <ListItemButton
                   key={hymn.title}
@@ -98,12 +116,12 @@ export const HymnListModal = (props: Omit<ModalProps, "children">) => {
                     borderRadius: 3,
                     mb: "4px",
                     display: "flex",
-                    justifyContent: "space-between",
+                    gap: "12px",
                   }}
                   onClick={handleClick(idx)}
                 >
+                  <Checkbox checked />
                   {hymn.num + ". " + hymn.title}
-                  <FiCheck />
                 </ListItemButton>
               );
             })}
@@ -111,14 +129,20 @@ export const HymnListModal = (props: Omit<ModalProps, "children">) => {
           <Divider />
           <List>
             {filteredHymns.map((hymn, idx) => {
-              if (selectedFiles.includes(idx))
+              if (selectedIdxs.includes(idx))
                 return <Fragment key={hymn.title + idx}></Fragment>;
               return (
                 <ListItemButton
                   key={hymn.title + idx}
-                  sx={{ borderRadius: 3, mb: "4px" }}
+                  sx={{
+                    borderRadius: 3,
+                    mb: "4px",
+                    display: "flex",
+                    gap: "12px",
+                  }}
                   onClick={handleClick(idx)}
                 >
+                  <Checkbox />
                   {hymn.num + ". " + hymn.title}
                 </ListItemButton>
               );

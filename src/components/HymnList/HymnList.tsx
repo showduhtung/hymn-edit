@@ -5,7 +5,7 @@ import { FiDownload, FiPlus } from "react-icons/fi";
 
 import { ListConfirmationDialog } from "./ListConfirmationDialog";
 import { downloadAsZip, readFileAsync } from "./utilities";
-import type { HymnType, LocalHymnsState } from "../../types";
+import type { HymnType, LocalHymnsState, HymnFileType } from "../../types";
 import { HymnListButton } from "./HymnListButton";
 import { DroppableList } from "./DroppableList";
 import { HymnListModal } from "./HymnListModal";
@@ -48,14 +48,18 @@ export const HymnList = () => {
     return () => setFilesToBeConfirmed([]);
   }
 
-  function handleConfirmFiles(selectedHymns: HymnType[]) {
+  function handleConfirmDraggedFiles(selectedHymns: HymnType[]) {
     setFilesToBeConfirmed([]);
     saveToLocalStorage({ hymns: selectedHymns, selectedHymnIdx: 0 });
   }
 
+  function handleImportedHymns(importedHymns: HymnType[]) {
+    toggleHymnListModal();
+    saveToLocalStorage({ hymns: importedHymns, selectedHymnIdx: 0 });
+  }
+
   function handleSelectHymn(hymnIdx: number) {
     return () => {
-      console.log("is this also running?");
       saveToLocalStorage({ ...localState, selectedHymnIdx: hymnIdx });
     };
   }
@@ -147,20 +151,21 @@ export const HymnList = () => {
         </Box>
       </Stack>
 
-      {/* need to use the ternary to force mount/unmount */}
+      {/* need to use ternary to force mount/unmount */}
       {filesToBeConfirmed.length > 0 && (
         <ListConfirmationDialog
           open
           data={combinedFiles}
           onClose={handleCloseDialog}
-          onConfirm={handleConfirmFiles}
+          onConfirm={handleConfirmDraggedFiles}
         />
       )}
 
       <HymnListModal
         onClose={() => toggleHymnListModal()}
         open={isHymnListModalOpen}
-        // onSubmit
+        onSubmit={handleImportedHymns}
+        initialHymns={hymns}
       />
     </>
   );
