@@ -3,7 +3,7 @@ import { Box, Typography, Stack, Button } from "@mui/joy";
 import { useLocalStorage, useToggle } from "@uidotdev/usehooks";
 import { FiDownload, FiPlus } from "react-icons/fi";
 
-import { ListConfirmationDialog } from "./ListConfirmationDialog";
+import { HymnListConfirmationDialog } from "./HymnListConfirmationDialog";
 import { downloadAsZip, readFileAsync } from "./utilities";
 import type { EditingHymnType, LocalHymnsState } from "../../types";
 import { HymnListButton } from "./HymnListButton";
@@ -173,7 +173,7 @@ export const HymnList = () => {
 
       {/* need to use ternary to force mount/unmount */}
       {filesToBeConfirmed.length > 0 && (
-        <ListConfirmationDialog
+        <HymnListConfirmationDialog
           open
           data={combinedFiles}
           onClose={handleCloseDialog}

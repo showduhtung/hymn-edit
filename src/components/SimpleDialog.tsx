@@ -5,6 +5,7 @@ import {
   DialogActions,
   type ModalProps,
 } from "@mui/joy";
+import type { ReactNode } from "react";
 
 type SimpleDialogProps = {
   onConfirm: () => void;
@@ -12,7 +13,7 @@ type SimpleDialogProps = {
   open: boolean;
   text?: string;
   type: "warning" | "confirm";
-  children: string;
+  children: ReactNode;
 } & Omit<ModalProps, "children">;
 
 export const SimpleDialog = ({

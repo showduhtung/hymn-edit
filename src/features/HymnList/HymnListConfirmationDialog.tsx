@@ -23,7 +23,7 @@ type ListConfirmationDialogProps = {
   onConfirm: (arg: EditingHymnType[]) => void;
 } & Omit<ModalProps, "children">;
 
-export const ListConfirmationDialog = ({
+export const HymnListConfirmationDialog = ({
   open,
   data,
   onClose,
