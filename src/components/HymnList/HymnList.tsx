@@ -100,15 +100,22 @@ export const HymnList = () => {
   return (
     <>
       <Stack padding="24px" spacing="24px">
-        <Box px="12px" display="flex" justifyContent="space-between">
-          <Typography fontSize={24} sx={{ textDecoration: "underline" }}>
-            Review Hymns
+        <Box
+          px="12px"
+          display="flex"
+          justifyContent="space-between"
+          gap="4px"
+          alignItems="center"
+        >
+          <Typography fontSize={16} sx={{ textDecoration: "underline" }}>
+            Hymn List
           </Typography>
           <Box display="flex" gap="8px">
             <Button
               variant="soft"
               startDecorator={<FiPlus size="12" />}
               onClick={() => toggleHymnListModal()}
+              sx={{ fontSize: 10, p: 1 }}
             >
               Import
             </Button>
@@ -117,6 +124,7 @@ export const HymnList = () => {
               startDecorator={<FiDownload size="12" />}
               disabled={!hymns.find((hymn) => hymn.status === "completed")}
               onClick={handleDownloadHymn()}
+              sx={{ fontSize: 10, p: 1 }}
             >
               Download
             </Button>
