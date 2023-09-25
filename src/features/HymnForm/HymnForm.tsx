@@ -14,12 +14,9 @@ import type { EditingHymnType, LocalHymnsState } from "../../types";
 import { IndividualVerseForm, ControlBar } from ".";
 import { joinByBreakLine, splitByBreakLine } from "./utilities";
 import { FiCheck, FiRefreshCw } from "react-icons/fi";
+import { unsaved } from "../../constants/colors";
 
 const defaultState = { hymns: [] as EditingHymnType[], selectedHymnIdx: -1 };
-
-const unsaved = "#FFFBEA";
-
-// TODO: sync control bar and form state to showcase status state
 
 export const HymnForm = (props: StackProps) => {
   const [selectedVerseIdx, setSelectedVerseIdx] = useState<number>(0);
