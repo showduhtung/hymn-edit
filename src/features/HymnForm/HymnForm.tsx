@@ -174,7 +174,7 @@ const FormControlBar = ({
             };
           }}
         >
-          Mark {status === "completed" ? "in progress" : "complete"}
+          Mark as "{status === "completed" ? "in progress" : "complete"}"
         </Button>
       </Box>
       <Modal open={opened} role="alertdialog" onClick={() => toggle(false)}>
