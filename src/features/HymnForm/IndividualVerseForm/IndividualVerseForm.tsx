@@ -31,18 +31,20 @@ export const IndividualVerseForm = ({
   const [errors, setErrors] = useState<number[]>([]);
 
   function handleSaveWithValidation(payload: string[]) {
+    setErrors(() => []);
     const mistakes = payload.reduce((acc, line, idx) => {
       return line === "" ? [...acc, idx] : acc;
     }, [] as number[]);
 
     if (mistakes.length === 0) onSave(payload);
-    else setErrors(mistakes);
+    else setErrors(() => mistakes);
   }
 
   function handleUpdateInput(idx: number) {
     return (e: ChangeEvent<HTMLTextAreaElement>) => {
       const value = e.target.value;
       setVerse(verse.map((line, currIdx) => (currIdx === idx ? value : line)));
+      setErrors([]);
     };
   }
 
@@ -65,19 +67,21 @@ export const IndividualVerseForm = ({
 
   function handleSave(idx?: number) {
     return () => {
-      if (!idx) return handleSaveWithValidation(verse);
+      if (idx === undefined) return handleSaveWithValidation(verse);
       const updatedVerse = [...savedVerse];
       updatedVerse.splice(idx, 1, verse[idx]);
       handleSaveWithValidation(updatedVerse);
     };
   }
 
-  function handleEnter(event: KeyboardEvent<HTMLTextAreaElement>) {
+  function handleEnter(idx?: number) {
     const isMac = navigator.userAgentData?.platform === "macOS";
-    if (event.key !== "Enter") return;
-    if (!canSave) return;
-    if (isMac && event.metaKey) handleSave()();
-    if (!isMac && event.ctrlKey) handleSave()();
+    return (event: KeyboardEvent<HTMLTextAreaElement>) => {
+      if (event.key !== "Enter") return;
+      if (!canSave) return;
+      if (!(isMac && event.metaKey) && !(!isMac && event.ctrlKey)) return;
+      return event.shiftKey ? handleSave()() : handleSave(idx)();
+    };
   }
 
   const textBackgroundColor = (line: string, idx: number) => {
@@ -107,14 +111,7 @@ export const IndividualVerseForm = ({
               Please fill in all empty textboxes
             </Typography>
           ) : (
-            <Typography
-              sx={({ palette }) => ({
-                color: palette.neutral[400],
-                fontSize: "12px",
-              })}
-            >
-              Ctrl/Cmd + Enter to Save
-            </Typography>
+            <Box />
           )}
           <IconLegend />
         </Box>
@@ -128,7 +125,7 @@ export const IndividualVerseForm = ({
                   variant="soft"
                   value={line}
                   onChange={handleUpdateInput(idx)}
-                  onKeyDown={handleEnter}
+                  onKeyDown={handleEnter(idx)}
                   autoFocus={idx === 0}
                   sx={{
                     backgroundColor: isError
@@ -186,23 +183,43 @@ export const IndividualVerseForm = ({
 
       <Box height="24px" />
 
-      <Box display="flex" gap="8px">
-        <Button
-          variant="soft"
-          onClick={handleSave()}
-          disabled={!canSave}
-          endDecorator={<FiSave size="14" />}
-        >
-          Save changes
-        </Button>
-        <Button
-          variant="soft"
-          disabled={areAllOriginal}
-          onClick={handleResetLineText(-1)}
-          endDecorator={<FiRotateCcw size="14" />}
-        >
-          Undo line changes
-        </Button>
+      <Box>
+        <Box display="flex" gap="8px">
+          <Button
+            variant="soft"
+            onClick={handleSave()}
+            disabled={!canSave}
+            endDecorator={<FiSave size="14" />}
+          >
+            Save all changes
+          </Button>
+          <Button
+            variant="soft"
+            disabled={areAllOriginal}
+            onClick={handleResetLineText(-1)}
+            endDecorator={<FiRotateCcw size="14" />}
+          >
+            Undo line changes
+          </Button>
+        </Box>
+        <Box pl="12px" pt="24px">
+          <Typography
+            sx={({ palette }) => ({
+              color: palette.neutral[400],
+              fontSize: "12px",
+            })}
+          >
+            Ctrl/Cmd + Enter to Save
+          </Typography>
+          <Typography
+            sx={({ palette }) => ({
+              color: palette.neutral[400],
+              fontSize: "12px",
+            })}
+          >
+            Ctrl/Cmd + Shift + Enter to Save All
+          </Typography>
+        </Box>
       </Box>
     </>
   );
