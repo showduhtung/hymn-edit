@@ -26,23 +26,29 @@ export const ControlBar = ({
     return (item: EditingVerseType, idx: number) => {
       const [_, ...content] = splitByBreakLine(item.updatedHtml);
       const [__, ...originalContent] = splitByBreakLine(item.html);
+      const currIdx = idx + add;
 
       const numberOfChanges = content.reduce((acc, curr, idx) => {
-        if (curr !== originalContent[idx]) return acc + 1;
-        return acc;
+        return acc + Number(curr !== originalContent[idx]);
       }, 0);
 
       return (
         <Button
           key={item.label + idx}
-          variant={idx + add === value ? "solid" : "soft"}
-          onClick={handleChange(idx + add)}
+          variant={currIdx === value ? "solid" : "soft"}
+          onClick={handleChange(currIdx)}
           color="primary"
           sx={(theme) => {
-            const isWhite = value === idx && numberOfChanges === 0;
+            const isSelected = currIdx === value;
+            const hasChanges = numberOfChanges > 0;
+            if (isSelected) return {};
+
             return {
-              backgroundColor: numberOfChanges > 0 ? saved : "",
-              color: isWhite ? "white" : theme.palette.primary[500],
+              backgroundColor: hasChanges ? saved : "",
+              color:
+                isSelected && !hasChanges
+                  ? "white"
+                  : theme.palette.primary[500],
             };
           }}
         >
