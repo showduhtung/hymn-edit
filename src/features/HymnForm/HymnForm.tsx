@@ -76,15 +76,6 @@ export const HymnForm = (props: StackProps) => {
     saveToLocalStorage({ ...localState, hymns });
   }
 
-  function handleVerseChange(dir: boolean) {
-    if (!selectedHymn) return;
-    const next = selectedVerseIdx + (dir ? 1 : -1);
-    const isOutOfBound = next > selectedHymn.verses.length - 1 || next < 0;
-    const newVerseIdx = isOutOfBound ? selectedVerseIdx : next;
-
-    setSelectedVerseIdx(newVerseIdx);
-  }
-
   useEffect(() => {
     setSelectedVerseIdx(0);
   }, [selectedHymnIdx]);
@@ -123,7 +114,6 @@ export const HymnForm = (props: StackProps) => {
               savedVerse={content}
               originalVerse={originalContent}
               onSave={handleSave(idx)}
-              onVerseChange={handleVerseChange}
             />
           </Box>
         );

@@ -57,9 +57,9 @@ export const IndividualVerseForm = ({
     };
   }
 
-  function handleSave(idx?: number) {
+  function handleSave(idx: number = -1) {
     return () => {
-      if (idx === undefined) return handleSaveWithValidation(verse);
+      if (idx === -1) return handleSaveWithValidation(verse);
       const updatedVerse = [...savedVerse];
       updatedVerse.splice(idx, 1, verse[idx]);
       handleSaveWithValidation(updatedVerse);
