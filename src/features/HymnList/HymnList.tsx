@@ -82,9 +82,10 @@ export const HymnList = () => {
         : hymns.filter((hymn) => hymn.status === "completed");
 
       const parsedFiles = files.map(({ verses, status: _, ...hymn }) => {
-        const parsedVerses = verses.map(
-          ({ updatedHtml: _, ...verse }) => verse
-        );
+        const parsedVerses = verses.map(({ updatedHtml, ...verse }) => ({
+          ...verse,
+          html: updatedHtml,
+        }));
         return { ...hymn, verses: parsedVerses };
       });
       downloadAsZip(parsedFiles);
