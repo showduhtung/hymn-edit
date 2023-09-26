@@ -1,4 +1,4 @@
-import { type ChangeEvent, useState, useEffect } from "react";
+import { type ChangeEvent, useState } from "react";
 import { Paper } from "@mui/material";
 import {
   Box,
@@ -71,11 +71,6 @@ export const IndividualVerseForm = ({
       handleSaveWithValidation(updatedVerse);
     };
   }
-
-  useEffect(() => {
-    setVerse(savedVerse);
-    // individual item in map doesn't update, so useEffect required to update internal state when savedVerse is changed
-  }, [savedVerse]);
 
   const textBackgroundColor = (line: string, idx: number) => {
     if (line !== originalVerse[idx] && line === savedVerse[idx]) return saved;
