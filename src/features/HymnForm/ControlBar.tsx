@@ -10,6 +10,8 @@ type ControlBarProps = {
   title: string;
 };
 
+// for better ux experience, control bar could also have a "unsaved" state to show that unsaved changes have been made in this verse
+
 export const ControlBar = ({
   verses,
   title,
