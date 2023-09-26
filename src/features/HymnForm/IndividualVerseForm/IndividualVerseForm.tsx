@@ -67,10 +67,11 @@ export const IndividualVerseForm = ({
   }
 
   function handleKeydown(idx?: number) {
-    const options = ["Enter", "ArrowRight", "ArrowLeft"];
+    const saveOptions = ["Enter", "s"];
+    const directions = ["ArrowRight", "ArrowLeft"];
     // for future right and left movement
 
-    function handleEnter(
+    function handleKeySave(
       event: KeyboardEvent<HTMLTextAreaElement>,
       idx?: number
     ) {
@@ -81,8 +82,8 @@ export const IndividualVerseForm = ({
     }
 
     return (event: KeyboardEvent<HTMLTextAreaElement>) => {
-      if (!options.includes(event.key)) return;
-      if (event.key === "Enter") handleEnter(event, idx);
+      if (![...saveOptions, ...directions].includes(event.key)) return;
+      if (saveOptions.includes(event.key)) handleKeySave(event, idx);
     };
   }
 
