@@ -75,9 +75,13 @@ export const IndividualVerseForm = ({
       event: KeyboardEvent<HTMLTextAreaElement>,
       idx?: number
     ) {
+      const withModifierKey = event.metaKey || event.ctrlKey;
+      if (!withModifierKey) return;
+      if (!canSave) return;
+
       event.stopPropagation();
       event.preventDefault();
-      if (!canSave) return;
+
       const isMac = navigator.userAgentData?.platform === "macOS";
       if (!(isMac && event.metaKey) && !(!isMac && event.ctrlKey)) return;
       return event.shiftKey ? handleSave()() : handleSave(idx)();
@@ -158,7 +162,7 @@ export const IndividualVerseForm = ({
 
       <Box height="24px" />
 
-      <Box>
+      <Box display="flex" flexDirection="column" gap="24px">
         <Box display="flex" gap="8px">
           <Button
             variant="soft"
@@ -177,7 +181,7 @@ export const IndividualVerseForm = ({
             UNDO line changes
           </Button>
         </Box>
-        <Box pl="12px" pt="24px">
+        <Box pl="12px">
           <Typography
             sx={({ palette }) => ({
               color: palette.neutral[400],
@@ -195,6 +199,15 @@ export const IndividualVerseForm = ({
             Ctrl/Cmd + Shift + Enter/S to Save All
           </Typography>
         </Box>
+        <Typography
+          pl="12px"
+          sx={({ palette }) => ({
+            color: palette.neutral[400],
+            fontSize: "12px",
+          })}
+        >
+          Note- character "", is not supported. Please use: “”
+        </Typography>
       </Box>
     </>
   );
