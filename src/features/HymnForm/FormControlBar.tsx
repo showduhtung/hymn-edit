@@ -25,8 +25,9 @@ export const FormControlBar = ({
           endDecorator={<FiRefreshCw size="14" />}
           onClick={() => toggle(true)}
           disabled={status === "not-started"}
+          color="danger"
         >
-          Reset all verses
+          RESET all verses
         </Button>
         <Button
           variant="soft"
@@ -44,7 +45,7 @@ export const FormControlBar = ({
             };
           }}
         >
-          Mark as "{status === "completed" ? "in progress" : "complete"}"
+          MARK as "{status === "completed" ? "in progress" : "complete"}"
         </Button>
       </Box>
       <SimpleDialog

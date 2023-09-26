@@ -163,7 +163,7 @@ export const IndividualVerseForm = ({
             disabled={!canSave}
             endDecorator={<FiSave size="14" />}
           >
-            Save all changes
+            SAVE all changes
           </Button>
           <Button
             variant="soft"
@@ -171,7 +171,7 @@ export const IndividualVerseForm = ({
             onClick={handleResetLineText(-1)}
             endDecorator={<FiRotateCcw size="14" />}
           >
-            Undo line changes
+            UNDO line changes
           </Button>
         </Box>
         <Box pl="12px" pt="24px">
