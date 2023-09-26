@@ -95,13 +95,26 @@ export const IndividualVerseForm = ({
   return (
     <>
       <Stack spacing="12px">
-        <Box width="100%" display="flex" justifyContent="space-between">
+        <Box
+          display="flex"
+          justifyContent="space-between"
+          alignItems="center"
+          pl="12px"
+          pr="12px"
+        >
           {errors.length > 0 ? (
             <Typography color="danger">
               Please fill in all empty textboxes
             </Typography>
           ) : (
-            <Box />
+            <Typography
+              sx={({ palette }) => ({
+                color: palette.neutral[400],
+                fontSize: "12px",
+              })}
+            >
+              Ctrl/Cmd + Enter to Save
+            </Typography>
           )}
           <IconLegend />
         </Box>
