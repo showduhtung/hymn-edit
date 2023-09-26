@@ -1,4 +1,4 @@
-import { type ChangeEvent, useState } from "react";
+import { type ChangeEvent, useState, type KeyboardEvent } from "react";
 import { Paper } from "@mui/material";
 import {
   Box,
@@ -72,6 +72,14 @@ export const IndividualVerseForm = ({
     };
   }
 
+  function handleEnter(event: KeyboardEvent<HTMLTextAreaElement>) {
+    const isMac = navigator.userAgentData?.platform === "macOS";
+    if (event.key !== "Enter") return;
+    if (!canSave) return;
+    if (isMac && event.metaKey) handleSave()();
+    if (!isMac && event.ctrlKey) handleSave()();
+  }
+
   const textBackgroundColor = (line: string, idx: number) => {
     if (line !== originalVerse[idx] && line === savedVerse[idx]) return saved;
     if (line !== savedVerse[idx]) return unsaved;
@@ -107,6 +115,7 @@ export const IndividualVerseForm = ({
                   variant="soft"
                   value={line}
                   onChange={handleUpdateInput(idx)}
+                  onKeyDown={handleEnter}
                   autoFocus={idx === 0}
                   sx={{
                     backgroundColor: isError
