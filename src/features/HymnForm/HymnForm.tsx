@@ -1,20 +1,10 @@
 import { useEffect, useState } from "react";
-import {
-  Box,
-  Button,
-  DialogActions,
-  Modal,
-  ModalDialog,
-  Stack,
-  type StackProps,
-} from "@mui/joy";
-import { useLocalStorage, useToggle } from "@uidotdev/usehooks";
+import { Box, Stack, type StackProps } from "@mui/joy";
+import { useLocalStorage } from "@uidotdev/usehooks";
 
 import type { EditingHymnType, LocalHymnsState } from "../../types";
-import { IndividualVerseForm, ControlBar } from ".";
+import { IndividualVerseForm, VerseSelector, FormControlBar } from ".";
 import { joinByBreakLine, splitByBreakLine } from "./utilities";
-import { FiCheck, FiRefreshCw } from "react-icons/fi";
-import { unsaved } from "../../constants/colors";
 
 const defaultState = { hymns: [] as EditingHymnType[], selectedHymnIdx: -1 };
 
@@ -86,6 +76,15 @@ export const HymnForm = (props: StackProps) => {
     saveToLocalStorage({ ...localState, hymns });
   }
 
+  function handleVerseChange(dir: boolean) {
+    if (!selectedHymn) return;
+    const next = selectedVerseIdx + (dir ? 1 : -1);
+    const isOutOfBound = next > selectedHymn.verses.length - 1 || next < 0;
+    const newVerseIdx = isOutOfBound ? selectedVerseIdx : next;
+
+    setSelectedVerseIdx(newVerseIdx);
+  }
+
   useEffect(() => {
     setSelectedVerseIdx(0);
   }, [selectedHymnIdx]);
@@ -99,7 +98,7 @@ export const HymnForm = (props: StackProps) => {
       sx={{ overflow: "scroll" }}
       {...props}
     >
-      <ControlBar
+      <VerseSelector
         value={selectedVerseIdx}
         onChange={setSelectedVerseIdx}
         verses={selectedHymn?.verses || []}
@@ -124,78 +123,11 @@ export const HymnForm = (props: StackProps) => {
               savedVerse={content}
               originalVerse={originalContent}
               onSave={handleSave(idx)}
+              onVerseChange={handleVerseChange}
             />
           </Box>
         );
       })}
     </Stack>
-  );
-};
-
-type HeaderFormActionsProps = {
-  status: "not-started" | "in-progress" | "completed";
-  onMark: () => void;
-  onReset: () => void;
-};
-
-const FormControlBar = ({
-  status,
-  onMark,
-  onReset,
-}: HeaderFormActionsProps) => {
-  const [opened, toggle] = useToggle(false);
-  return (
-    <>
-      <Box display="flex" gap="8px">
-        <Button
-          variant="soft"
-          endDecorator={<FiRefreshCw size="14" />}
-          onClick={() => toggle(true)}
-          disabled={status === "not-started"}
-        >
-          Reset all verses
-        </Button>
-        <Button
-          variant="soft"
-          onClick={onMark}
-          disabled={status === "not-started"}
-          endDecorator={
-            status === "completed" ? "\u{1F6A7}" : <FiCheck size="14" />
-          }
-          sx={() => {
-            if (status === "in-progress") return {};
-            return {
-              backgroundColor: unsaved,
-              color: "black",
-              ":hover": { backgroundColor: "#EFEADA" },
-            };
-          }}
-        >
-          Mark as "{status === "completed" ? "in progress" : "complete"}"
-        </Button>
-      </Box>
-      <Modal open={opened} role="alertdialog" onClick={() => toggle(false)}>
-        <ModalDialog>
-          Are you sure you want to reset this hymn? All saved changes will be
-          deleted.
-          <DialogActions>
-            <Button
-              onClick={() => {
-                onReset();
-                toggle(false);
-              }}
-              autoFocus
-              variant="solid"
-              color="danger"
-            >
-              Confirm
-            </Button>
-            <Button onClick={() => toggle(false)} variant="plain">
-              Close
-            </Button>
-          </DialogActions>
-        </ModalDialog>
-      </Modal>
-    </>
   );
 };

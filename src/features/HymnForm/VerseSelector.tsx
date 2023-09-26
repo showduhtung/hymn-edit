@@ -3,7 +3,7 @@ import type { EditingVerseType } from "../../types";
 import { saved } from "../../constants/colors";
 import { splitByBreakLine } from "./utilities";
 
-type ControlBarProps = {
+type VerseSelectorProps = {
   verses: EditingVerseType[];
   value: number;
   onChange: (idx: number) => void;
@@ -12,12 +12,12 @@ type ControlBarProps = {
 
 // for better ux experience, control bar could also have a "unsaved" state to show that unsaved changes have been made in this verse
 
-export const ControlBar = ({
+export const VerseSelector = ({
   verses,
   title,
   onChange,
   value,
-}: ControlBarProps) => {
+}: VerseSelectorProps) => {
   const secondRow = verses.length > 10 ? verses.slice(10) : [];
 
   function handleChange(idx: number) {
