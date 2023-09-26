@@ -182,7 +182,7 @@ export const IndividualVerseForm = ({
               fontSize: "12px",
             })}
           >
-            Ctrl/Cmd + Enter to Save
+            Ctrl/Cmd + Enter/S to Save
           </Typography>
           <Typography
             sx={({ palette }) => ({
@@ -190,7 +190,7 @@ export const IndividualVerseForm = ({
               fontSize: "12px",
             })}
           >
-            Ctrl/Cmd + Shift + Enter to Save All
+            Ctrl/Cmd + Shift + Enter/S to Save All
           </Typography>
         </Box>
       </Box>
