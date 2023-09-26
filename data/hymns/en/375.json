@@ -6,17 +6,17 @@
     {
       "label": "1",
       "num": 1,
-      "html": "1<br><b>C</b>ome, oh come, with thy broken heart, <br><b>W</b>eary and worn with care; <br><b>C</b>ome and kneel at the open door, <br><b>J</b>esus is waiting there: <br><b>W</b>aiting to heal thy wounded soul, <br><b>W</b>aiting to give thee rest: <br><b>W</b>hy wilt thou walk where shadows fall? <br><b>C</b>ome to His loving breast! "
+      "html": "<b>1</b><br><b>C</b>ome, oh come, with thy broken heart,<br><b>W</b>eary and worn with care;<br><b>C</b>ome and kneel at the open door,<br><b>J</b>esus is waiting there,<br><b>W</b>aiting to heal thy wounded soul,<br><b>W</b>aiting to give thee rest;<br><b>W</b>hy wilt thou walk where shadows fall?<br><b>C</b>ome to His loving breast!"
     },
     {
       "label": "2",
       "num": 2,
-      "html": "2<br><b>F</b>irmly cling to the blessed cross, <br><b>T</b>here shall thy refuge be; <br><b>W</b>ash thee now in the crimson fount, <br><b>F</b>lowing so pure for thee: <br><b>L</b>ist to the gentle warning voice! <br><b>L</b>ist to the earnest call! <br><b>L</b>eave at the cross thy burden now: <br><b>J</b>esus will bear it all. "
+      "html": "<b>2</b><br><b>F</b>irmly cling to the blessed cross,<br><b>T</b>here shall thy refuge be;<br><b>W</b>ash thee now in the crimson fount,<br><b>F</b>lowing so pure for thee;<br><b>L</b>ist to the gentle warning voice!<br><b>L</b>ist to the earnest call!<br><b>L</b>eave at the cross thy burden now:<br><b>J</b>esus will bear it all."
     },
     {
       "label": "3",
       "num": 3,
-      "html": "3<br><b>C</b>ome and taste of the precious feast, <br><b>F</b>east of eternal love; <br><b>T</b>hink of joys that forever bloom, <br><b>B</b>right in the life above: <br><b>C</b>ome with a trusting heart to God, <br><b>C</b>ome and be saved by grace: <br><b>C</b>ome, for He longs to clasp thee now <br><b>C</b>lose in His dear embrace. "
+      "html": "<b>3</b><br><b>C</b>ome and taste of the precious feast,<br><b>F</b>east of eternal love;<br><b>T</b>hink of joys that forever bloom,<br><b>B</b>right in the life above:<br><b>C</b>ome with a trusting heart to God,<br><b>C</b>ome and be saved by grace;<br><b>C</b>ome, for He longs to clasp thee now,<br><b>C</b>lose in His dear embrace."
     }
   ]
 }

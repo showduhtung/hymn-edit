@@ -11,27 +11,27 @@
     {
       "label": "1C",
       "num": 1,
-      "html": "1<br><b>I</b> would be brave, for there is much to dare, <br><b>I</b> would be brave, for there is much to dare."
+      "html": "<b>1</b><br><b>I</b> would be brave, for there is much to dare;<br><b>I</b> would be brave, for there is much to dare."
     },
     {
       "label": "2",
       "num": 2,
-      "html": "2<br><b>I</b> would be friend of all the foe, the friendless; <br><b>I</b> would be giving, and forget the gift; <br><b>I</b> would be humble, for I know my weakness;"
+      "html": "<b>2</b><br><b>I</b> would be friend of all- the foe, the friendless;<br><b>I</b> would be giving, and forget the gift;<br><b>I</b> would be humble, for I know my weakness;"
     },
     {
       "label": "2C",
       "num": 2,
-      "html": "2<br><b>I</b> would look up, and laugh, and love, and lift, <br><b>I</b> would look up, and laugh, and love, and lift."
+      "html": "<b>2</b><br><b>I</b> would look up, and laugh, and love, and lift;<br><b>I</b> would look up, and laugh, and love, and lift."
     },
     {
       "label": "3",
       "num": 3,
-      "html": "3<br><b>I</b> would be prayerful thro’ each busy moment; <br><b>I</b> would be constantly in touch with God; <br><b>I</b> would be tuned to hear the slightest whisper;"
+      "html": "<b>3</b><br><b>I</b> would be prayerful through each busy moment;<br><b>I</b> would be constantly in touch with God;<br><b>I</b> would be tuned to hear the slightest whisper;"
     },
     {
       "label": "3C",
       "num": 3,
-      "html": "3<br><b>I</b> would have faith to keep the path Christ trod, <br><b>I</b> would have faith to keep the path Christ trod."
+      "html": "<b>3</b><br><b>I</b> would have faith to keep the path Christ trod;<br><b>I</b> would have faith to keep the path Christ trod."
     }
   ]
 }

@@ -6,12 +6,12 @@
     {
       "label": "1",
       "num": 1,
-      "html": "1<br><b>A</b>mid the trials that I meet, <br><b>A</b>mid the thorns that pierce my feet. <br><b>O</b>ne thought remains supremely sweet, <br><b>T</b>hou thinkest, Lord, of me!"
+      "html": "<b>1</b><br><b>A</b>mid the trials that I meet,<br><b>A</b>mid the thorns that pierce my feet,<br><b>O</b>ne thought remains supremely sweet,<br><b>T</b>hou thinkest, Lord, of me!"
     },
     {
       "label": "1C",
       "num": 1,
-      "html": "<b>1</b><br><b>T</b>hou thinkest, Lord, of me, <br><b>T</b>hou thinkest, Lord, of me, <br><b>W</b>hat need I fear when Thou art near, <br><b>A</b>nd thinkest, Lord, of me."
+      "html": "<b>1</b><br><b>T</b>hou thinkest, Lord, of me!<br><b>T</b>hou thinkest, Lord, of me!<br><b>W</b>hat need I fear when Thou art near,<br><b>A</b>nd thinkest, Lord, of me."
     },
     {
       "label": "2",
@@ -21,17 +21,17 @@
     {
       "label": "2C",
       "num": 2,
-      "html": "<b>2</b><br><b>T</b>hou thinkest, Lord, of me, <br><b>T</b>hou thinkest, Lord, of me, <br><b>W</b>hat need I fear when Thou art near, <br><b>A</b>nd thinkest, Lord, of me."
+      "html": "<b>2</b><br><b>T</b>hou thinkest, Lord, of me!<br><b>T</b>hou thinkest, Lord, of me!<br><b>W</b>hat need I fear when Thou art near,<br><b>A</b>nd thinkest, Lord, of me."
     },
     {
       "label": "3",
       "num": 3,
-      "html": "3<br><b>L</b>et shadows come, let shadows go, <br><b>L</b>et life be bright or dark with woe, <br><b>I</b> am content, for this I know, <br><b>T</b>hou thinkest, Lord, of me!"
+      "html": "<b>3</b><br><b>L</b>et shadows come, let shadows go,<br><b>L</b>et life be bright, or dark with woe,<br><b>I</b> am content, for this I know,<br><b>T</b>hou thinkest, Lord, of me!"
     },
     {
       "label": "3C",
       "num": 3,
-      "html": "<b>3</b><br><b>T</b>hou thinkest, Lord, of me, <br><b>T</b>hou thinkest, Lord, of me, <br><b>W</b>hat need I fear when Thou art near, <br><b>A</b>nd thinkest, Lord, of me."
+      "html": "<b>3</b><br><b>T</b>hou thinkest, Lord, of me!<br><b>T</b>hou thinkest, Lord, of me!<br><b>W</b>hat need I fear when Thou art near,<br><b>A</b>nd thinkest, Lord, of me."
     }
   ]
 }

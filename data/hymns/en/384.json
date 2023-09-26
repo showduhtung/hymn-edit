@@ -6,7 +6,7 @@
     {
       "label": "1",
       "num": 1,
-      "html": "1<br><b>E</b>arthly pleasures vainly call me, <br><b>I</b> would be like Jesus; <br><b>N</b>othing worldly shall enthrall me, <br><b>I</b> would be like Jesus."
+      "html": "<b>1</b><br><b>E</b>arthly pleasures vainly call me;<br><b>I</b> would be like Jesus;<br><b>N</b>othing worldly shall enthrall me;<br><b>I</b> would be like Jesus."
     },
     {
       "label": "1C",
@@ -16,7 +16,7 @@
     {
       "label": "2",
       "num": 2,
-      "html": "2<br><b>H</b>e has broken every fetter, <br><b>I</b> would be like Jesus; <br><b>T</b>hat my soul may serve Him better, <br><b>I</b> would be like Jesus."
+      "html": "<b>2</b><br><b>H</b>e has broken ev'ry fetter,<br><b>I</b> would be like Jesus;<br><b>T</b>hat my soul may serve Him better,<br><b>I</b> would be like Jesus."
     },
     {
       "label": "2C",
@@ -36,7 +36,7 @@
     {
       "label": "4",
       "num": 4,
-      "html": "4<br><b>T</b>hat in heaven He may meet me, <br><b>I</b> would be like Jesus; <br><b>T</b>hat His words, “Well done,” may greet me, <br><b>I</b> would be like Jesus."
+      "html": "<b>4</b><br><b>T</b>hat in heaven He may meet me,<br><b>I</b> would be like Jesus;<br><b>T</b>hat His words “Well done” may greet me,<br><b>I</b> would be like Jesus."
     },
     {
       "label": "4C",

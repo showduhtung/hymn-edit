@@ -6,12 +6,12 @@
     {
       "label": "1",
       "num": 1,
-      "html": "1<br><b>T</b>here is a name I love to hear, <br><b>I</b> love to sing its worth; <br><b>I</b>t sounds like music in mine ear, <br><b>T</b>he sweetest name on earth."
+      "html": "<b>1</b><br><b>T</b>here is a name I love to hear,<br><b>I</b> love to sing its worth;<br><b>I</b>t sounds like music in my ear,<br><b>T</b>he sweetest name on earth."
     },
     {
       "label": "1C",
       "num": 1,
-      "html": "<b>1</b><br><b>O</b>h, how I love Jesus, <br><b>O</b>h, how I love Jesus, <br><b>O</b>h, how I love Jesus, <br><b>B</b>ecause He first loved me."
+      "html": "<b>1</b><br><b>O</b>h, how I love Jesus,<br><b>O</b>h, how I love Jesus,<br><b>O</b>h, how I love Jesus,<br><b>B</b>ecause He first loved me!"
     },
     {
       "label": "2",
@@ -21,7 +21,7 @@
     {
       "label": "2C",
       "num": 2,
-      "html": "<b>2</b><br><b>O</b>h, how I love Jesus, <br><b>O</b>h, how I love Jesus, <br><b>O</b>h, how I love Jesus, <br><b>B</b>ecause He first loved me."
+      "html": "<b>2</b><br><b>O</b>h, how I love Jesus,<br><b>O</b>h, how I love Jesus,<br><b>O</b>h, how I love Jesus,<br><b>B</b>ecause He first loved me!"
     },
     {
       "label": "3",
@@ -31,17 +31,17 @@
     {
       "label": "3C",
       "num": 3,
-      "html": "<b>3</b><br><b>O</b>h, how I love Jesus, <br><b>O</b>h, how I love Jesus, <br><b>O</b>h, how I love Jesus, <br><b>B</b>ecause He first loved me."
+      "html": "<b>3</b><br><b>O</b>h, how I love Jesus,<br><b>O</b>h, how I love Jesus,<br><b>O</b>h, how I love Jesus,<br><b>B</b>ecause He first loved me!"
     },
     {
       "label": "4",
       "num": 4,
-      "html": "4<br><b>I</b>t tells of One whose loving heart <br><b>C</b>an feel my deepest woe, <br><b>W</b>ho in each sorrow bears a part, <br><b>T</b>hat none can bear below."
+      "html": "<b>4</b><br><b>I</b>t tells of One whose loving heart<br><b>C</b>an feel my deepest woe;<br><b>W</b>ho in each sorrow bears a part<br><b>T</b>hat none can bear below."
     },
     {
       "label": "4C",
       "num": 4,
-      "html": "<b>4</b><br><b>O</b>h, how I love Jesus, <br><b>O</b>h, how I love Jesus, <br><b>O</b>h, how I love Jesus, <br><b>B</b>ecause He first loved me."
+      "html": "<b>4</b><br><b>O</b>h, how I love Jesus,<br><b>O</b>h, how I love Jesus,<br><b>O</b>h, how I love Jesus,<br><b>B</b>ecause He first loved me!"
     }
   ]
 }
