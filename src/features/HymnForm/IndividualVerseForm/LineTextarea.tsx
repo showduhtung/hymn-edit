@@ -14,6 +14,8 @@ type LineTextareaProps = {
   isResetDisabled: boolean;
 } & TextareaProps;
 
+// can offset more of the parent form business logic into textarea component
+
 export const LineTextarea = ({
   isError,
   bgColor,
