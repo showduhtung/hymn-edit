@@ -75,6 +75,8 @@ export const IndividualVerseForm = ({
       event: KeyboardEvent<HTMLTextAreaElement>,
       idx?: number
     ) {
+      event.stopPropagation();
+      event.preventDefault();
       if (!canSave) return;
       const isMac = navigator.userAgentData?.platform === "macOS";
       if (!(isMac && event.metaKey) && !(!isMac && event.ctrlKey)) return;
