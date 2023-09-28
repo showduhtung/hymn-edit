@@ -7,8 +7,13 @@ export function splitByBreakLine(html: string) {
     .map((line) => line.replaceAll("<b>", "").replaceAll("</b>", ""));
 }
 
-export function joinByBreakLine(html: string[]) {
-  return html.map((line) => `<b>${line[0]}</b>${line.slice(1)}`).join("<br>");
+export function joinByBreakLine(html: string[], shouldBold: boolean = false) {
+  return html
+    .map((line) => {
+      const first = shouldBold ? `<b>${line[0]}</b>` : line[0];
+      return `${first}>${line.slice(1)}`;
+    })
+    .join("<br>");
 }
 
 export function autofocusLastCharacter(e: ChangeEvent<HTMLTextAreaElement>) {
