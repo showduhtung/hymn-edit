@@ -6,7 +6,7 @@
     {
       "label": "1",
       "num": 1,
-      "html": "1<br><b>O</b> what a wonderful, wonderful day <br><b>D</b>ay I will never forget; <br><b>A</b>fter I’d wandered in darkness away, <br><b>J</b>esus my Saviour I met."
+      "html": "<b>1</b><br><b>O</b> what a wonderful, wonderful day-<br><b>D</b>ay I will never forget;<br><b>A</b>fter I’d wandered in darkness away,<br><b>J</b>esus my Savior I met."
     },
     {
       "label": "1C",
@@ -16,7 +16,7 @@
     {
       "label": "1C",
       "num": 1,
-      "html": "<b>1</b><br><b>H</b>eaven came down and glory filled my soul, <br><b>W</b>hen at the cross the Saviour made me whole; <br><b>M</b>y sins were washed away <br><b>A</b>nd my night was turned to day <br><b>H</b>eaven came down and glory filled my soul!"
+      "html": "<b>1</b><br><b>H</b>eaven came down and glory filled my soul,<br><b>W</b>hen at the cross the Savior made me whole;<br><b>M</b>y sins were washed away<br><b>A</b>nd my night was turned to day,<br><b>H</b>eaven came down and glory filled my soul!"
     },
     {
       "label": "2",
@@ -31,7 +31,7 @@
     {
       "label": "2C",
       "num": 2,
-      "html": "<b>2</b><br><b>H</b>eaven came down and glory filled my soul, <br><b>W</b>hen at the cross the Saviour made me whole; <br><b>M</b>y sins were washed away <br><b>A</b>nd my night was turned to day <br><b>H</b>eaven came down and glory filled my soul!"
+      "html": "<b>2</b><br><b>H</b>eaven came down and glory filled my soul,<br><b>W</b>hen at the cross the Savior made me whole;<br><b>M</b>y sins were washed away<br><b>A</b>nd my night was turned to day,<br><b>H</b>eaven came down and glory filled my soul!"
     },
     {
       "label": "3",
@@ -46,7 +46,7 @@
     {
       "label": "3C",
       "num": 3,
-      "html": "<b>3</b><br><b>H</b>eaven came down and glory filled my soul, <br><b>W</b>hen at the cross the Saviour made me whole; <br><b>M</b>y sins were washed away <br><b>A</b>nd my night was turned to day <br><b>H</b>eaven came down and glory filled my soul!"
+      "html": "<b>3</b><br><b>H</b>eaven came down and glory filled my soul,<br><b>W</b>hen at the cross the Savior made me whole;<br><b>M</b>y sins were washed away<br><b>A</b>nd my night was turned to day,<br><b>H</b>eaven came down and glory filled my soul!"
     }
   ]
 }

@@ -6,12 +6,12 @@
     {
       "label": "1",
       "num": 1,
-      "html": "1<br>“All things are ready,” come to the feast! <br><b>C</b>ome, for the table now is spread; <br><b>Y</b>e famishing, ye weary come, <br><b>A</b>nd thou shalt be richly fed."
+      "html": "<b>1</b><br><b>“</b>All things are ready,” come to the feast!<br><b>C</b>ome, for the table now is spread;<br><b>Y</b>e famishing, ye weary, come,<br><b>A</b>nd thou shalt be richly fed."
     },
     {
       "label": "1C",
       "num": 1,
-      "html": "<b>1</b><br><b>H</b>ear the invitation, <br><b>C</b>ome, “whosoever will”; <br><b>P</b>raise God for full salvation, <br><b>F</b>or “whosoever will.”"
+      "html": "<b>1</b><br><b>H</b>ear the invitation,<br><b>C</b>ome, “whosoever will;”<br><b>P</b>raise God for full salvation,<br><b>F</b>or “whosoever will.”"
     },
     {
       "label": "2",
@@ -21,7 +21,7 @@
     {
       "label": "2C",
       "num": 2,
-      "html": "<b>2</b><br><b>H</b>ear the invitation, <br><b>C</b>ome, “whosoever will”; <br><b>P</b>raise God for full salvation, <br><b>F</b>or “whosoever will.”"
+      "html": "<b>2</b><br><b>H</b>ear the invitation,<br><b>C</b>ome, “whosoever will;”<br><b>P</b>raise God for full salvation,<br><b>F</b>or “whosoever will.”"
     },
     {
       "label": "3",
@@ -31,7 +31,7 @@
     {
       "label": "3C",
       "num": 3,
-      "html": "<b>3</b><br><b>H</b>ear the invitation, <br><b>C</b>ome, “whosoever will”; <br><b>P</b>raise God for full salvation, <br><b>F</b>or “whosoever will.”"
+      "html": "<b>3</b><br><b>H</b>ear the invitation,<br><b>C</b>ome, “whosoever will;”<br><b>P</b>raise God for full salvation,<br><b>F</b>or “whosoever will.”"
     },
     {
       "label": "4",
@@ -41,7 +41,7 @@
     {
       "label": "4C",
       "num": 4,
-      "html": "<b>4</b><br><b>H</b>ear the invitation, <br><b>C</b>ome, “whosoever will”; <br><b>P</b>raise God for full salvation, <br><b>F</b>or “whosoever will.”"
+      "html": "<b>4</b><br><b>H</b>ear the invitation,<br><b>C</b>ome, “whosoever will;”<br><b>P</b>raise God for full salvation,<br><b>F</b>or “whosoever will.”"
     }
   ]
 }

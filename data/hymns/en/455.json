@@ -6,7 +6,7 @@
     {
       "label": "1",
       "num": 1,
-      "html": "1<br><b>I</b> know of a name, <br><b>A</b> beautiful name, <br><b>T</b>hat angels brought down to earth; <br><b>T</b>hey whispered it low, <br><b>o</b>ne night long ago, <br><b>T</b>o a maiden of lowly birth."
+      "html": "<b>1</b><br><b>I</b> know of a name,<br><b>a</b> beautiful name,<br><b>T</b>hat angels brought down to earth;<br><b>T</b>hey whispered it low,<br><b>o</b>ne night long ago,<br><b>T</b>o a maiden of lowly birth."
     },
     {
       "label": "1C",
@@ -16,7 +16,7 @@
     {
       "label": "2",
       "num": 2,
-      "html": "2<br><b>I</b> know of a name, <br><b>a</b> beautiful name, <br><b>A</b> beautiful name, That unto a Babe was giv’n; <br><b>T</b>he stars glittered bright <br><b>T</b>hroughout that glad night, <br><b>A</b>nd angels praised God in heav’n."
+      "html": "<b>2</b><br><b>I</b> know of a name,<br><b>a</b> beautiful name,<br><b>T</b>hat unto a Babe was giv’n;<br><b>T</b>he stars glittered bright<br><b>t</b>hroughout that glad night,<br><b>A</b>nd angels praised God in heav’n."
     },
     {
       "label": "2C",
@@ -26,7 +26,7 @@
     {
       "label": "3",
       "num": 3,
-      "html": "3<br><b>T</b>he One of that name <br><b>m</b>y Saviour became, <br><b>M</b>y Saviour of Calvary; <br><b>M</b>y sins nailed Him there, <br><b>m</b>y burdens He bare, <br><b>H</b>e suffered all this for me."
+      "html": "<b>3</b><br><b>T</b>he One of that name,<br><b>m</b>y Saviour became,<br><b>M</b>y Saviour of Calvary;<br><b>M</b>y sins nailed Him there,<br><b>m</b>y burdens He bare,<br><b>H</b>e suffered all this for me."
     },
     {
       "label": "3C",

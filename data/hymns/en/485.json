@@ -16,7 +16,7 @@
     {
       "label": "1C",
       "num": 1,
-      "html": "<b>1</b><br><b>M</b>any things about tomorrow. <br><b>I</b> don’t seem to understand; <br><b>B</b>ut I know who holds tomorrow, <br><b>A</b>nd I know who holds my hand."
+      "html": "<b>1</b><br><b>M</b>any things about tomorrow,<br><b>I</b> don’t seem to understand;<br><b>B</b>ut I know who holds tomorrow,<br><b>A</b>nd I know who holds my hand."
     },
     {
       "label": "2",
@@ -31,7 +31,7 @@
     {
       "label": "2C",
       "num": 2,
-      "html": "<b>2</b><br><b>M</b>any things about tomorrow. <br><b>I</b> don’t seem to understand; <br><b>B</b>ut I know who holds tomorrow, <br><b>A</b>nd I know who holds my hand."
+      "html": "<b>2</b><br><b>M</b>any things about tomorrow,<br><b>I</b> don’t seem to understand;<br><b>B</b>ut I know who holds tomorrow,<br><b>A</b>nd I know who holds my hand."
     },
     {
       "label": "3",
@@ -46,7 +46,7 @@
     {
       "label": "3C",
       "num": 3,
-      "html": "<b>3</b><br><b>M</b>any things about tomorrow. <br><b>I</b> don’t seem to understand; <br><b>B</b>ut I know who holds tomorrow, <br><b>A</b>nd I know who holds my hand."
+      "html": "<b>3</b><br><b>M</b>any things about tomorrow,<br><b>I</b> don’t seem to understand;<br><b>B</b>ut I know who holds tomorrow,<br><b>A</b>nd I know who holds my hand."
     }
   ]
 }

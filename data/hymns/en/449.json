@@ -11,7 +11,7 @@
     {
       "label": "1C",
       "num": 1,
-      "html": "<b>1</b><br><b>A</b>mazing love! How can it be <br><b>T</b>hat Thou, my God, shouldst die for me?<br><b>A</b>mazing love! How can it be, <br><b>T</b>hat Thou, my God, shouldst die for me!"
+      "html": "<b>1</b><br><b>A</b>mazing love! How can it be<br><b>T</b>hat Thou, my God, shouldst die for me?<br><b>A</b>mazing love! How can it be,<br><b>T</b>hat Thou, my God, shouldst die for me?"
     },
     {
       "label": "2",
@@ -26,22 +26,22 @@
     {
       "label": "3",
       "num": 3,
-      "html": "3<br><b>L</b>ong my imprisoned spirit lay <br><b>F</b>ast bound in sin and nature’s night; <br><b>T</b>hine eye diffused a quick’ning ray, <br><b>I</b> woke, the dungeon flamed with light;"
+      "html": "<b>3</b><br><b>L</b>ong my imprisoned spirit lay,<br><b>F</b>ast bound in sin and nature’s night;<br><b>T</b>hine eye diffused a quick’ning ray,<br><b>I</b> woke, the dungeon flamed with light;"
     },
     {
       "label": "3C",
       "num": 3,
-      "html": "<b>3</b><br><b>M</b>y chains fell off, my heart was free; <br><b>I</b> rose, went forth and followed Thee.<br><b>A</b>mazing love! How can it be, <br><b>T</b>hat Thou, my God, shouldst die for me!"
+      "html": "<b>3</b><br><b>M</b>y chains fell off, my heart was free;<br><b>I</b> rose, went forth, and followed Thee.<br><b>A</b>mazing love! How can it be,<br><b>T</b>hat Thou, my God, shouldst die for me!"
     },
     {
       "label": "4",
       "num": 4,
-      "html": "4<br><b>N</b>o condemnation now I dread; <br><b>J</b>esus, and all in Him is mine! <br><b>A</b>live in Him, my living Head, <br><b>A</b>nd clothed in righteousness divine,"
+      "html": "<b>4</b><br><b>N</b>o condemnation now I dread;<br><b>J</b>esus, and all in Him, is mine;<br><b>A</b>live in Him, my living Head,<br><b>A</b>nd clothed in righteousness divine,"
     },
     {
       "label": "4C",
       "num": 4,
-      "html": "<b>4</b><br><b>B</b>old I approach th’eternal throne, <br><b>A</b>nd claim the crown, thro’ Christ my own.<br><b>A</b>mazing love! How can it be, <br><b>T</b>hat Thou, my God, shouldst die for me!"
+      "html": "<b>4</b><br><b>B</b>old I approach th’eternal throne,<br><b>A</b>nd claim the crown, through Christ my own.<br><b>A</b>mazing love! How can it be,<br><b>T</b>hat Thou, my God, shouldst die for me!"
     }
   ]
 }
