@@ -11,7 +11,7 @@
     {
       "label": "1C",
       "num": 1,
-      "html": "1<br><b>I</b> shall not fear the battle <br><b>I</b>f Thou art by my side, <br><b>N</b>or wander from the pathway <br><b>I</b>f Thou wilt be my Guide."
+      "html": "<b>1</b><br><b>I</b> shall not fear the battle <br><b>I</b>f Thou art by my side, <br><b>N</b>or wander from the pathway <br><b>I</b>f Thou wilt be my Guide."
     },
     {
       "label": "2",
@@ -21,7 +21,7 @@
     {
       "label": "2C",
       "num": 2,
-      "html": "2<br><b>A</b>nd, Jesus, I have promised <br><b>T</b>o serve Thee to the end; <br><b>O</b> give me grace to follow <br><b>M</b>y Master and my Friend. "
+      "html": "<b>2</b><br><b>A</b>nd, Jesus, I have promised <br><b>T</b>o serve Thee to the end; <br><b>O</b> give me grace to follow <br><b>M</b>y Master and my Friend. "
     },
     {
       "label": "3",
@@ -31,7 +31,7 @@
     {
       "label": "3C",
       "num": 3,
-      "html": "3<br><b>M</b>y foes are ever near me, <br><b>A</b>round me and within; <br><b>B</b>ut, Jesus, draw Thou nearer <br><b>A</b>nd shield my soul from sin. "
+      "html": "<b>3</b><br><b>M</b>y foes are ever near me, <br><b>A</b>round me and within; <br><b>B</b>ut, Jesus, draw Thou nearer <br><b>A</b>nd shield my soul from sin. "
     },
     {
       "label": "4",
@@ -41,7 +41,7 @@
     {
       "label": "4C",
       "num": 4,
-      "html": "4<br><b>O</b> speak to reassure me, <br><b>T</b>o hasten or control! <br><b>O</b> speak, and make me listen, <br><b>T</b>hou Guardian of my soul! "
+      "html": "<b>4</b><br><b>O</b> speak to reassure me, <br><b>T</b>o hasten or control! <br><b>O</b> speak, and make me listen, <br><b>T</b>hou Guardian of my soul! "
     }
   ]
 }

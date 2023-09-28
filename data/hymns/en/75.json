@@ -11,7 +11,7 @@
     {
       "label": "1C",
       "num": 1,
-      "html": "1<br><b>R</b>ejoice, rejoice, Rejoice, rejoice,<br><b>B</b>orn is the King of Israel."
+      "html": "<b>1</b><br><b>R</b>ejoice, rejoice, Rejoice, rejoice,<br><b>B</b>orn is the King of Israel."
     },
     {
       "label": "2",
@@ -21,7 +21,7 @@
     {
       "label": "2C",
       "num": 2,
-      "html": "2<br><b>R</b>ejoice, rejoice, Rejoice, rejoice, <br><b>B</b>orn is the King of Israel."
+      "html": "<b>2</b><br><b>R</b>ejoice, rejoice, Rejoice, rejoice, <br><b>B</b>orn is the King of Israel."
     },
     {
       "label": "3",
@@ -31,7 +31,7 @@
     {
       "label": "3C",
       "num": 3,
-      "html": "3<br><b>R</b>ejoice, rejoice, Rejoice, rejoice, <br><b>B</b>orn is the King of Israel."
+      "html": "<b>3</b><br><b>R</b>ejoice, rejoice, Rejoice, rejoice, <br><b>B</b>orn is the King of Israel."
     },
     {
       "label": "4",
@@ -41,7 +41,7 @@
     {
       "label": "4C",
       "num": 4,
-      "html": "4<br><b>R</b>ejoice, rejoice, Rejoice, rejoice, <br><b>B</b>orn is the King of Israel."
+      "html": "<b>4</b><br><b>R</b>ejoice, rejoice, Rejoice, rejoice, <br><b>B</b>orn is the King of Israel."
     }
   ]
 }
