@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Box, Stack, type StackProps } from "@mui/joy";
 import { useLocalStorage } from "@uidotdev/usehooks";
 
-import type { EditingHymnType, LocalHymnsState } from "../../types";
+import type { EditingHymnType, HymnStatus, LocalHymnsState } from "../../types";
 import { IndividualVerseForm, VerseSelector, FormControlBar } from ".";
 import { joinByBreakLine, splitByBreakLine } from "./utilities";
 
@@ -21,10 +21,8 @@ export const HymnForm = (props: StackProps) => {
 
     const hymns = localState.hymns.map((hymn) => {
       if (hymn.title !== selectedHymn.title) return hymn;
-      const status =
-        hymn.status === "completed"
-          ? ("in-progress" as const)
-          : ("completed" as const);
+      const status: HymnStatus =
+        hymn.status === "completed" ? "in-progress" : "completed";
       return { ...hymn, status };
     });
 
@@ -53,13 +51,12 @@ export const HymnForm = (props: StackProps) => {
           const splitUpdated = splitByBreakLine(verses[idx].updatedHtml);
           return splitOriginal.every((line, idx) => line === splitUpdated[idx]);
         });
-        return {
-          ...hymn,
-          verses,
-          status: isSameAsOriginal
-            ? ("not-started" as const)
-            : ("in-progress" as const),
-        };
+
+        const status: HymnStatus = isSameAsOriginal
+          ? "not-started"
+          : "in-progress";
+
+        return { ...hymn, verses, status };
       });
 
       saveToLocalStorage({ ...localState, hymns: updatedHymns });
@@ -69,9 +66,10 @@ export const HymnForm = (props: StackProps) => {
   function handleReset() {
     const hymns = localState.hymns.map((hymn, idx) => {
       if (idx !== selectedHymnIdx) return hymn;
-      const verses = hymn.verses.map((verse) => {
-        return { ...verse, updatedHtml: verse.html };
-      });
+      const verses = hymn.verses.map((verse) => ({
+        ...verse,
+        updatedHtml: verse.html,
+      }));
       return { ...hymn, verses, status: "not-started" as const };
     });
     saveToLocalStorage({ ...localState, hymns });
@@ -96,7 +94,6 @@ export const HymnForm = (props: StackProps) => {
         verses={selectedHymn?.verses || []}
         title={selectedHymn?.title || ""}
       />
-
       <FormControlBar
         status={status}
         onMark={handleMarkComplete}
