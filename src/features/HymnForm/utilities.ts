@@ -9,14 +9,14 @@ export function splitByBreakLine(html: string) {
 
 export function joinByBreakLine(html: string[]) {
   return html
-    .map((line) => {
-      const isFirstAlpha = /[A-Za-z]/.test(line[0]);
-      const [first, second] = [
-        isFirstAlpha ? line[0].toUpperCase() : line[0],
-        isFirstAlpha ? line[1] : line[1].toUpperCase(),
+    .map(([first, second, ...rest]) => {
+      const isFirstAlpha = /[A-Za-z]/.test(first);
+      const [modifiedFirst, modifiedSecond] = [
+        isFirstAlpha ? first.toUpperCase() : first,
+        isFirstAlpha ? second : second.toUpperCase(),
       ];
 
-      return `${first}${second}${line.slice(2)}`;
+      return `${modifiedFirst}${modifiedSecond}${rest.join("")}`;
     })
     .join("<br>");
 }
