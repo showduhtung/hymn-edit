@@ -7,12 +7,16 @@ export function splitByBreakLine(html: string) {
     .map((line) => line.replaceAll("<b>", "").replaceAll("</b>", ""));
 }
 
-export function joinByBreakLine(html: string[], shouldBold: boolean = false) {
+export function joinByBreakLine(html: string[]) {
   return html
     .map((line) => {
-      // TODO bug- will capitalize the apostrophe in "F, instead of F
-      const first = shouldBold ? `<b>${line[0]}</b>` : line[0];
-      return `${first}${line.slice(1)}`;
+      const isFirstAlpha = /[A-Za-z]/.test(line[0]);
+      const [first, second] = [
+        isFirstAlpha ? line[0].toUpperCase() : line[0],
+        isFirstAlpha ? line[1] : line[1].toUpperCase(),
+      ];
+
+      return `${first}${second}${line.slice(2)}`;
     })
     .join("<br>");
 }

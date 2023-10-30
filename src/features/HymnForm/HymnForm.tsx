@@ -37,8 +37,7 @@ export const HymnForm = (props: StackProps) => {
         if (currIdx !== verseIdx) return verse;
         const [idx] = splitByBreakLine(verse.html);
         const updatedHtml =
-          `<b>${String(idx)}</b><br>` +
-          joinByBreakLine(updatedContent, verse.label.includes("C"));
+          `<b>${String(idx)}</b><br>` + joinByBreakLine(updatedContent);
 
         return { ...verse, updatedHtml };
       });

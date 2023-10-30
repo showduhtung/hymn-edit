@@ -35,7 +35,7 @@ export const HymnListModal = ({
   useEffect(() => {
     async function getHymns() {
       const responses = await Promise.all(
-        hymnFileNames.map((fileName) => fetch(`data/hymns/en/${fileName}`))
+        hymnFileNames.map((file) => fetch(`data/hymns/en/${file}`))
       );
       const data = (await Promise.all(
         responses.map((response) => response.json())
