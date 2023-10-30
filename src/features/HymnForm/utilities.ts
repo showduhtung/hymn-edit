@@ -10,10 +10,11 @@ export function splitByBreakLine(html: string) {
 export function joinByBreakLine(html: string[]) {
   return html
     .map(([first, second, ...rest]) => {
+      if (!second) return `<b>${first}</b>`;
       const isFirstAlpha = /[A-Za-z]/.test(first);
       const [modifiedFirst, modifiedSecond] = [
-        isFirstAlpha ? first.toUpperCase() : first,
-        isFirstAlpha ? second : second.toUpperCase(),
+        isFirstAlpha ? `<b>${first}</b>` : first,
+        isFirstAlpha ? second : `<b>${second}</b>`,
       ];
 
       return `${modifiedFirst}${modifiedSecond}${rest.join("")}`;
