@@ -10,6 +10,7 @@ export function splitByBreakLine(html: string) {
 export function joinByBreakLine(html: string[], shouldBold: boolean = false) {
   return html
     .map((line) => {
+      // TODO bug- will capitalize the apostrophe in "F, instead of F
       const first = shouldBold ? `<b>${line[0]}</b>` : line[0];
       return `${first}>${line.slice(1)}`;
     })
