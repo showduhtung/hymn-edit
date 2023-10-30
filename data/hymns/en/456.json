@@ -6,32 +6,32 @@
     {
       "label": "1",
       "num": 1,
-      "html": "1<br>’Mid pleasures and palaces though we may roam, <br><b>B</b>e it ever so humble, there’s no place like home! <br><b>A</b> charm from the skies seems to hallow us there,"
+      "html": "<b>1</b><br>’<b>M</b>id pleasures and palaces though we may roam,<br><b>B</b>e it ever so humble, there’s no place like home!<br><b>A</b> charm from the skies seems to hallow us there,"
     },
     {
       "label": "1C",
       "num": 1,
-      "html": "<b>1</b><br><b>W</b>hich, seek through the world, is ne’er met with elsewhere.<br><b>H</b>ome, Home, Sweet, sweet home!<br><b>B</b>e it ever so humble,<br><b>t</b>here’s no place like home!"
+      "html": "<b>1</b><br><b>W</b>hich, seek through the world, is ne’er met with elsewhere.<br><b>H</b>ome! Home! Sweet, sweet home!<br><b>B</b>e it ever so humble,<br><b>t</b>here’s no place like home!"
     },
     {
       "label": "2",
       "num": 2,
-      "html": "2<br><b>A</b>n exile from home, splendor dazzles in vain<br><b>O</b>h give me my lowly thatched cottage again,<br><b>T</b>he birds singing sweetly that came at my call;"
+      "html": "<b>2</b><br><b>A</b>n exile from home, splendor dazzles in vain<br><b>O</b>h, give me my lowly thatched cottage again,<br><b>T</b>he birds singing sweetly that come at my call,"
     },
     {
       "label": "2C",
       "num": 2,
-      "html": "<b>2</b><br><b>G</b>ive me them with that peace of mind, dearer than all.<br><b>H</b>ome, Home, Sweet, sweet home!<br><b>B</b>e it ever so humble,<br><b>t</b>here’s no place like home!"
+      "html": "<b>2</b><br><b>G</b>ive me them with that peace of mind, dearer than all.<br><b>H</b>ome! Home! Sweet, sweet home!<br><b>B</b>e it ever so humble,<br><b>t</b>here’s no place like home!"
     },
     {
       "label": "3",
       "num": 3,
-      "html": "3<br><b>T</b>o us, in despite of the absence of years, <br><b>H</b>ow sweet the remembrance of home still appears; <br><b>F</b>rom allurements abroad which but flatter the eye,"
+      "html": "<b>3</b><br><b>T</b>o us, in despite of the absence of years,<br><b>H</b>ow sweet the remembrance of home still appears;<br><b>F</b>rom allurements abroad which but flatter the eye,"
     },
     {
       "label": "3C",
       "num": 3,
-      "html": "<b>3</b><br><b>T</b>he unsatisfied heart turns and says with a sigh.<br><b>H</b>ome, Home, Sweet, sweet home!<br><b>B</b>e it ever so humble,<br><b>t</b>here’s no place like home!"
+      "html": "<b>3</b><br><b>T</b>he unsatisfied heart turns and says with a sigh.<br><b>H</b>ome! Home! Sweet, sweet home!<br><b>B</b>e it ever so humble,<br><b>t</b>here’s no place like home!"
     }
   ]
 }
