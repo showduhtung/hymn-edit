@@ -5,9 +5,9 @@ import { FiDownload, FiPlus } from "react-icons/fi";
 
 import { HymnListConfirmationDialog } from "./HymnListConfirmationDialog";
 import { downloadAsZip, readFileAsync } from "./utilities";
-import type { EditingHymnType, LocalHymnsState } from "../../types";
+import type { EditingHymnType, LocalHymnsState } from "~/types";
 import { HymnListButton } from "./HymnListButton";
-import { DroppableList } from "../../components";
+import { DroppableList } from "~/ui";
 import { HymnListModal } from "./HymnListModal";
 
 const defaultState = {

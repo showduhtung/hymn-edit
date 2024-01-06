@@ -9,8 +9,8 @@ import {
 import { FiCheck, FiDownload, FiTrash } from "react-icons/fi";
 import { useHover, useToggle } from "@uidotdev/usehooks";
 
-import type { EditingHymnType } from "../../types";
-import { SimpleDialog } from "../../components";
+import type { EditingHymnType } from "~/types";
+import { SimpleDialog } from "~/ui";
 
 type HymnListButtonProps = {
   data: EditingHymnType;

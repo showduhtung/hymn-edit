@@ -1,2 +1,2 @@
-export * from "./SimpleDialog";
-export * from "./DroppableList";
+export * from "./HymnList";
+export * from "./HymnEditor";

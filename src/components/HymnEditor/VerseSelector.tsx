@@ -1,6 +1,6 @@
 import { Box, Button, ButtonGroup, Typography, Stack, Sheet } from "@mui/joy";
-import type { EditingVerseType } from "../../types";
-import { saved } from "../../constants/colors";
+import type { EditingVerseType } from "~/types";
+import { saved } from "~/constants/colors";
 import { splitByBreakLine } from "./utilities";
 
 type VerseSelectorProps = {

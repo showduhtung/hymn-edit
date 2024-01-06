@@ -14,8 +14,8 @@ import {
   Checkbox,
 } from "@mui/joy";
 import { Fragment, useEffect, useState } from "react";
-import { hymnFileNames } from "../../constants";
-import type { HymnFileType, EditingHymnType } from "../../types";
+import { hymnFileNames } from "~/constants";
+import type { HymnFileType, EditingHymnType } from "~/types";
 
 type HymnListModalProps = Omit<ModalProps, "children" | "onSubmit"> & {
   onSubmit: (hymnFiles: EditingHymnType[]) => void;

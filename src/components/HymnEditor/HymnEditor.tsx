@@ -2,13 +2,13 @@ import { useEffect, useState } from "react";
 import { Box, Stack, type StackProps } from "@mui/joy";
 import { useLocalStorage } from "@uidotdev/usehooks";
 
-import type { EditingHymnType, HymnStatus, LocalHymnsState } from "../../types";
+import type { EditingHymnType, HymnStatus, LocalHymnsState } from "~/types";
 import { IndividualVerseForm, VerseSelector, FormControlBar } from ".";
 import { joinByBreakLine, splitByBreakLine } from "./utilities";
 
 const defaultState = { hymns: [] as EditingHymnType[], selectedHymnIdx: -1 };
 
-export const HymnForm = (props: StackProps) => {
+export const HymnEditor = (props: StackProps) => {
   const [selectedVerseIdx, setSelectedVerseIdx] = useState<number>(0);
   const [localState = defaultState, saveToLocalStorage] =
     useLocalStorage<LocalHymnsState>("editing-hymns");
