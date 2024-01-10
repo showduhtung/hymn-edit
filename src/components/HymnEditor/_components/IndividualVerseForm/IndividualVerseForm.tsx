@@ -2,11 +2,12 @@ import { type ChangeEvent, useState, type KeyboardEvent } from "react";
 import { Paper } from "@mui/material";
 import { Box, Typography, Stack, Button } from "@mui/joy";
 import { FiRotateCcw, FiSave } from "react-icons/fi";
-import { joinByBreakLine } from "../utilities";
+import { initial, saved, unsaved } from "~/constants/colors";
+
 import { IconLegend } from "./IconLegend";
 import { Div } from "./Div";
-import { initial, saved, unsaved } from "../../../constants/colors";
 import { LineTextarea } from "./LineTextarea";
+import { joinByBreakLine } from "../../utilities";
 
 type IndividualVerseFormProps = {
   savedVerse: string[];

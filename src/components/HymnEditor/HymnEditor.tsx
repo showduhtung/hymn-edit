@@ -3,7 +3,11 @@ import { Box, Stack, type StackProps } from "@mui/joy";
 import { useLocalStorage } from "@uidotdev/usehooks";
 
 import type { EditingHymnType, HymnStatus, LocalHymnsState } from "~/types";
-import { IndividualVerseForm, VerseSelector, FormControlBar } from ".";
+import {
+  IndividualVerseForm,
+  VerseSelector,
+  FormControlBar,
+} from "./_components";
 import { joinByBreakLine, splitByBreakLine } from "./utilities";
 
 const defaultState = { hymns: [] as EditingHymnType[], selectedHymnIdx: -1 };
