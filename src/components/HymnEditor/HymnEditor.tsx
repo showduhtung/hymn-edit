@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Box, Stack, type StackProps } from "@mui/joy";
+import { Box, Stack } from "@mui/joy";
 import { useLocalStorage } from "@uidotdev/usehooks";
 
 import type { EditingHymnType, HymnStatus, LocalHymnsState } from "~/types";
@@ -12,7 +12,7 @@ import { joinByBreakLine, splitByBreakLine } from "./utilities";
 
 const defaultState = { hymns: [] as EditingHymnType[], selectedHymnIdx: -1 };
 
-export const HymnEditor = (props: StackProps) => {
+export const HymnEditor = () => {
   const [selectedVerseIdx, setSelectedVerseIdx] = useState<number>(0);
   const [localState = defaultState, saveToLocalStorage] =
     useLocalStorage<LocalHymnsState>("editing-hymns");
@@ -85,12 +85,7 @@ export const HymnEditor = (props: StackProps) => {
   const { status } = selectedHymn || { status: "not-started" };
 
   return (
-    <Stack
-      spacing="24px"
-      maxHeight="100dvh"
-      sx={{ overflow: "scroll" }}
-      {...props}
-    >
+    <Stack spacing="24px" maxHeight="100dvh" sx={{ overflow: "scroll" }}>
       <VerseSelector
         value={selectedVerseIdx}
         onChange={setSelectedVerseIdx}

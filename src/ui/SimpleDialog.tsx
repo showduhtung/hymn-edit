@@ -10,11 +10,10 @@ import type { ReactNode } from "react";
 type SimpleDialogProps = {
   onConfirm: () => void;
   onClose: () => void;
-  open: boolean;
   text?: string;
   type: "warning" | "confirm";
   children: ReactNode;
-} & Omit<ModalProps, "children">;
+} & Omit<ModalProps, "children" | "onClose">;
 
 export const SimpleDialog = ({
   type,

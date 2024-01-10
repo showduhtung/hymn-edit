@@ -1,10 +1,9 @@
-import { Box, Typography, Stack, Button } from "@mui/joy";
-import { useLocalStorage, useToggle } from "@uidotdev/usehooks";
-import { FiDownload, FiPlus } from "react-icons/fi";
+import { Box, Typography, Stack } from "@mui/joy";
+import { useLocalStorage } from "@uidotdev/usehooks";
 
 import { downloadAsZip } from "./utilities";
 import type { EditingHymnType, LocalHymnsState } from "~/types";
-import { DraggableContainer, HymnsImports, ListItem } from "./_components";
+import { DraggableContainer, HymnListActions, ListItem } from "./_components";
 
 const defaultState = {
   hymns: [] as EditingHymnType[],
@@ -16,7 +15,6 @@ const defaultState = {
 export const HymnList = () => {
   const [localState = defaultState, saveToLocalStorage] =
     useLocalStorage<LocalHymnsState>("editing-hymns");
-  const [isHymnListModalOpen, toggleModal] = useToggle(false);
 
   const { selectedHymnIdx, hymns } = localState;
   const selectedHymn = hymns.find((_, idx) => idx === selectedHymnIdx);
@@ -68,36 +66,11 @@ export const HymnList = () => {
         maxHeight="100dvh"
         sx={{ overflow: "scroll" }}
       >
-        <Box
-          px="12px"
-          display="flex"
-          justifyContent="space-between"
-          gap="4px"
-          alignItems="center"
-        >
-          <Typography fontSize={16} sx={{ textDecoration: "underline" }}>
-            Hymn List
-          </Typography>
-          <Box display="flex" gap="8px">
-            <Button
-              variant="soft"
-              startDecorator={<FiPlus size="12" />}
-              onClick={() => toggleModal()}
-              sx={{ fontSize: 10, p: 1 }}
-            >
-              Import
-            </Button>
-            <Button
-              variant="soft"
-              startDecorator={<FiDownload size="12" />}
-              disabled={!hymns.find((hymn) => hymn.status === "completed")}
-              onClick={handleDownloadHymn()}
-              sx={{ fontSize: 10, p: 1 }}
-            >
-              Download
-            </Button>
-          </Box>
-        </Box>
+        <HymnListActions
+          hymns={hymns}
+          onImport={handleImportedHymns}
+          onDownload={handleDownloadHymn()}
+        />
 
         <Box>
           <Box px="12px">
@@ -123,16 +96,6 @@ export const HymnList = () => {
           </DraggableContainer>
         </Box>
       </Stack>
-
-      <HymnsImports
-        onClose={toggleModal}
-        open={isHymnListModalOpen}
-        onSubmit={(importedHymns: EditingHymnType[]) => {
-          toggleModal();
-          handleImportedHymns(importedHymns);
-        }}
-        initialHymns={hymns}
-      />
     </>
   );
 };

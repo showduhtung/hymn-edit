@@ -10,13 +10,15 @@ const defaultState = {
   selectedHymnIdx: -1,
 };
 
+type DraggableContainerProps = {
+  children: ReactNode;
+  onImport: (hymns: EditingHymnType[]) => void;
+};
+
 export function DraggableContainer({
   children,
   onImport,
-}: {
-  children: ReactNode;
-  onImport: (hymns: EditingHymnType[]) => void;
-}) {
+}: DraggableContainerProps) {
   const [filesToBeConfirmed, setFilesToBeConfirmed] = useState<
     EditingHymnType[]
   >([]);
