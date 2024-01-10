@@ -1,4 +1,4 @@
-type HymnMetadata = { lang: string; num: string; title: string };
+export type HymnMetadata = { lang: string; num: string; title: string };
 type VerseMetadata = { label: string; num: number; html: string };
 export type HymnStatus = "completed" | "in-progress" | "not-started";
 
