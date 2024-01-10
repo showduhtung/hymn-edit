@@ -3,12 +3,14 @@ import { Box, Typography, Stack, Button } from "@mui/joy";
 import { useLocalStorage, useToggle } from "@uidotdev/usehooks";
 import { FiDownload, FiPlus } from "react-icons/fi";
 
-import { HymnListConfirmationDialog } from "./HymnListConfirmationDialog";
 import { downloadAsZip, readFileAsync } from "./utilities";
 import type { EditingHymnType, LocalHymnsState } from "~/types";
-import { HymnListButton } from "./HymnListButton";
 import { DroppableList } from "~/ui";
-import { HymnListModal } from "./HymnListModal";
+import {
+  HymnListConfirmationDialog,
+  HymnsImports,
+  ListItem,
+} from "./_components";
 
 const defaultState = {
   hymns: [] as EditingHymnType[],
@@ -28,7 +30,7 @@ export const HymnList = () => {
   const { selectedHymnIdx, hymns } = localState;
   const selectedHymn = hymns.find((_, idx) => idx === selectedHymnIdx);
 
-  async function handleFiles(files: FileList) {
+  async function handlePossibleFiles(files: FileList) {
     const possibleFiles: EditingHymnType[] = await Promise.all(
       Array.from(files)
         .filter((file) => file.type === "application/json")
@@ -113,7 +115,6 @@ export const HymnList = () => {
         maxHeight="100dvh"
         sx={{ overflow: "scroll" }}
       >
-        {/* <Button onClick={()=> saveToLocalStorage()}>Hi</Button> */}
         <Box
           px="12px"
           display="flex"
@@ -153,13 +154,13 @@ export const HymnList = () => {
           </Box>
 
           <DroppableList
-            onDroppedFiles={handleFiles}
+            onDroppedFiles={handlePossibleFiles}
             sx={{ borderRadius: 3, minHeight: 300 }}
           >
             {hymns.map((item, idx) => {
               const { title, status } = item;
               return (
-                <HymnListButton
+                <ListItem
                   key={title + status}
                   onClick={handleSelectHymn(idx)}
                   selected={title === selectedHymn?.title}
@@ -183,7 +184,7 @@ export const HymnList = () => {
         />
       )}
 
-      <HymnListModal
+      <HymnsImports
         onClose={() => toggleHymnListModal()}
         open={isHymnListModalOpen}
         onSubmit={handleImportedHymns}
