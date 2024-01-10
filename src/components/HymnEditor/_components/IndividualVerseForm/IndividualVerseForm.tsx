@@ -15,6 +15,10 @@ type IndividualVerseFormProps = {
   onSave: (val: string[]) => void;
 };
 
+// savedVerse: localStorage state of the verse
+// originalVerse: unedited version of the verse
+// the above two states provide flexibility to save progress in editing a verse
+
 export const IndividualVerseForm = ({
   savedVerse,
   originalVerse,
@@ -35,7 +39,7 @@ export const IndividualVerseForm = ({
 
   function handleUpdateInput(idx: number) {
     return (e: ChangeEvent<HTMLTextAreaElement>) => {
-      const value = e.target.value;
+      const { value } = e.target;
       setVerse(verse.map((line, currIdx) => (currIdx === idx ? value : line)));
       setErrors([]);
     };
