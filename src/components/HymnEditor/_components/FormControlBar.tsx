@@ -2,11 +2,12 @@ import { Box, Button } from "@mui/joy";
 import { useToggle } from "@uidotdev/usehooks";
 
 import { FiCheck, FiRefreshCw } from "react-icons/fi";
-import { unsaved } from "../../constants/colors";
-import { SimpleDialog } from "../../components";
+import { unsaved } from "~/constants/colors";
+import type { HymnStatus } from "~/types";
+import { SimpleDialog } from "~/ui";
 
 type FormControlBarProps = {
-  status: "not-started" | "in-progress" | "completed";
+  status: HymnStatus;
   onMark: () => void;
   onReset: () => void;
 };

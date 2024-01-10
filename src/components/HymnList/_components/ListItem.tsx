@@ -1,4 +1,4 @@
-import type { ElementRef, MouseEvent } from "react";
+import type { ElementRef, MouseEvent, ReactNode } from "react";
 import {
   Typography,
   ListItemButton,
@@ -9,23 +9,22 @@ import {
 import { FiCheck, FiDownload, FiTrash } from "react-icons/fi";
 import { useHover, useToggle } from "@uidotdev/usehooks";
 
-import type { EditingHymnType } from "../../types";
-import { SimpleDialog } from "../../components";
+import type { EditingHymnType, HymnStatus } from "~/types";
+import { SimpleDialog } from "~/ui";
 
-type HymnListButtonProps = {
+type ListItemProps = {
   data: EditingHymnType;
   onDelete: () => void;
   onDownload: () => void;
 } & ListItemButtonProps;
 
-export const HymnListButton = ({
+export const ListItem = ({
   onDownload,
   onDelete,
-  selected,
   data,
   sx,
   ...props
-}: HymnListButtonProps) => {
+}: ListItemProps) => {
   const { title, status, num } = data;
   const [ref, hovering] = useHover<ElementRef<"div">>();
 
@@ -57,12 +56,11 @@ export const HymnListButton = ({
           minHeight: "48px",
           ...sx,
         }}
-        selected={selected}
         color="primary"
         {...props}
       >
         <Typography maxWidth="80%">{`${num}. ${title}`}</Typography>
-        {selected && hovering ? (
+        {props.selected && hovering ? (
           <Box display="flex" gap="4px">
             <IconButton
               sx={{ borderRadius: 3 }}
@@ -88,7 +86,7 @@ export const HymnListButton = ({
   );
 };
 
-const statusIcon = {
+const statusIcon: Record<HymnStatus, string | ReactNode> = {
   "not-started": "",
   "in-progress": "\u{1F6A7}",
   completed: <FiCheck />,

@@ -4,6 +4,7 @@
     "useDefineForClassFields": true,
     "lib": ["ES2021", "DOM", "DOM.Iterable"],
     "module": "ESNext",
+
     "skipLibCheck": true,
 
     /* Bundler mode */
@@ -20,7 +21,13 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "types": ["@uidotdev/usehooks"],
-    "typeRoots": ["types"]
+    "typeRoots": ["types"],
+
+    /* Aliasing */
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./src/*"]
+    }
   },
   "include": ["src"],
 

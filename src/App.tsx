@@ -6,7 +6,7 @@ import "@fontsource/inter";
 
 import { Paper } from "@mui/material";
 import { Box, styled, Container } from "@mui/joy";
-import { HymnForm, HymnList } from "./features";
+import { HymnEditor, HymnList } from "~/components";
 
 const StyledContainer = styled(Container)(({ theme }) => ({
   padding: "24px",
@@ -23,7 +23,7 @@ function App() {
           <HymnList />
         </Paper>
         <Paper elevation={2} sx={{ flexGrow: 1, padding: "24px", h: "100%" }}>
-          <HymnForm />
+          <HymnEditor />
         </Paper>
       </Box>
     </StyledContainer>

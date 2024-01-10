@@ -14,20 +14,24 @@ import {
   Checkbox,
 } from "@mui/joy";
 import { Fragment, useEffect, useState } from "react";
-import { hymnFileNames } from "../../constants";
-import type { HymnFileType, EditingHymnType } from "../../types";
+import { hymnFileNames } from "~/constants";
+import type { HymnFileType, EditingHymnType, HymnMetadata } from "~/types";
 
-type HymnListModalProps = Omit<ModalProps, "children" | "onSubmit"> & {
+type HymnsImportProps = Omit<
+  ModalProps,
+  "children" | "onSubmit" | "onClose"
+> & {
   onSubmit: (hymnFiles: EditingHymnType[]) => void;
   initialHymns: EditingHymnType[];
+  onClose: () => void;
 };
 
-export const HymnListModal = ({
+export const HymnsImports = ({
   initialHymns,
   onSubmit,
   onClose,
   ...props
-}: HymnListModalProps) => {
+}: HymnsImportProps) => {
   const [selectedIdxs, setSelectedIdxs] = useState<number[]>([]);
   const [hymnFiles, setHymnFiles] = useState<HymnFileType[]>([]);
   const [input, setInput] = useState<string>("");
@@ -83,11 +87,11 @@ export const HymnListModal = ({
   }
 
   function handleClose(
-    event = {},
+    _event = {},
     reason: "backdropClick" | "escapeKeyDown" | "closeClick"
   ) {
     if (reason !== "closeClick") return;
-    onClose?.(event, reason);
+    onClose();
     resetState();
   }
 
@@ -105,10 +109,7 @@ export const HymnListModal = ({
     return isSameAsInitial && selectedIdxs.length === initialHymns.length;
   })();
 
-  const shouldHide = (
-    { num, title }: { num: string; title: string },
-    idx: number
-  ) => {
+  const shouldHide = ({ num, title }: Partial<HymnMetadata>, idx: number) => {
     const fullTitle = `${num}. ${title}`.toLowerCase();
 
     const isAlreadySelected = selectedIdxs.includes(idx);
@@ -158,7 +159,7 @@ export const HymnListModal = ({
           </List>
           <Divider />
           <List>
-            {hymnFiles.map(({ num, title }: HymnFileType, idx: number) => {
+            {hymnFiles.map(({ num, title }: HymnFileType, idx) => {
               return shouldHide({ num, title }, idx) ? (
                 <Fragment key={title + idx}></Fragment>
               ) : (

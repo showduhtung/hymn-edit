@@ -1,5 +1,5 @@
 import JSZip from "jszip";
-import type { EditingHymnType, EditingVerseType } from "../../types";
+import type { EditingHymnType, EditingVerseType } from "~/types";
 
 export function readFileAsync(file: File): Promise<EditingHymnType> {
   return new Promise((resolve, reject) => {

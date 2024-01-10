@@ -2,7 +2,7 @@ import { IconButton, Textarea, type TextareaProps } from "@mui/joy";
 import { FiRefreshCw, FiRotateCcw, FiSave } from "react-icons/fi";
 import type { Theme } from "@mui/joy/styles/types";
 
-import { autofocusLastCharacter } from "../utilities";
+import { autofocusLastCharacter } from "../../utilities";
 
 type LineTextareaProps = {
   isError: boolean;

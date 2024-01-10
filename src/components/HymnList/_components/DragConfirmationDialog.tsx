@@ -13,23 +13,23 @@ import {
   DialogTitle,
   type ModalProps,
 } from "@mui/joy";
-import type { EditingHymnType } from "../../types";
+import type { EditingHymnType } from "~/types";
 
 type HymnList = EditingHymnType & { checked: boolean };
-type ListConfirmationDialogProps = {
+type DragConfirmationDialogProps = {
   open: boolean;
   data: EditingHymnType[];
   onClose: (arg: boolean) => () => void;
   onConfirm: (arg: EditingHymnType[]) => void;
 } & Omit<ModalProps, "children">;
 
-export const HymnListConfirmationDialog = ({
+export const DragConfirmationDialog = ({
   open,
   data,
   onClose,
   onConfirm,
   ...props
-}: ListConfirmationDialogProps) => {
+}: DragConfirmationDialogProps) => {
   const [list, setList] = useState<HymnList[]>(
     data.map((item) => ({ ...item, checked: true }))
   );
